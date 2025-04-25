@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Vinyl Haven</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #8a4f2b;
+        }
+        
+        .logo img {
+            height: 40px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            color: #444;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #8a4f2b;
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            padding-top: 70px;
+        }
+        
+        .hero-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+        
+        .hero-content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+        
+        .cta-button {
+            background-color: #8a4f2b;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .cta-button:hover {
+            background-color: #6a3b1d;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(138, 79, 43, 0.3);
+        }
+        
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background-color: #fff;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: #8a4f2b;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .about-text {
+            flex: 1;
+            padding: 0 20px;
+            min-width: 300px;
+        }
+        
+        .about-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #8a4f2b;
+        }
+        
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #666;
+        }
+        
+        .about-image {
+            flex: 1;
+            padding: 0 20px;
+            min-width: 300px;
+            text-align: center;
+        }
+        
+        .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Featured Albums */
+        .featured-albums {
+            padding: 100px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .album-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .album-item {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .album-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .album-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .album-item-content {
+            padding: 20px;
+        }
+        
+        .album-item-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #8a4f2b;
+        }
+        
+        .album-item-content p {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .album-item-content .price {
+            font-weight: 700;
+            color: #333;
+            font-size: 1.2rem;
+        }
+        
+        /* Store Hours */
+        .store-hours {
+            padding: 100px 0;
+            background-color: #fff;
+        }
+        
+        .hours-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hours-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .hours-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.1rem;
+        }
+        
+        .hours-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .day {
+            font-weight: 600;
+            color: #8a4f2b;
+        }
+        
+        /* Contact Form */
+        .contact {
+            padding: 100px 0;
+            background-color: #f9f9f9;
+            position: relative;
+        }
+        
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-form h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: #8a4f2b;
+            outline: none;
+        }
+        
+        .submit-button {
+            width: 100%;
+            background-color: #8a4f2b;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+        
+        .submit-button:hover {
+            background-color: #6a3b1d;
+            box-shadow: 0 5px 15px rgba(138, 79, 43, 0.3);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 30px;
+            padding: 0 15px;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #8a4f2b;
+        }
+        
+        .footer-column p, .footer-column a {
+            color: #ccc;
+            margin-bottom: 10px;
+            display: block;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-column a:hover {
+            color: #8a4f2b;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #444;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: #8a4f2b;
+            color: #fff;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #444;
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        /* Slide Left Animation */
+        .slide-left {
+            animation: slide-left 1s ease-in-out;
+            opacity: 0;
+            transform: translateX(-100px);
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes slide-left {
+            0% {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .about-text, .about-image {
+                padding: 0;
+                margin-bottom: 30px;
+            }
+            
+            .footer-column {
+                flex: 100%;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="/" style="font-size: 32px; text-decoration: none;">🎵</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#featured">Featured Albums</a></li>
+                <li><a href="#hours">Store Hours</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <video class="hero-video" autoplay muted loop>
+            <source src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" type="video/mp4">
+            <source src="https://player.vimeo.com/external/394678700.sd.mp4?s=353646e34d7bde02ad0e8ecbef785f05eaa0ebbf&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <div class="container hero-content">
+            <h1>Vintage Vinyl Haven</h1>
+            <p>Discover rare and classic records from every era. Your journey through musical history starts here.</p>
+            <button class="cta-button">Shop Collection</button>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Story</h3>
+                    <p>Established in 1978, Vintage Vinyl Haven has been a cornerstone of the local music scene for over four decades. What started as a small passion project in a garage has grown into the city's premier destination for vinyl enthusiasts.</p>
+                    <p>Our collection spans genres and eras, from rare jazz pressings of the 1950s to modern indie exclusives. Each record in our store is personally curated by our team of music aficionados who live and breathe vinyl culture.</p>
+                    <p>Beyond just selling records, we're committed to preserving the art of analog listening and building a community where music lovers can gather, share, and discover new sounds together.</p>
+                </div>
+                <div class="about-image slide-left">
+                    <img src="https://picsum.photos/seed/vinyl1/600/400" alt="Vintage record store interior">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Albums Section -->
+    <section class="featured-albums" id="featured">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Albums</h2>
+            </div>
+            <div class="album-items">
+                <div class="album-item">
+                    <img src="https://picsum.photos/seed/album1/400/400" alt="Classic Jazz Album">
+                    <div class="album-item-content">
+                        <h3>Miles Davis - Kind of Blue</h3>
+                        <p>Original 1959 pressing in excellent condition. The definitive jazz album of all time.</p>
+                        <div class="price">$189.99</div>
+                    </div>
+                </div>
+                <div class="album-item">
+                    <img src="https://picsum.photos/seed/album2/400/400" alt="Rock Album">
+                    <div class="album-item-content">
+                        <h3>Pink Floyd - Dark Side of the Moon</h3>
+                        <p>1973 UK pressing with original posters and stickers included.</p>
+                        <div class="price">$149.99</div>
+                    </div>
+                </div>
+                <div class="album-item">
+                    <img src="https://picsum.photos/seed/album3/400/400" alt="Soul Album">
+                    <div class="album-item-content">
+                        <h3>Marvin Gaye - What's Going On</h3>
+                        <p>Rare 1971 first pressing in near mint condition. Soul masterpiece.</p>
+                        <div class="price">$179.99</div>
+                    </div>
+                </div>
+                <div class="album-item">
+                    <img src="https://picsum.photos/seed/album4/400/400" alt="Alternative Album">
+                    <div class="album-item-content">
+                        <h3>Radiohead - OK Computer</h3>
+                        <p>Limited edition 180g audiophile pressing with expanded artwork.</p>
+                        <div class="price">$129.99</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Store Hours Section -->
+    <section class="store-hours" id="hours">
+        <div class="container">
+            <div class="section-title">
+                <h2>Store Hours</h2>
+            </div>
+            <div class="hours-container">
+                <ul class="hours-list">
+                    <li><span class="day">Monday</span> <span>10:00 AM - 6:00 PM</span></li>
+                    <li><span class="day">Tuesday</span> <span>10:00 AM - 6:00 PM</span></li>
+                    <li><span class="day">Wednesday</span> <span>10:00 AM - 6:00 PM</span></li>
+                    <li><span class="day">Thursday</span> <span>10:00 AM - 8:00 PM</span></li>
+                    <li><span class="day">Friday</span> <span>10:00 AM - 9:00 PM</span></li>
+                    <li><span class="day">Saturday</span> <span>9:00 AM - 9:00 PM</span></li>
+                    <li><span class="day">Sunday</span> <span>11:00 AM - 5:00 PM</span></li>
+                </ul>
+                <p>Special hours may apply on holidays. Follow us on social media for updates.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Form Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-form">
+                <h3>Drop Us a Line</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject">
+                            <option value="general">General Inquiry</option>
+                            <option value="records">Record Availability</option>
+                            <option value="selling">Selling Your Collection</option>
+                            <option value="events">Events & Performances</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Vintage Vinyl Haven</h3>
+                    <p>Preserving musical history one record at a time. Your source for rare and classic vinyl from every era.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Visit Us</h3>
+                    <p>123 Rhythm Street</p>
+                    <p>Melody District, MU 54321</p>
+                    <p>Email: info@vinylhaven.com</p>
+                    <p>Phone: (555) 456-7890</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#featured">Featured Albums</a>
+                    <a href="#hours">Store Hours</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#">FB</a>
+                        <a href="#">IG</a>
+                        <a href="#">TW</a>
+                        <a href="#">YT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Vintage Vinyl Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Slide-left animation observer
+            const slideObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.style.opacity = 1;
+                            entry.target.style.transform = 'translateX(0)';
+                        }, 200);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            // Observe the slide-left elements
+            const slideElements = document.querySelectorAll('.slide-left');
+            slideElements.forEach(el => {
+                slideObserver.observe(el);
+            });
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 70,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // CTA button click action
+            document.querySelector('.cta-button').addEventListener('click', function() {
+                window.scrollTo({
+                    top: document.querySelector('#featured').offsetTop - 70,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Album hover effect enhancement
+            const albumItems = document.querySelectorAll('.album-item');
+            albumItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px) scale(1.03)';
+                    this.style.boxShadow = '0 20px 30px rgba(0, 0, 0, 0.15)';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = '';
+                    this.style.boxShadow = '';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
