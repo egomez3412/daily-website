@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vintage Clothing Store</title>
+    <title>VR Fitness App</title>
     <style>
         * {
             margin: 0;
@@ -42,7 +42,7 @@
         .logo {
             font-size: 24px;
             font-weight: 700;
-            color: #8f4a2e;
+            color: #ff6b6b;
         }
         
         .logo img {
@@ -66,7 +66,7 @@
         }
         
         .nav-links a:hover {
-            color: #8f4a2e;
+            color: #ff6b6b;
         }
         
         .mobile-menu-btn {
@@ -75,7 +75,7 @@
             border: none;
             font-size: 24px;
             cursor: pointer;
-            color: #8f4a2e;
+            color: #ff6b6b;
         }
         
         /* Hero Section */
@@ -130,7 +130,7 @@
         }
         
         .cta-button {
-            background-color: #8f4a2e;
+            background-color: #ff6b6b;
             color: #fff;
             border: none;
             padding: 15px 30px;
@@ -144,9 +144,9 @@
         }
         
         .cta-button:hover {
-            background-color: #723a23;
+            background-color: #ff5252;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(143, 74, 46, 0.3);
+            box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
         }
         
         /* About Section */
@@ -176,7 +176,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background-color: #8f4a2e;
+            background-color: #ff6b6b;
         }
         
         .about-content {
@@ -195,7 +195,7 @@
         .about-text h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            color: #8f4a2e;
+            color: #ff6b6b;
         }
         
         .about-text p {
@@ -218,139 +218,237 @@
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
         
-        /* Product Categories */
-        .categories {
+        /* Testimonials Section */
+        .testimonials {
             padding: 100px 0;
             background-color: #f9f9f9;
         }
         
-        .category-items {
+        .testimonial-items {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 30px;
         }
         
-        .category-item {
+        .testimonial-item {
             background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 350px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 30px;
+        }
+        
+        .testimonial-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-content {
+            text-align: center;
+        }
+        
+        .testimonial-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            overflow: hidden;
+        }
+        
+        .testimonial-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+        
+        .testimonial-rating {
+            color: #ffb100;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        
+        /* Pricing Section */
+        .pricing {
+            padding: 100px 0;
+            background-color: #fff;
+        }
+        
+        .pricing-plans {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .pricing-plan {
+            background-color: #f9f9f9;
             border-radius: 10px;
             overflow: hidden;
             width: 300px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 40px 30px;
+            text-align: center;
+            border-top: 5px solid #ff6b6b;
         }
         
-        .category-item:hover {
+        .pricing-plan:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
         
-        .category-item img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-        
-        .category-item-content {
-            padding: 20px;
-        }
-        
-        .category-item-content h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            color: #8f4a2e;
-        }
-        
-        .category-item-content p {
-            color: #666;
-            margin-bottom: 15px;
-            line-height: 1.5;
-        }
-        
-        .shop-button {
-            display: inline-block;
-            background-color: transparent;
-            color: #8f4a2e;
-            border: 2px solid #8f4a2e;
-            padding: 8px 20px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-        }
-        
-        .shop-button:hover {
-            background-color: #8f4a2e;
-            color: #fff;
-        }
-        
-        /* Newsletter Section */
-        .newsletter {
-            padding: 100px 0;
+        .pricing-plan.featured {
             background-color: #fff;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .newsletter-content {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.2);
             position: relative;
             z-index: 1;
+            border-top: 5px solid #ff3838;
         }
         
-        .newsletter-content h3 {
-            font-size: 2rem;
+        .pricing-plan.featured:hover {
+            transform: scale(1.05) translateY(-10px);
+        }
+        
+        .plan-name {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .plan-price {
+            font-size: 2.5rem;
+            color: #ff6b6b;
             margin-bottom: 20px;
-            color: #8f4a2e;
+            font-weight: 800;
         }
         
-        .newsletter-content p {
+        .plan-price span {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        
+        .plan-features {
+            list-style: none;
             margin-bottom: 30px;
-            color: #666;
-            font-size: 1.1rem;
         }
         
-        .newsletter-form {
+        .plan-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            color: #666;
+        }
+        
+        .zoom-in-up {
+            opacity: 0;
+            transform: scale(0.8) translateY(50px);
+            transition: all 0.8s cubic-bezier(0.39, 0.575, 0.565, 1);
+        }
+        
+        /* Contact Form */
+        .contact {
+            padding: 100px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .contact-content {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
+            justify-content: space-between;
+            gap: 50px;
         }
         
-        .newsletter-form input {
+        .contact-info {
             flex: 1;
-            min-width: 250px;
-            padding: 15px;
+            min-width: 300px;
+        }
+        
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #ff6b6b;
+        }
+        
+        .contact-info p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
             border: 1px solid #ddd;
-            border-radius: 30px;
+            border-radius: 8px;
             font-size: 1rem;
+            color: #333;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #ff6b6b;
             outline: none;
         }
         
-        .newsletter-form input:focus {
-            border-color: #8f4a2e;
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
         }
         
-        .newsletter-form button {
-            padding: 15px 30px;
-            background-color: #8f4a2e;
+        .submit-btn {
+            background-color: #ff6b6b;
             color: #fff;
             border: none;
-            border-radius: 30px;
+            padding: 15px 30px;
             font-size: 1rem;
             font-weight: 600;
+            border-radius: 8px;
             cursor: pointer;
             transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            width: 100%;
         }
         
-        .newsletter-form button:hover {
-            background-color: #723a23;
+        .submit-btn:hover {
+            background-color: #ff5252;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(143, 74, 46, 0.3);
+            box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
         }
         
         /* Footer */
@@ -377,7 +475,7 @@
         .footer-column h3 {
             font-size: 1.3rem;
             margin-bottom: 20px;
-            color: #8f4a2e;
+            color: #ff6b6b;
         }
         
         .footer-column p, .footer-column a {
@@ -389,7 +487,7 @@
         }
         
         .footer-column a:hover {
-            color: #8f4a2e;
+            color: #ff6b6b;
         }
         
         .social-links {
@@ -409,7 +507,7 @@
         }
         
         .social-links a:hover {
-            background-color: #8f4a2e;
+            background-color: #ff6b6b;
             color: #fff;
         }
         
@@ -419,13 +517,6 @@
             border-top: 1px solid #444;
             color: #999;
             font-size: 0.9rem;
-        }
-        
-        /* Slide Left Animation */
-        .slide-left {
-            opacity: 0;
-            transform: translateX(-100px);
-            transition: all 1s ease-in-out;
         }
         
         /* Responsive Styles */
@@ -470,6 +561,18 @@
             .mobile-menu-btn {
                 display: block;
             }
+            
+            .contact-content {
+                flex-direction: column;
+            }
+            
+            .pricing-plan.featured {
+                transform: scale(1);
+            }
+            
+            .pricing-plan.featured:hover {
+                transform: translateY(-10px);
+            }
         }
     </style>
 </head>
@@ -478,13 +581,13 @@
     <nav>
         <div class="container nav-container">
             <div class="logo">
-                <a href="/" style="font-size: 32px; text-decoration: none;">👚</a>
+                <a href="/" style="font-size: 32px; text-decoration: none;">🏋️</a>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#categories">Categories</a></li>
-                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="mobile-menu-btn">☰</button>
@@ -494,13 +597,13 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <video class="hero-video" autoplay muted loop>
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-woman-shopping-in-a-clothing-store-10502-large.mp4" type="video/mp4">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-woman-running-in-a-futuristic-environment-4914-large.mp4" type="video/mp4">
         </video>
         <div class="overlay"></div>
         <div class="container hero-content">
-            <h1>Timeless Style Awaits</h1>
-            <p>Discover our curated collection of vintage clothing that transcends eras and brings classic fashion back to life.</p>
-            <button class="cta-button">Shop Collection</button>
+            <h1>Fitness Reimagined in Virtual Reality</h1>
+            <p>Transform your workout experience with immersive VR environments that make fitness fun, engaging, and effective. Your new fitness journey begins here.</p>
+            <button class="cta-button">Start Your Free Trial</button>
         </div>
     </section>
     
@@ -512,111 +615,185 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Our Passion for Vintage</h3>
-                    <p>Founded in 2010, our vintage clothing store began as a small passion project that has grown into a beloved destination for fashion enthusiasts seeking unique pieces with history and character.</p>
-                    <p>Every garment in our collection is carefully sourced and curated, with each piece telling its own story from decades past. From glamorous 1950s dresses to iconic 1970s suits and 1990s streetwear, we pride ourselves on offering authentic vintage fashion that stands the test of time.</p>
-                    <p>Our team of vintage fashion experts meticulously inspects, cleans, and when necessary, lovingly restores each item to ensure it's ready for its new chapter in your wardrobe. We believe in sustainable fashion through preservation of the past.</p>
+                    <h3>Redefining Fitness Through Technology</h3>
+                    <p>At VR Fitness, we've combined cutting-edge virtual reality technology with scientifically-backed workout programs to create a revolutionary fitness experience that keeps you motivated and engaged.</p>
+                    <p>Our team of fitness experts, game designers, and VR specialists have collaborated to build immersive workout environments that transport you beyond the walls of a traditional gym. Whether you're boxing in a virtual arena, running through enchanted forests, or performing yoga on a serene digital mountaintop, our app makes fitness an adventure.</p>
+                    <p>We believe that when exercise feels like play, you're more likely to stick with it. That's why we've designed our VR fitness experiences to be not just effective workouts, but genuinely enjoyable experiences that you'll look forward to every day.</p>
                 </div>
-                <div class="about-image slide-left">
-                    <img src="https://picsum.photos/seed/vintage1/600/400" alt="Vintage clothing store interior">
+                <div class="about-image">
+                    <img src="https://picsum.photos/seed/vrfitness1/600/400" alt="VR fitness in action">
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Product Categories Section -->
-    <section class="categories" id="categories">
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="section-title">
-                <h2>Product Categories</h2>
+                <h2>What Our Users Say</h2>
             </div>
-            <div class="category-items">
-                <div class="category-item">
-                    <img src="https://picsum.photos/seed/vintage2/400/600" alt="Vintage Dresses">
-                    <div class="category-item-content">
-                        <h3>Vintage Dresses</h3>
-                        <p>Explore our collection of timeless dresses spanning every decade from the 1940s through the 1990s.</p>
-                        <a href="#" class="shop-button">Shop Dresses</a>
+            <div class="testimonial-items">
+                <div class="testimonial-item zoom-in-up">
+                    <div class="testimonial-content">
+                        <div class="testimonial-avatar">
+                            <img src="https://picsum.photos/seed/user1/200/200" alt="User Avatar">
+                        </div>
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p class="testimonial-text">"I've tried dozens of fitness apps, but nothing kept me engaged like this VR fitness experience. I've lost 15 pounds in just two months, and for the first time ever, I actually look forward to my workouts!"</p>
+                        <p class="testimonial-author">Sarah Johnson</p>
                     </div>
                 </div>
-                <div class="category-item">
-                    <img src="https://picsum.photos/seed/vintage3/400/600" alt="Classic Outerwear">
-                    <div class="category-item-content">
-                        <h3>Classic Outerwear</h3>
-                        <p>From leather jackets to wool coats, discover outerwear pieces that combine vintage style with lasting quality.</p>
-                        <a href="#" class="shop-button">Shop Outerwear</a>
+                <div class="testimonial-item zoom-in-up">
+                    <div class="testimonial-content">
+                        <div class="testimonial-avatar">
+                            <img src="https://picsum.photos/seed/user2/200/200" alt="User Avatar">
+                        </div>
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p class="testimonial-text">"As a busy dad, finding time and motivation to work out was always challenging. With this VR fitness app, I can get an intense 30-minute workout that feels like playing a game. Game-changer for my health!"</p>
+                        <p class="testimonial-author">Michael Chen</p>
                     </div>
                 </div>
-                <div class="category-item">
-                    <img src="https://picsum.photos/seed/vintage4/400/600" alt="Vintage Accessories">
-                    <div class="category-item-content">
-                        <h3>Vintage Accessories</h3>
-                        <p>Complete your look with our curated selection of vintage handbags, jewelry, scarves, and more.</p>
-                        <a href="#" class="shop-button">Shop Accessories</a>
-                    </div>
-                </div>
-                <div class="category-item">
-                    <img src="https://picsum.photos/seed/vintage5/400/600" alt="Denim Collection">
-                    <div class="category-item-content">
-                        <h3>Denim Collection</h3>
-                        <p>Classic American jeans, jackets, and more from iconic brands across the decades.</p>
-                        <a href="#" class="shop-button">Shop Denim</a>
+                <div class="testimonial-item zoom-in-up">
+                    <div class="testimonial-content">
+                        <div class="testimonial-avatar">
+                            <img src="https://picsum.photos/seed/user3/200/200" alt="User Avatar">
+                        </div>
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p class="testimonial-text">"The immersive environments make me forget I'm even exercising. I've been using this app for six months and have seen incredible improvements in my endurance, strength, and overall fitness level."</p>
+                        <p class="testimonial-author">Emily Rodriguez</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Newsletter Section -->
-    <section class="newsletter" id="newsletter">
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
         <div class="container">
-            <div class="newsletter-content">
-                <h3>Join Our Vintage Community</h3>
-                <p>Subscribe to our newsletter to receive updates on new arrivals, vintage fashion tips, and exclusive offers. Be the first to know when rare pieces become available.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address" required>
-                    <button type="submit">Subscribe</button>
-                </form>
+            <div class="section-title">
+                <h2>Choose Your Plan</h2>
+            </div>
+            <div class="pricing-plans">
+                <div class="pricing-plan">
+                    <h3 class="plan-name">Basic</h3>
+                    <div class="plan-price">$9.99<span>/month</span></div>
+                    <ul class="plan-features">
+                        <li>10 VR workout environments</li>
+                        <li>Basic fitness tracking</li>
+                        <li>Community access</li>
+                        <li>Weekly new workouts</li>
+                        <li>Email support</li>
+                    </ul>
+                    <button class="cta-button">Get Started</button>
+                </div>
+                <div class="pricing-plan featured">
+                    <h3 class="plan-name">Premium</h3>
+                    <div class="plan-price">$19.99<span>/month</span></div>
+                    <ul class="plan-features">
+                        <li>All 30+ VR workout environments</li>
+                        <li>Advanced fitness tracking</li>
+                        <li>Personalized workout plans</li>
+                        <li>Daily new workouts</li>
+                        <li>Priority support</li>
+                        <li>Multiplayer workout sessions</li>
+                    </ul>
+                    <button class="cta-button">Get Started</button>
+                </div>
+                <div class="pricing-plan">
+                    <h3 class="plan-name">Family</h3>
+                    <div class="plan-price">$29.99<span>/month</span></div>
+                    <ul class="plan-features">
+                        <li>All Premium features</li>
+                        <li>Up to 5 user profiles</li>
+                        <li>Family fitness challenges</li>
+                        <li>Competitive leaderboards</li>
+                        <li>24/7 support</li>
+                        <li>Exclusive family workout modes</li>
+                    </ul>
+                    <button class="cta-button">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Have Questions?</h3>
+                    <p>We're here to help you with any questions about our VR fitness platform. Whether you need technical assistance, have questions about our subscription plans, or just want to learn more about how VR can transform your fitness journey, our team is ready to assist.</p>
+                    <p>Email: info@vrfitnessapp.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Office Hours: Monday-Friday, 9am-6pm PST</p>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
     
     <!-- Footer -->
-    <footer id="contact">
+    <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Vintage Elegance</h3>
-                    <p>Celebrating timeless fashion through carefully curated vintage clothing collections that tell stories of the past.</p>
-                </div>
-                <div class="footer-column">
-                    <h3>Visit Us</h3>
-                    <p>123 Fashion Avenue</p>
-                    <p>Style District, NY 10001</p>
-                    <p>Email: hello@vintageelegance.com</p>
-                    <p>Phone: (555) 123-4567</p>
+                    <h3>VR Fitness</h3>
+                    <p>Transforming fitness through immersive virtual reality experiences designed to make working out enjoyable and effective.</p>
                 </div>
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <a href="#home">Home</a>
                     <a href="#about">About Us</a>
-                    <a href="#categories">Categories</a>
-                    <a href="#newsletter">Newsletter</a>
-                    <a href="#">Size Guide</a>
-                    <a href="#">Vintage Care</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#">Privacy Policy</a>
                 </div>
                 <div class="footer-column">
-                    <h3>Follow Us</h3>
+                    <h3>Resources</h3>
+                    <a href="#">VR Fitness Blog</a>
+                    <a href="#">Equipment Guide</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Workout Library</a>
+                    <a href="#">Fitness Tips</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
                     <div class="social-links">
-                        <a href="#">FB</a>
-                        <a href="#">IG</a>
-                        <a href="#">PT</a>
-                        <a href="#">TK</a>
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="YouTube">YT</a>
+                        <a href="#" aria-label="Discord">DC</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Vintage Elegance. All rights reserved.</p>
+                <p>&copy; 2023 VR Fitness App. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -633,18 +810,18 @@
                 });
             }
             
-            // Slide-left animation observer
+            // Zoom-in-up animation observer
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.style.opacity = 1;
-                        entry.target.style.transform = 'translateX(0)';
+                        entry.target.style.transform = 'scale(1) translateY(0)';
                     }
                 });
             }, { threshold: 0.1 });
             
-            // Observe all slide-left elements
-            document.querySelectorAll('.slide-left').forEach(el => {
+            // Observe all zoom-in-up elements
+            document.querySelectorAll('.zoom-in-up').forEach(el => {
                 observer.observe(el);
             });
             
@@ -671,40 +848,48 @@
             });
             
             // CTA button click action
-            document.querySelector('.cta-button').addEventListener('click', function() {
+            document.querySelector('.hero .cta-button').addEventListener('click', function() {
                 window.scrollTo({
-                    top: document.querySelector('#categories').offsetTop - 70,
+                    top: document.querySelector('#pricing').offsetTop - 70,
                     behavior: 'smooth'
                 });
             });
             
-            // Category items hover effect enhancement
-            const categoryItems = document.querySelectorAll('.category-item');
-            categoryItems.forEach(item => {
-                item.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-10px) scale(1.03)';
-                    this.style.boxShadow = '0 20px 30px rgba(0, 0, 0, 0.15)';
-                });
-                
-                item.addEventListener('mouseleave', function() {
-                    this.style.transform = '';
-                    this.style.boxShadow = '';
-                });
-            });
-            
-            // Newsletter form submission
-            const newsletterForm = document.querySelector('.newsletter-form');
-            if (newsletterForm) {
-                newsletterForm.addEventListener('submit', function(e) {
+            // Form submission
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
                     e.preventDefault();
-                    const email = this.querySelector('input[type="email"]').value;
-                    if (email) {
-                        alert('Thank you for subscribing! We\'ll keep you updated on our latest vintage arrivals.');
-                        this.reset();
-                    }
+                    const formData = new FormData(this);
+                    const formValues = Object.fromEntries(formData.entries());
+                    
+                    // You would typically send this data to a server
+                    console.log('Form submitted:', formValues);
+                    
+                    // Show success message
+                    alert('Thank you for your message! We will get back to you soon.');
+                    this.reset();
+                });
+            }
+            
+            // Add hover effects to pricing plans
+            const pricingPlans = document.querySelectorAll('.pricing-plan');
+            if (pricingPlans.length) {
+                pricingPlans.forEach(plan => {
+                    const button = plan.querySelector('.cta-button');
+                    
+                    plan.addEventListener('mouseenter', function() {
+                        if (!this.classList.contains('featured')) {
+                            button.style.backgroundColor = '#ff5252';
+                        }
+                    });
+                    
+                    plan.addEventListener('mouseleave', function() {
+                        if (!this.classList.contains('featured')) {
+                            button.style.backgroundColor = '#ff6b6b';
+                        }
+                    });
                 });
             }
         });
     </script>
-</body>
-</html>
