@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VR Fitness App</title>
+    <title>Luxury Watch Retailer</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Cormorant Garamond', serif;
         }
         
         body {
@@ -42,7 +42,7 @@
         .logo {
             font-size: 24px;
             font-weight: 700;
-            color: #ff6b6b;
+            color: #c4a35b;
         }
         
         .logo img {
@@ -63,10 +63,13 @@
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
         }
         
         .nav-links a:hover {
-            color: #ff6b6b;
+            color: #c4a35b;
         }
         
         .mobile-menu-btn {
@@ -75,7 +78,7 @@
             border: none;
             font-size: 24px;
             cursor: pointer;
-            color: #ff6b6b;
+            color: #c4a35b;
         }
         
         /* Hero Section */
@@ -102,7 +105,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.5);
             z-index: -1;
         }
         
@@ -120,7 +123,9 @@
         .hero-content h1 {
             font-size: 3.5rem;
             margin-bottom: 20px;
-            font-weight: 800;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
         
         .hero-content p {
@@ -130,23 +135,23 @@
         }
         
         .cta-button {
-            background-color: #ff6b6b;
+            background-color: #c4a35b;
             color: #fff;
             border: none;
             padding: 15px 30px;
             font-size: 1rem;
             font-weight: 600;
-            border-radius: 30px;
+            border-radius: 0;
             cursor: pointer;
             transition: all 0.3s ease;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
         }
         
         .cta-button:hover {
-            background-color: #ff5252;
+            background-color: #a88c4a;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+            box-shadow: 0 10px 20px rgba(196, 163, 91, 0.3);
         }
         
         /* About Section */
@@ -166,6 +171,9 @@
             margin-bottom: 20px;
             position: relative;
             display: inline-block;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 3px;
         }
         
         .section-title h2:after {
@@ -175,8 +183,8 @@
             left: 50%;
             transform: translateX(-50%);
             width: 80px;
-            height: 3px;
-            background-color: #ff6b6b;
+            height: 2px;
+            background-color: #c4a35b;
         }
         
         .about-content {
@@ -195,12 +203,15 @@
         .about-text h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            color: #ff6b6b;
+            color: #c4a35b;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
         
         .about-text p {
             font-size: 1.1rem;
-            line-height: 1.6;
+            line-height: 1.8;
             margin-bottom: 20px;
             color: #666;
         }
@@ -214,151 +225,135 @@
         
         .about-image img {
             max-width: 100%;
-            border-radius: 10px;
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
         
-        /* Testimonials Section */
-        .testimonials {
+        /* Product Catalog */
+        .catalog {
             padding: 100px 0;
             background-color: #f9f9f9;
         }
         
-        .testimonial-items {
+        .catalog-items {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 30px;
         }
         
-        .testimonial-item {
+        .catalog-item {
             background-color: #fff;
-            border-radius: 10px;
             overflow: hidden;
             width: 350px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            padding: 30px;
         }
         
-        .testimonial-item:hover {
+        .catalog-item:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
         
-        .testimonial-content {
-            text-align: center;
-        }
-        
-        .testimonial-avatar {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin: 0 auto 20px;
+        .catalog-image {
+            position: relative;
             overflow: hidden;
+            height: 350px;
         }
         
-        .testimonial-avatar img {
+        .catalog-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.5s ease;
         }
         
-        .testimonial-text {
-            font-style: italic;
+        .catalog-item:hover .catalog-image img {
+            transform: scale(1.05);
+        }
+        
+        .catalog-content {
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .catalog-name {
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: #333;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .catalog-price {
+            font-size: 1.2rem;
+            color: #c4a35b;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .catalog-description {
             color: #666;
             margin-bottom: 20px;
             line-height: 1.6;
         }
         
-        .testimonial-author {
-            font-weight: bold;
-            color: #ff6b6b;
-        }
-        
-        .testimonial-rating {
-            color: #ffb100;
-            font-size: 20px;
-            margin-bottom: 15px;
-        }
-        
-        /* Pricing Section */
-        .pricing {
+        /* Store Locator */
+        .store-locator {
             padding: 100px 0;
             background-color: #fff;
         }
         
-        .pricing-plans {
+        .store-map {
+            width: 100%;
+            height: 400px;
+            margin-bottom: 50px;
+            border: none;
+        }
+        
+        .stores-list {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
             gap: 30px;
+            justify-content: center;
         }
         
-        .pricing-plan {
+        .store-item {
             background-color: #f9f9f9;
-            border-radius: 10px;
-            overflow: hidden;
-            width: 300px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            padding: 40px 30px;
-            text-align: center;
-            border-top: 5px solid #ff6b6b;
+            padding: 30px;
+            width: 350px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
         }
         
-        .pricing-plan:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        .store-item:hover {
+            transform: translateY(-5px);
         }
         
-        .pricing-plan.featured {
-            background-color: #fff;
-            transform: scale(1.05);
-            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.2);
-            position: relative;
-            z-index: 1;
-            border-top: 5px solid #ff3838;
-        }
-        
-        .pricing-plan.featured:hover {
-            transform: scale(1.05) translateY(-10px);
-        }
-        
-        .plan-name {
-            font-size: 1.5rem;
-            color: #333;
+        .store-name {
+            font-size: 1.3rem;
+            color: #c4a35b;
             margin-bottom: 15px;
-            font-weight: 700;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
         
-        .plan-price {
-            font-size: 2.5rem;
-            color: #ff6b6b;
+        .store-info {
             margin-bottom: 20px;
-            font-weight: 800;
-        }
-        
-        .plan-price span {
-            font-size: 1rem;
-            font-weight: 400;
-        }
-        
-        .plan-features {
-            list-style: none;
-            margin-bottom: 30px;
-        }
-        
-        .plan-features li {
-            padding: 10px 0;
-            border-bottom: 1px solid #eee;
+            line-height: 1.6;
             color: #666;
         }
         
-        .zoom-in-up {
-            opacity: 0;
-            transform: scale(0.8) translateY(50px);
-            transition: all 0.8s cubic-bezier(0.39, 0.575, 0.565, 1);
+        .store-contact {
+            font-weight: 500;
+            color: #333;
+        }
+        
+        .store-hours {
+            margin-top: 15px;
+            font-style: italic;
+            color: #777;
         }
         
         /* Contact Form */
@@ -382,7 +377,10 @@
         .contact-info h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            color: #ff6b6b;
+            color: #c4a35b;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
         
         .contact-info p {
@@ -405,6 +403,9 @@
             margin-bottom: 8px;
             color: #333;
             font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
         }
         
         .form-group input,
@@ -412,15 +413,15 @@
             width: 100%;
             padding: 12px 15px;
             border: 1px solid #ddd;
-            border-radius: 8px;
             font-size: 1rem;
             color: #333;
             transition: border-color 0.3s ease;
+            background-color: #f4f4f4;
         }
         
         .form-group input:focus,
         .form-group textarea:focus {
-            border-color: #ff6b6b;
+            border-color: #c4a35b;
             outline: none;
         }
         
@@ -430,30 +431,29 @@
         }
         
         .submit-btn {
-            background-color: #ff6b6b;
+            background-color: #c4a35b;
             color: #fff;
             border: none;
             padding: 15px 30px;
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: 600;
-            border-radius: 8px;
             cursor: pointer;
             transition: all 0.3s ease;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             display: block;
             width: 100%;
         }
         
         .submit-btn:hover {
-            background-color: #ff5252;
+            background-color: #a88c4a;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+            box-shadow: 0 10px 20px rgba(196, 163, 91, 0.3);
         }
         
         /* Footer */
         footer {
-            background-color: #333;
+            background-color: #222;
             color: #fff;
             padding: 60px 0 30px;
         }
@@ -475,19 +475,23 @@
         .footer-column h3 {
             font-size: 1.3rem;
             margin-bottom: 20px;
-            color: #ff6b6b;
+            color: #c4a35b;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
         
         .footer-column p, .footer-column a {
-            color: #ccc;
+            color: #aaa;
             margin-bottom: 10px;
             display: block;
             text-decoration: none;
             transition: color 0.3s ease;
+            line-height: 1.6;
         }
         
         .footer-column a:hover {
-            color: #ff6b6b;
+            color: #c4a35b;
         }
         
         .social-links {
@@ -499,30 +503,36 @@
             display: inline-block;
             width: 40px;
             height: 40px;
-            background-color: #444;
-            border-radius: 50%;
+            background-color: #333;
+            border-radius: 0;
             text-align: center;
             line-height: 40px;
             transition: background-color 0.3s ease;
         }
         
         .social-links a:hover {
-            background-color: #ff6b6b;
+            background-color: #c4a35b;
             color: #fff;
         }
         
         .footer-bottom {
             text-align: center;
             padding-top: 30px;
-            border-top: 1px solid #444;
-            color: #999;
+            border-top: 1px solid #333;
+            color: #777;
             font-size: 0.9rem;
+        }
+        
+        .zoom-in-up {
+            opacity: 0;
+            transform: scale(0.8) translateY(50px);
+            transition: all 0.8s cubic-bezier(0.39, 0.575, 0.565, 1);
         }
         
         /* Responsive Styles */
         @media (max-width: 768px) {
             .hero-content h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
             
             .about-content {
@@ -565,14 +575,6 @@
             .contact-content {
                 flex-direction: column;
             }
-            
-            .pricing-plan.featured {
-                transform: scale(1);
-            }
-            
-            .pricing-plan.featured:hover {
-                transform: translateY(-10px);
-            }
         }
     </style>
 </head>
@@ -581,13 +583,13 @@
     <nav>
         <div class="container nav-container">
             <div class="logo">
-                <a href="/" style="font-size: 32px; text-decoration: none;">🏋️</a>
+                <a href="/" style="font-size: 32px; text-decoration: none;">⌚</a>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#catalog">Collection</a></li>
+                <li><a href="#store-locator">Store Locator</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="mobile-menu-btn">☰</button>
@@ -597,13 +599,12 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <video class="hero-video" autoplay muted loop>
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-woman-running-in-a-futuristic-environment-4914-large.mp4" type="video/mp4">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-luxury-watch-with-a-leather-strap-42298-large.mp4" type="video/mp4">
         </video>
         <div class="overlay"></div>
         <div class="container hero-content">
-            <h1>Fitness Reimagined in Virtual Reality</h1>
-            <p>Transform your workout experience with immersive VR environments that make fitness fun, engaging, and effective. Your new fitness journey begins here.</p>
-            <button class="cta-button">Start Your Free Trial</button>
+            <h1>Timeless Elegance</h1>
+            <button class="cta-button">Explore Collection</button>
         </div>
     </section>
     
@@ -615,103 +616,88 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Redefining Fitness Through Technology</h3>
-                    <p>At VR Fitness, we've combined cutting-edge virtual reality technology with scientifically-backed workout programs to create a revolutionary fitness experience that keeps you motivated and engaged.</p>
-                    <p>Our team of fitness experts, game designers, and VR specialists have collaborated to build immersive workout environments that transport you beyond the walls of a traditional gym. Whether you're boxing in a virtual arena, running through enchanted forests, or performing yoga on a serene digital mountaintop, our app makes fitness an adventure.</p>
-                    <p>We believe that when exercise feels like play, you're more likely to stick with it. That's why we've designed our VR fitness experiences to be not just effective workouts, but genuinely enjoyable experiences that you'll look forward to every day.</p>
+                    <h3>Our Heritage</h3>
+                    <p>Since 1875, we have been crafting exceptional timepieces that combine traditional watchmaking with innovative design. Our heritage is built on a commitment to quality, precision, and timeless elegance.</p>
+                    <p>Each watch in our collection represents decades of horological expertise, meticulous craftsmanship, and a passion for creating timepieces that transcend trends and become cherished heirlooms passed down through generations.</p>
+                    <p>Our master watchmakers dedicate countless hours to perfecting every minute detail, ensuring that each watch not only tells time with flawless accuracy but also tells a story of luxury, tradition, and artisanship.</p>
                 </div>
-                <div class="about-image">
-                    <img src="https://picsum.photos/seed/vrfitness1/600/400" alt="VR fitness in action">
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <div class="section-title">
-                <h2>What Our Users Say</h2>
-            </div>
-            <div class="testimonial-items">
-                <div class="testimonial-item zoom-in-up">
-                    <div class="testimonial-content">
-                        <div class="testimonial-avatar">
-                            <img src="https://picsum.photos/seed/user1/200/200" alt="User Avatar">
-                        </div>
-                        <div class="testimonial-rating">★★★★★</div>
-                        <p class="testimonial-text">"I've tried dozens of fitness apps, but nothing kept me engaged like this VR fitness experience. I've lost 15 pounds in just two months, and for the first time ever, I actually look forward to my workouts!"</p>
-                        <p class="testimonial-author">Sarah Johnson</p>
-                    </div>
-                </div>
-                <div class="testimonial-item zoom-in-up">
-                    <div class="testimonial-content">
-                        <div class="testimonial-avatar">
-                            <img src="https://picsum.photos/seed/user2/200/200" alt="User Avatar">
-                        </div>
-                        <div class="testimonial-rating">★★★★★</div>
-                        <p class="testimonial-text">"As a busy dad, finding time and motivation to work out was always challenging. With this VR fitness app, I can get an intense 30-minute workout that feels like playing a game. Game-changer for my health!"</p>
-                        <p class="testimonial-author">Michael Chen</p>
-                    </div>
-                </div>
-                <div class="testimonial-item zoom-in-up">
-                    <div class="testimonial-content">
-                        <div class="testimonial-avatar">
-                            <img src="https://picsum.photos/seed/user3/200/200" alt="User Avatar">
-                        </div>
-                        <div class="testimonial-rating">★★★★★</div>
-                        <p class="testimonial-text">"The immersive environments make me forget I'm even exercising. I've been using this app for six months and have seen incredible improvements in my endurance, strength, and overall fitness level."</p>
-                        <p class="testimonial-author">Emily Rodriguez</p>
-                    </div>
+                <div class="about-image zoom-in-up">
+                    <img src="https://picsum.photos/seed/watches1/600/400" alt="Watchmaking workshop">
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Pricing Section -->
-    <section class="pricing" id="pricing">
+    <!-- Product Catalog -->
+    <section class="catalog" id="catalog">
         <div class="container">
             <div class="section-title">
-                <h2>Choose Your Plan</h2>
+                <h2>Our Collection</h2>
             </div>
-            <div class="pricing-plans">
-                <div class="pricing-plan">
-                    <h3 class="plan-name">Basic</h3>
-                    <div class="plan-price">$9.99<span>/month</span></div>
-                    <ul class="plan-features">
-                        <li>10 VR workout environments</li>
-                        <li>Basic fitness tracking</li>
-                        <li>Community access</li>
-                        <li>Weekly new workouts</li>
-                        <li>Email support</li>
-                    </ul>
-                    <button class="cta-button">Get Started</button>
+            <div class="catalog-items">
+                <div class="catalog-item">
+                    <div class="catalog-image">
+                        <img src="https://picsum.photos/seed/watch1/600/600" alt="Luxury Watch">
+                    </div>
+                    <div class="catalog-content">
+                        <h3 class="catalog-name">Sovereign Chronograph</h3>
+                        <p class="catalog-price">$12,500</p>
+                        <p class="catalog-description">A masterpiece of precision engineering with automatic movement and 18k rose gold case.</p>
+                        <button class="cta-button">View Details</button>
+                    </div>
                 </div>
-                <div class="pricing-plan featured">
-                    <h3 class="plan-name">Premium</h3>
-                    <div class="plan-price">$19.99<span>/month</span></div>
-                    <ul class="plan-features">
-                        <li>All 30+ VR workout environments</li>
-                        <li>Advanced fitness tracking</li>
-                        <li>Personalized workout plans</li>
-                        <li>Daily new workouts</li>
-                        <li>Priority support</li>
-                        <li>Multiplayer workout sessions</li>
-                    </ul>
-                    <button class="cta-button">Get Started</button>
+                <div class="catalog-item">
+                    <div class="catalog-image">
+                        <img src="https://picsum.photos/seed/watch2/600/600" alt="Luxury Watch">
+                    </div>
+                    <div class="catalog-content">
+                        <h3 class="catalog-name">Celestial Voyager</h3>
+                        <p class="catalog-price">$18,900</p>
+                        <p class="catalog-description">Featuring celestial mapping and moon phase complications with platinum casing.</p>
+                        <button class="cta-button">View Details</button>
+                    </div>
                 </div>
-                <div class="pricing-plan">
-                    <h3 class="plan-name">Family</h3>
-                    <div class="plan-price">$29.99<span>/month</span></div>
-                    <ul class="plan-features">
-                        <li>All Premium features</li>
-                        <li>Up to 5 user profiles</li>
-                        <li>Family fitness challenges</li>
-                        <li>Competitive leaderboards</li>
-                        <li>24/7 support</li>
-                        <li>Exclusive family workout modes</li>
-                    </ul>
-                    <button class="cta-button">Get Started</button>
+                <div class="catalog-item">
+                    <div class="catalog-image">
+                        <img src="https://picsum.photos/seed/watch3/600/600" alt="Luxury Watch">
+                    </div>
+                    <div class="catalog-content">
+                        <h3 class="catalog-name">Heritage Automatic</h3>
+                        <p class="catalog-price">$8,750</p>
+                        <p class="catalog-description">Classical design with modern technology, featuring our signature sapphire crystal back.</p>
+                        <button class="cta-button">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Store Locator -->
+    <section class="store-locator" id="store-locator">
+        <div class="container">
+            <div class="section-title">
+                <h2>Find Our Boutiques</h2>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3059353029!2d-74.25986548248684!3d40.697149419326095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sca!4v1626188329457!5m2!1sen!2sca" class="store-map" allowfullscreen="" loading="lazy"></iframe>
+            
+            <div class="stores-list">
+                <div class="store-item">
+                    <h3 class="store-name">New York Flagship</h3>
+                    <p class="store-info">Fifth Avenue, New York<br>NY 10022, United States</p>
+                    <p class="store-contact">+1 (212) 555-7890</p>
+                    <p class="store-hours">Mon-Sat: 10am - 7pm<br>Sunday: 12pm - 5pm</p>
+                </div>
+                <div class="store-item">
+                    <h3 class="store-name">London Boutique</h3>
+                    <p class="store-info">Bond Street, Mayfair<br>London W1S 1SR, United Kingdom</p>
+                    <p class="store-contact">+44 20 7123 4567</p>
+                    <p class="store-hours">Mon-Sat: 9:30am - 6:30pm<br>Sunday: Closed</p>
+                </div>
+                <div class="store-item">
+                    <h3 class="store-name">Paris Atelier</h3>
+                    <p class="store-info">Place Vendôme<br>75001 Paris, France</p>
+                    <p class="store-contact">+33 1 42 60 70 80</p>
+                    <p class="store-hours">Tues-Sat: 10am - 7pm<br>Sun-Mon: Closed</p>
                 </div>
             </div>
         </div>
@@ -721,24 +707,24 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="section-title">
-                <h2>Get In Touch</h2>
+                <h2>Contact Us</h2>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Have Questions?</h3>
-                    <p>We're here to help you with any questions about our VR fitness platform. Whether you need technical assistance, have questions about our subscription plans, or just want to learn more about how VR can transform your fitness journey, our team is ready to assist.</p>
-                    <p>Email: info@vrfitnessapp.com</p>
-                    <p>Phone: (555) 123-4567</p>
-                    <p>Office Hours: Monday-Friday, 9am-6pm PST</p>
+                    <h3>Personalized Service</h3>
+                    <p>We are dedicated to providing exceptional service to our clients. Whether you're interested in learning more about our collection, seeking advice on watch maintenance, or wish to arrange a private viewing, our team of experts is here to assist you.</p>
+                    <p>Email: inquiries@luxurywatchco.com</p>
+                    <p>Phone: +1 (800) 555-8000</p>
+                    <p>Headquarters: New York, NY</p>
                 </div>
                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="form-group">
-                            <label for="name">Name</label>
+                            <label for="name">Full Name</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email">Email Address</label>
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
@@ -761,39 +747,37 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>VR Fitness</h3>
-                    <p>Transforming fitness through immersive virtual reality experiences designed to make working out enjoyable and effective.</p>
+                    <h3>Luxury Watch Co.</h3>
+                    <p>Crafting exceptional timepieces since 1875. A heritage of precision, innovation, and timeless elegance.</p>
                 </div>
                 <div class="footer-column">
-                    <h3>Quick Links</h3>
+                    <h3>Navigation</h3>
                     <a href="#home">Home</a>
                     <a href="#about">About Us</a>
-                    <a href="#testimonials">Testimonials</a>
-                    <a href="#pricing">Pricing</a>
+                    <a href="#catalog">Collection</a>
+                    <a href="#store-locator">Store Locator</a>
                     <a href="#contact">Contact</a>
-                    <a href="#">Privacy Policy</a>
                 </div>
                 <div class="footer-column">
-                    <h3>Resources</h3>
-                    <a href="#">VR Fitness Blog</a>
-                    <a href="#">Equipment Guide</a>
-                    <a href="#">Help Center</a>
-                    <a href="#">Workout Library</a>
-                    <a href="#">Fitness Tips</a>
+                    <h3>Services</h3>
+                    <a href="#">Timepiece Authentication</a>
+                    <a href="#">Watch Maintenance</a>
+                    <a href="#">Private Viewings</a>
+                    <a href="#">Watch Customization</a>
+                    <a href="#">Trade-In Program</a>
                 </div>
                 <div class="footer-column">
                     <h3>Connect With Us</h3>
                     <div class="social-links">
+                        <a href="#" aria-label="Instagram">IG</a>
                         <a href="#" aria-label="Facebook">FB</a>
                         <a href="#" aria-label="Twitter">TW</a>
-                        <a href="#" aria-label="Instagram">IG</a>
-                        <a href="#" aria-label="YouTube">YT</a>
-                        <a href="#" aria-label="Discord">DC</a>
+                        <a href="#" aria-label="Pinterest">PT</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 VR Fitness App. All rights reserved.</p>
+                <p>&copy; 2023 Luxury Watch Co. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -847,10 +831,10 @@
                 });
             });
             
-            // CTA button click action
+            // Hero CTA button action
             document.querySelector('.hero .cta-button').addEventListener('click', function() {
                 window.scrollTo({
-                    top: document.querySelector('#pricing').offsetTop - 70,
+                    top: document.querySelector('#catalog').offsetTop - 70,
                     behavior: 'smooth'
                 });
             });
@@ -867,27 +851,23 @@
                     console.log('Form submitted:', formValues);
                     
                     // Show success message
-                    alert('Thank you for your message! We will get back to you soon.');
+                    alert('Thank you for your message. A member of our team will contact you shortly.');
                     this.reset();
                 });
             }
             
-            // Add hover effects to pricing plans
-            const pricingPlans = document.querySelectorAll('.pricing-plan');
-            if (pricingPlans.length) {
-                pricingPlans.forEach(plan => {
-                    const button = plan.querySelector('.cta-button');
+            // Add hover effect to catalog items
+            const catalogItems = document.querySelectorAll('.catalog-item');
+            if (catalogItems.length) {
+                catalogItems.forEach(item => {
+                    const button = item.querySelector('.cta-button');
                     
-                    plan.addEventListener('mouseenter', function() {
-                        if (!this.classList.contains('featured')) {
-                            button.style.backgroundColor = '#ff5252';
-                        }
+                    item.addEventListener('mouseenter', function() {
+                        button.style.backgroundColor = '#a88c4a';
                     });
                     
-                    plan.addEventListener('mouseleave', function() {
-                        if (!this.classList.contains('featured')) {
-                            button.style.backgroundColor = '#ff6b6b';
-                        }
+                    item.addEventListener('mouseleave', function() {
+                        button.style.backgroundColor = '#c4a35b';
                     });
                 });
             }
