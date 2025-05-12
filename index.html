@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxury Watch Retailer</title>
+    <title>Vintage Records</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Cormorant Garamond', serif;
+            font-family: 'Playfair Display', serif;
         }
         
         body {
-            background-color: #f8f8f8;
+            background-color: #f8f5f2;
             color: #333;
         }
         
@@ -42,7 +42,7 @@
         .logo {
             font-size: 24px;
             font-weight: 700;
-            color: #c4a35b;
+            color: #8a4f2d;
         }
         
         .logo img {
@@ -69,7 +69,7 @@
         }
         
         .nav-links a:hover {
-            color: #c4a35b;
+            color: #8a4f2d;
         }
         
         .mobile-menu-btn {
@@ -78,7 +78,7 @@
             border: none;
             font-size: 24px;
             cursor: pointer;
-            color: #c4a35b;
+            color: #8a4f2d;
         }
         
         /* Hero Section */
@@ -105,7 +105,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.6);
             z-index: -1;
         }
         
@@ -123,7 +123,7 @@
         .hero-content h1 {
             font-size: 3.5rem;
             margin-bottom: 20px;
-            font-weight: 300;
+            font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
         }
@@ -135,7 +135,7 @@
         }
         
         .cta-button {
-            background-color: #c4a35b;
+            background-color: #8a4f2d;
             color: #fff;
             border: none;
             padding: 15px 30px;
@@ -149,9 +149,9 @@
         }
         
         .cta-button:hover {
-            background-color: #a88c4a;
+            background-color: #6a3c1f;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(196, 163, 91, 0.3);
+            box-shadow: 0 10px 20px rgba(138, 79, 45, 0.3);
         }
         
         /* About Section */
@@ -171,7 +171,7 @@
             margin-bottom: 20px;
             position: relative;
             display: inline-block;
-            font-weight: 300;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 3px;
         }
@@ -184,7 +184,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 2px;
-            background-color: #c4a35b;
+            background-color: #8a4f2d;
         }
         
         .about-content {
@@ -203,8 +203,8 @@
         .about-text h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            color: #c4a35b;
-            font-weight: 300;
+            color: #8a4f2d;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
@@ -228,129 +228,122 @@
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
         
-        /* Product Catalog */
-        .catalog {
+        /* Featured Albums */
+        .albums {
             padding: 100px 0;
-            background-color: #f9f9f9;
+            background-color: #f8f5f2;
         }
         
-        .catalog-items {
+        .album-items {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 30px;
         }
         
-        .catalog-item {
+        .album-item {
             background-color: #fff;
             overflow: hidden;
-            width: 350px;
+            width: 300px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
-        .catalog-item:hover {
+        .album-item:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
         
-        .catalog-image {
+        .album-image {
             position: relative;
             overflow: hidden;
-            height: 350px;
+            height: 300px;
         }
         
-        .catalog-image img {
+        .album-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
         
-        .catalog-item:hover .catalog-image img {
+        .album-item:hover .album-image img {
             transform: scale(1.05);
         }
         
-        .catalog-content {
+        .album-content {
             padding: 25px;
             text-align: center;
         }
         
-        .catalog-name {
+        .album-name {
             font-size: 1.5rem;
-            font-weight: 300;
+            font-weight: 700;
             color: #333;
             margin-bottom: 10px;
             letter-spacing: 1px;
             text-transform: uppercase;
         }
         
-        .catalog-price {
+        .album-artist {
             font-size: 1.2rem;
-            color: #c4a35b;
+            color: #8a4f2d;
             margin-bottom: 15px;
             font-weight: 600;
         }
         
-        .catalog-description {
+        .album-description {
             color: #666;
             margin-bottom: 20px;
             line-height: 1.6;
         }
         
-        /* Store Locator */
-        .store-locator {
+        /* Store Hours */
+        .store-hours {
             padding: 100px 0;
             background-color: #fff;
         }
         
-        .store-map {
-            width: 100%;
-            height: 400px;
-            margin-bottom: 50px;
-            border: none;
-        }
-        
-        .stores-list {
+        .hours-list {
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
             justify-content: center;
         }
         
-        .store-item {
-            background-color: #f9f9f9;
+        .hours-item {
+            background-color: #f8f5f2;
             padding: 30px;
             width: 350px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease;
         }
         
-        .store-item:hover {
+        .hours-item:hover {
             transform: translateY(-5px);
         }
         
-        .store-name {
+        .location-name {
             font-size: 1.3rem;
-            color: #c4a35b;
+            color: #8a4f2d;
             margin-bottom: 15px;
             font-weight: 600;
             letter-spacing: 1px;
             text-transform: uppercase;
         }
         
-        .store-info {
+        .location-info {
             margin-bottom: 20px;
             line-height: 1.6;
             color: #666;
         }
         
-        .store-contact {
+        .location-contact {
             font-weight: 500;
             color: #333;
         }
         
-        .store-hours {
+        .location-hours {
             margin-top: 15px;
             font-style: italic;
             color: #777;
@@ -359,7 +352,7 @@
         /* Contact Form */
         .contact {
             padding: 100px 0;
-            background-color: #f9f9f9;
+            background-color: #f8f5f2;
         }
         
         .contact-content {
@@ -377,8 +370,8 @@
         .contact-info h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            color: #c4a35b;
-            font-weight: 300;
+            color: #8a4f2d;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
@@ -421,7 +414,7 @@
         
         .form-group input:focus,
         .form-group textarea:focus {
-            border-color: #c4a35b;
+            border-color: #8a4f2d;
             outline: none;
         }
         
@@ -431,7 +424,7 @@
         }
         
         .submit-btn {
-            background-color: #c4a35b;
+            background-color: #8a4f2d;
             color: #fff;
             border: none;
             padding: 15px 30px;
@@ -446,9 +439,9 @@
         }
         
         .submit-btn:hover {
-            background-color: #a88c4a;
+            background-color: #6a3c1f;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(196, 163, 91, 0.3);
+            box-shadow: 0 10px 20px rgba(138, 79, 45, 0.3);
         }
         
         /* Footer */
@@ -475,8 +468,8 @@
         .footer-column h3 {
             font-size: 1.3rem;
             margin-bottom: 20px;
-            color: #c4a35b;
-            font-weight: 300;
+            color: #8a4f2d;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
@@ -491,7 +484,7 @@
         }
         
         .footer-column a:hover {
-            color: #c4a35b;
+            color: #8a4f2d;
         }
         
         .social-links {
@@ -504,14 +497,14 @@
             width: 40px;
             height: 40px;
             background-color: #333;
-            border-radius: 0;
+            border-radius: 50%;
             text-align: center;
             line-height: 40px;
             transition: background-color 0.3s ease;
         }
         
         .social-links a:hover {
-            background-color: #c4a35b;
+            background-color: #8a4f2d;
             color: #fff;
         }
         
@@ -523,10 +516,10 @@
             font-size: 0.9rem;
         }
         
-        .zoom-in-up {
+        .slide-left {
             opacity: 0;
-            transform: scale(0.8) translateY(50px);
-            transition: all 0.8s cubic-bezier(0.39, 0.575, 0.565, 1);
+            transform: translateX(-100px);
+            transition: all 0.8s ease-out;
         }
         
         /* Responsive Styles */
@@ -583,13 +576,13 @@
     <nav>
         <div class="container nav-container">
             <div class="logo">
-                <a href="/" style="font-size: 32px; text-decoration: none;">⌚</a>
+                <a href="/" style="font-size: 32px; text-decoration: none;">🎵</a>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#catalog">Collection</a></li>
-                <li><a href="#store-locator">Store Locator</a></li>
+                <li><a href="#albums">Featured Albums</a></li>
+                <li><a href="#store-hours">Store Hours</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="mobile-menu-btn">☰</button>
@@ -599,12 +592,13 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <video class="hero-video" autoplay muted loop>
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-luxury-watch-with-a-leather-strap-42298-large.mp4" type="video/mp4">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-hands-browsing-vinyl-records-in-a-store-8132-large.mp4" type="video/mp4">
         </video>
         <div class="overlay"></div>
         <div class="container hero-content">
-            <h1>Timeless Elegance</h1>
-            <button class="cta-button">Explore Collection</button>
+            <h1>Vintage Vinyl Records</h1>
+            <p>Experience the warm analog sound that only vinyl can deliver</p>
+            <button class="cta-button">Browse Collection</button>
         </div>
     </section>
     
@@ -616,88 +610,98 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Our Heritage</h3>
-                    <p>Since 1875, we have been crafting exceptional timepieces that combine traditional watchmaking with innovative design. Our heritage is built on a commitment to quality, precision, and timeless elegance.</p>
-                    <p>Each watch in our collection represents decades of horological expertise, meticulous craftsmanship, and a passion for creating timepieces that transcend trends and become cherished heirlooms passed down through generations.</p>
-                    <p>Our master watchmakers dedicate countless hours to perfecting every minute detail, ensuring that each watch not only tells time with flawless accuracy but also tells a story of luxury, tradition, and artisanship.</p>
+                    <h3>Our Passion</h3>
+                    <p>Since 1978, Vintage Vinyl has been the premier destination for record collectors and music enthusiasts. Our carefully curated collection spans decades of musical history, from rare first pressings to modern limited editions.</p>
+                    <p>We believe that vinyl records offer an experience that digital formats simply cannot match. From the warmth of the analog sound to the tactile pleasure of album artwork, vinyl connects listeners to music in a profound way.</p>
+                    <p>Our knowledgeable staff shares your passion for music and is always ready to help you discover your next favorite album or track down that elusive record you've been hunting for years.</p>
                 </div>
-                <div class="about-image zoom-in-up">
-                    <img src="https://picsum.photos/seed/watches1/600/400" alt="Watchmaking workshop">
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Product Catalog -->
-    <section class="catalog" id="catalog">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Collection</h2>
-            </div>
-            <div class="catalog-items">
-                <div class="catalog-item">
-                    <div class="catalog-image">
-                        <img src="https://picsum.photos/seed/watch1/600/600" alt="Luxury Watch">
-                    </div>
-                    <div class="catalog-content">
-                        <h3 class="catalog-name">Sovereign Chronograph</h3>
-                        <p class="catalog-price">$12,500</p>
-                        <p class="catalog-description">A masterpiece of precision engineering with automatic movement and 18k rose gold case.</p>
-                        <button class="cta-button">View Details</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-image">
-                        <img src="https://picsum.photos/seed/watch2/600/600" alt="Luxury Watch">
-                    </div>
-                    <div class="catalog-content">
-                        <h3 class="catalog-name">Celestial Voyager</h3>
-                        <p class="catalog-price">$18,900</p>
-                        <p class="catalog-description">Featuring celestial mapping and moon phase complications with platinum casing.</p>
-                        <button class="cta-button">View Details</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-image">
-                        <img src="https://picsum.photos/seed/watch3/600/600" alt="Luxury Watch">
-                    </div>
-                    <div class="catalog-content">
-                        <h3 class="catalog-name">Heritage Automatic</h3>
-                        <p class="catalog-price">$8,750</p>
-                        <p class="catalog-description">Classical design with modern technology, featuring our signature sapphire crystal back.</p>
-                        <button class="cta-button">View Details</button>
-                    </div>
+                <div class="about-image slide-left">
+                    <img src="https://picsum.photos/seed/recordstore/600/400" alt="Our record store">
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Store Locator -->
-    <section class="store-locator" id="store-locator">
+    <!-- Featured Albums -->
+    <section class="albums" id="albums">
         <div class="container">
             <div class="section-title">
-                <h2>Find Our Boutiques</h2>
+                <h2>Featured Albums</h2>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3059353029!2d-74.25986548248684!3d40.697149419326095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sca!4v1626188329457!5m2!1sen!2sca" class="store-map" allowfullscreen="" loading="lazy"></iframe>
+            <div class="album-items">
+                <div class="album-item">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/vinyl1/600/600" alt="Vinyl Record">
+                    </div>
+                    <div class="album-content">
+                        <h3 class="album-name">Blue Train</h3>
+                        <p class="album-artist">John Coltrane</p>
+                        <p class="album-description">Original 1957 Blue Note pressing in excellent condition. A jazz masterpiece.</p>
+                        <button class="cta-button">View Details</button>
+                    </div>
+                </div>
+                <div class="album-item">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/vinyl2/600/600" alt="Vinyl Record">
+                    </div>
+                    <div class="album-content">
+                        <h3 class="album-name">Rumors</h3>
+                        <p class="album-artist">Fleetwood Mac</p>
+                        <p class="album-description">1977 first pressing with original inner sleeves. Near mint condition.</p>
+                        <button class="cta-button">View Details</button>
+                    </div>
+                </div>
+                <div class="album-item">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/vinyl3/600/600" alt="Vinyl Record">
+                    </div>
+                    <div class="album-content">
+                        <h3 class="album-name">Kind of Blue</h3>
+                        <p class="album-artist">Miles Davis</p>
+                        <p class="album-description">Rare 1959 Columbia 6-Eye pressing. Excellent playing condition.</p>
+                        <button class="cta-button">View Details</button>
+                    </div>
+                </div>
+                <div class="album-item">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/vinyl4/600/600" alt="Vinyl Record">
+                    </div>
+                    <div class="album-content">
+                        <h3 class="album-name">Abbey Road</h3>
+                        <p class="album-artist">The Beatles</p>
+                        <p class="album-description">UK first pressing with misaligned Apple label. Collector's item.</p>
+                        <button class="cta-button">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Store Hours -->
+    <section class="store-hours" id="store-hours">
+        <div class="container">
+            <div class="section-title">
+                <h2>Store Hours</h2>
+            </div>
             
-            <div class="stores-list">
-                <div class="store-item">
-                    <h3 class="store-name">New York Flagship</h3>
-                    <p class="store-info">Fifth Avenue, New York<br>NY 10022, United States</p>
-                    <p class="store-contact">+1 (212) 555-7890</p>
-                    <p class="store-hours">Mon-Sat: 10am - 7pm<br>Sunday: 12pm - 5pm</p>
+            <div class="hours-list">
+                <div class="hours-item">
+                    <h3 class="location-name">Downtown Location</h3>
+                    <p class="location-info">123 Vinyl Avenue<br>Music District, NY 10001</p>
+                    <p class="location-contact">(212) 555-7890</p>
+                    <p class="location-hours">Monday-Friday: 11am - 8pm<br>Saturday: 10am - 9pm<br>Sunday: 12pm - 6pm</p>
                 </div>
-                <div class="store-item">
-                    <h3 class="store-name">London Boutique</h3>
-                    <p class="store-info">Bond Street, Mayfair<br>London W1S 1SR, United Kingdom</p>
-                    <p class="store-contact">+44 20 7123 4567</p>
-                    <p class="store-hours">Mon-Sat: 9:30am - 6:30pm<br>Sunday: Closed</p>
+                <div class="hours-item">
+                    <h3 class="location-name">Uptown Branch</h3>
+                    <p class="location-info">456 Record Lane<br>Melody Heights, NY 10025</p>
+                    <p class="location-contact">(212) 555-4321</p>
+                    <p class="location-hours">Monday-Friday: 12pm - 7pm<br>Saturday: 11am - 8pm<br>Sunday: 12pm - 5pm</p>
                 </div>
-                <div class="store-item">
-                    <h3 class="store-name">Paris Atelier</h3>
-                    <p class="store-info">Place Vendôme<br>75001 Paris, France</p>
-                    <p class="store-contact">+33 1 42 60 70 80</p>
-                    <p class="store-hours">Tues-Sat: 10am - 7pm<br>Sun-Mon: Closed</p>
+                <div class="hours-item">
+                    <h3 class="location-name">Brooklyn Store</h3>
+                    <p class="location-info">789 Turntable Street<br>Williamsburg, NY 11211</p>
+                    <p class="location-contact">(718) 555-6789</p>
+                    <p class="location-hours">Thursday-Friday: 1pm - 9pm<br>Saturday: 11am - 10pm<br>Sunday: 12pm - 7pm<br>Monday-Wednesday: Closed</p>
                 </div>
             </div>
         </div>
@@ -711,20 +715,20 @@
             </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Personalized Service</h3>
-                    <p>We are dedicated to providing exceptional service to our clients. Whether you're interested in learning more about our collection, seeking advice on watch maintenance, or wish to arrange a private viewing, our team of experts is here to assist you.</p>
-                    <p>Email: inquiries@luxurywatchco.com</p>
-                    <p>Phone: +1 (800) 555-8000</p>
-                    <p>Headquarters: New York, NY</p>
+                    <h3>Get in Touch</h3>
+                    <p>Whether you're looking for a specific album, want to sell your collection, or just want to chat about music, we'd love to hear from you. Our team of vinyl enthusiasts is always ready to help with your record needs.</p>
+                    <p>Email: info@vintagevinyl.com</p>
+                    <p>Phone: (212) 555-VINYL (8465)</p>
+                    <p>Main Store: 123 Vinyl Avenue, Music District, NY 10001</p>
                 </div>
                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="form-group">
-                            <label for="name">Full Name</label>
+                            <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email Address</label>
+                            <label for="email">Email</label>
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
@@ -747,24 +751,24 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Luxury Watch Co.</h3>
-                    <p>Crafting exceptional timepieces since 1875. A heritage of precision, innovation, and timeless elegance.</p>
+                    <h3>Vintage Vinyl</h3>
+                    <p>Your destination for rare and collectible vinyl records since 1978. We buy, sell, and trade records from every era and genre.</p>
                 </div>
                 <div class="footer-column">
-                    <h3>Navigation</h3>
+                    <h3>Quick Links</h3>
                     <a href="#home">Home</a>
                     <a href="#about">About Us</a>
-                    <a href="#catalog">Collection</a>
-                    <a href="#store-locator">Store Locator</a>
+                    <a href="#albums">Featured Albums</a>
+                    <a href="#store-hours">Store Hours</a>
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-column">
                     <h3>Services</h3>
-                    <a href="#">Timepiece Authentication</a>
-                    <a href="#">Watch Maintenance</a>
-                    <a href="#">Private Viewings</a>
-                    <a href="#">Watch Customization</a>
-                    <a href="#">Trade-In Program</a>
+                    <a href="#">Record Cleaning</a>
+                    <a href="#">Collection Appraisals</a>
+                    <a href="#">Special Orders</a>
+                    <a href="#">Listening Stations</a>
+                    <a href="#">Record Trading</a>
                 </div>
                 <div class="footer-column">
                     <h3>Connect With Us</h3>
@@ -772,12 +776,12 @@
                         <a href="#" aria-label="Instagram">IG</a>
                         <a href="#" aria-label="Facebook">FB</a>
                         <a href="#" aria-label="Twitter">TW</a>
-                        <a href="#" aria-label="Pinterest">PT</a>
+                        <a href="#" aria-label="Spotify">SP</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Luxury Watch Co. All rights reserved.</p>
+                <p>&copy; 2023 Vintage Vinyl Records. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -794,18 +798,18 @@
                 });
             }
             
-            // Zoom-in-up animation observer
+            // Slide-left animation observer
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.style.opacity = 1;
-                        entry.target.style.transform = 'scale(1) translateY(0)';
+                        entry.target.style.transform = 'translateX(0)';
                     }
                 });
             }, { threshold: 0.1 });
             
-            // Observe all zoom-in-up elements
-            document.querySelectorAll('.zoom-in-up').forEach(el => {
+            // Observe all slide-left elements
+            document.querySelectorAll('.slide-left').forEach(el => {
                 observer.observe(el);
             });
             
@@ -834,7 +838,7 @@
             // Hero CTA button action
             document.querySelector('.hero .cta-button').addEventListener('click', function() {
                 window.scrollTo({
-                    top: document.querySelector('#catalog').offsetTop - 70,
+                    top: document.querySelector('#albums').offsetTop - 70,
                     behavior: 'smooth'
                 });
             });
@@ -851,25 +855,27 @@
                     console.log('Form submitted:', formValues);
                     
                     // Show success message
-                    alert('Thank you for your message. A member of our team will contact you shortly.');
+                    alert('Thank you for your message. We\'ll get back to you soon!');
                     this.reset();
                 });
             }
             
-            // Add hover effect to catalog items
-            const catalogItems = document.querySelectorAll('.catalog-item');
-            if (catalogItems.length) {
-                catalogItems.forEach(item => {
+            // Add hover effect to album items
+            const albumItems = document.querySelectorAll('.album-item');
+            if (albumItems.length) {
+                albumItems.forEach(item => {
                     const button = item.querySelector('.cta-button');
                     
                     item.addEventListener('mouseenter', function() {
-                        button.style.backgroundColor = '#a88c4a';
+                        button.style.backgroundColor = '#6a3c1f';
                     });
                     
                     item.addEventListener('mouseleave', function() {
-                        button.style.backgroundColor = '#c4a35b';
+                        button.style.backgroundColor = '#8a4f2d';
                     });
                 });
             }
         });
     </script>
+</body>
+</html>
