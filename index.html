@@ -42,7 +42,7 @@
         .logo {
             font-size: 24px;
             font-weight: 700;
-            color: #8a4f2d;
+            color: #8a4f2b;
         }
         
         .logo img {
@@ -69,7 +69,7 @@
         }
         
         .nav-links a:hover {
-            color: #8a4f2d;
+            color: #8a4f2b;
         }
         
         .mobile-menu-btn {
@@ -78,7 +78,7 @@
             border: none;
             font-size: 24px;
             cursor: pointer;
-            color: #8a4f2d;
+            color: #8a4f2b;
         }
         
         /* Hero Section */
@@ -135,7 +135,7 @@
         }
         
         .cta-button {
-            background-color: #8a4f2d;
+            background-color: #8a4f2b;
             color: #fff;
             border: none;
             padding: 15px 30px;
@@ -184,7 +184,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 2px;
-            background-color: #8a4f2d;
+            background-color: #8a4f2b;
         }
         
         .about-content {
@@ -203,7 +203,7 @@
         .about-text h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            color: #8a4f2d;
+            color: #8a4f2b;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -287,7 +287,7 @@
         
         .album-artist {
             font-size: 1.2rem;
-            color: #8a4f2d;
+            color: #8a4f2b;
             margin-bottom: 15px;
             font-weight: 600;
         }
@@ -325,7 +325,7 @@
         
         .location-name {
             font-size: 1.3rem;
-            color: #8a4f2d;
+            color: #8a4f2b;
             margin-bottom: 15px;
             font-weight: 600;
             letter-spacing: 1px;
@@ -370,7 +370,7 @@
         .contact-info h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            color: #8a4f2d;
+            color: #8a4f2b;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -414,7 +414,7 @@
         
         .form-group input:focus,
         .form-group textarea:focus {
-            border-color: #8a4f2d;
+            border-color: #8a4f2b;
             outline: none;
         }
         
@@ -424,7 +424,7 @@
         }
         
         .submit-btn {
-            background-color: #8a4f2d;
+            background-color: #8a4f2b;
             color: #fff;
             border: none;
             padding: 15px 30px;
@@ -468,7 +468,7 @@
         .footer-column h3 {
             font-size: 1.3rem;
             margin-bottom: 20px;
-            color: #8a4f2d;
+            color: #8a4f2b;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -484,7 +484,7 @@
         }
         
         .footer-column a:hover {
-            color: #8a4f2d;
+            color: #8a4f2b;
         }
         
         .social-links {
@@ -504,7 +504,7 @@
         }
         
         .social-links a:hover {
-            background-color: #8a4f2d;
+            background-color: #8a4f2b;
             color: #fff;
         }
         
@@ -520,6 +520,13 @@
             opacity: 0;
             transform: translateX(-100px);
             transition: all 0.8s ease-out;
+        }
+        
+        /* Zoom in up animation */
+        .zoom-in-up {
+            opacity: 0;
+            transform: scale(0.8) translateY(50px);
+            transition: all 0.7s ease-out;
         }
         
         /* Responsive Styles */
@@ -582,7 +589,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#albums">Featured Albums</a></li>
-                <li><a href="#store-hours">Store Hours</a></li>
+                <li><a href="#store-hours">Store Location</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="mobile-menu-btn">☰</button>
@@ -596,7 +603,7 @@
         </video>
         <div class="overlay"></div>
         <div class="container hero-content">
-            <h1>Vintage Vinyl Records</h1>
+            <h1>The Sound of Yesterday</h1>
             <p>Experience the warm analog sound that only vinyl can deliver</p>
             <button class="cta-button">Browse Collection</button>
         </div>
@@ -629,7 +636,7 @@
                 <h2>Featured Albums</h2>
             </div>
             <div class="album-items">
-                <div class="album-item">
+                <div class="album-item zoom-in-up">
                     <div class="album-image">
                         <img src="https://picsum.photos/seed/vinyl1/600/600" alt="Vinyl Record">
                     </div>
@@ -640,7 +647,7 @@
                         <button class="cta-button">View Details</button>
                     </div>
                 </div>
-                <div class="album-item">
+                <div class="album-item zoom-in-up">
                     <div class="album-image">
                         <img src="https://picsum.photos/seed/vinyl2/600/600" alt="Vinyl Record">
                     </div>
@@ -651,7 +658,7 @@
                         <button class="cta-button">View Details</button>
                     </div>
                 </div>
-                <div class="album-item">
+                <div class="album-item zoom-in-up">
                     <div class="album-image">
                         <img src="https://picsum.photos/seed/vinyl3/600/600" alt="Vinyl Record">
                     </div>
@@ -662,7 +669,7 @@
                         <button class="cta-button">View Details</button>
                     </div>
                 </div>
-                <div class="album-item">
+                <div class="album-item zoom-in-up">
                     <div class="album-image">
                         <img src="https://picsum.photos/seed/vinyl4/600/600" alt="Vinyl Record">
                     </div>
@@ -681,7 +688,7 @@
     <section class="store-hours" id="store-hours">
         <div class="container">
             <div class="section-title">
-                <h2>Store Hours</h2>
+                <h2>Store Location</h2>
             </div>
             
             <div class="hours-list">
@@ -759,7 +766,7 @@
                     <a href="#home">Home</a>
                     <a href="#about">About Us</a>
                     <a href="#albums">Featured Albums</a>
-                    <a href="#store-hours">Store Hours</a>
+                    <a href="#store-hours">Store Location</a>
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-column">
@@ -799,7 +806,7 @@
             }
             
             // Slide-left animation observer
-            const observer = new IntersectionObserver((entries) => {
+            const slideObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.style.opacity = 1;
@@ -810,7 +817,25 @@
             
             // Observe all slide-left elements
             document.querySelectorAll('.slide-left').forEach(el => {
-                observer.observe(el);
+                slideObserver.observe(el);
+            });
+            
+            // Zoom-in-up animation observer
+            const zoomObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.style.opacity = 1;
+                            entry.target.style.transform = 'scale(1) translateY(0)';
+                        }, entry.target.dataset.delay || 0);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            // Observe zoom-in-up elements with staggered delay
+            document.querySelectorAll('.zoom-in-up').forEach((el, index) => {
+                el.dataset.delay = index * 150;
+                zoomObserver.observe(el);
             });
             
             // Smooth scrolling for navigation links
@@ -867,15 +892,4 @@
                     const button = item.querySelector('.cta-button');
                     
                     item.addEventListener('mouseenter', function() {
-                        button.style.backgroundColor = '#6a3c1f';
-                    });
-                    
-                    item.addEventListener('mouseleave', function() {
-                        button.style.backgroundColor = '#8a4f2d';
-                    });
-                });
-            }
-        });
-    </script>
-</body>
-</html>
+                        button.style.
