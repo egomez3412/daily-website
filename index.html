@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Thumb Nursery</title>
+    <title>Vintage Record Store</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
         }
         
         body {
-            background-color: #f8f9f5;
+            background-color: #f8f7f5;
             color: #333;
         }
         
@@ -26,7 +26,7 @@
         /* Navigation */
         nav {
             background-color: #fff;
-            box-shadow: 0 2px 10px rgba(139, 195, 74, 0.3);
+            box-shadow: 0 2px 10px rgba(138, 79, 46, 0.3);
             position: fixed;
             width: 100%;
             z-index: 1000;
@@ -42,7 +42,7 @@
         .logo {
             font-size: 24px;
             font-weight: 700;
-            color: #8bc34a;
+            color: #8a4f2e;
         }
         
         .logo img {
@@ -69,7 +69,7 @@
         }
         
         .nav-links a:hover {
-            color: #8bc34a;
+            color: #8a4f2e;
         }
         
         .mobile-menu-btn {
@@ -78,7 +78,7 @@
             border: none;
             font-size: 24px;
             cursor: pointer;
-            color: #8bc34a;
+            color: #8a4f2e;
         }
         
         /* Hero Section */
@@ -105,7 +105,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.6);
             z-index: -1;
         }
         
@@ -126,7 +126,7 @@
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
-            text-shadow: 0 0 15px rgba(139, 195, 74, 0.7);
+            text-shadow: 0 0 15px rgba(138, 79, 46, 0.7);
         }
         
         .hero-content p {
@@ -136,7 +136,7 @@
         }
         
         .cta-button {
-            background-color: #8bc34a;
+            background-color: #8a4f2e;
             color: #fff;
             border: none;
             padding: 15px 30px;
@@ -150,9 +150,9 @@
         }
         
         .cta-button:hover {
-            background-color: #689f38;
+            background-color: #6a3d22;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(139, 195, 74, 0.4);
+            box-shadow: 0 10px 20px rgba(138, 79, 46, 0.4);
         }
         
         /* About Section */
@@ -185,7 +185,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background-color: #8bc34a;
+            background-color: #8a4f2e;
         }
         
         .about-content {
@@ -204,7 +204,7 @@
         .about-text h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            color: #8bc34a;
+            color: #8a4f2e;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -227,28 +227,28 @@
         .about-image img {
             max-width: 100%;
             border-radius: 10px;
-            box-shadow: 0 15px 30px rgba(139, 195, 74, 0.2);
+            box-shadow: 0 15px 30px rgba(138, 79, 46, 0.2);
         }
         
-        /* Products Section */
-        .products {
+        /* Albums Section */
+        .albums {
             padding: 100px 0;
-            background-color: #f8f9f5;
+            background-color: #f8f7f5;
             position: relative;
         }
         
-        .products-bg {
+        .albums-bg {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             opacity: 0.05;
-            background: url('https://picsum.photos/seed/plants/1600/900') center/cover no-repeat;
+            background: url('https://picsum.photos/seed/records/1600/900') center/cover no-repeat;
             z-index: 0;
         }
         
-        .product-items {
+        .album-items {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -257,7 +257,7 @@
             z-index: 1;
         }
         
-        .product-item {
+        .album-item {
             background-color: #fff;
             overflow: hidden;
             width: 300px;
@@ -266,34 +266,34 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
-        .product-item:hover {
+        .album-item:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(139, 195, 74, 0.3);
+            box-shadow: 0 15px 30px rgba(138, 79, 46, 0.3);
         }
         
-        .product-image {
+        .album-image {
             position: relative;
             overflow: hidden;
             height: 300px;
         }
         
-        .product-image img {
+        .album-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
         
-        .product-item:hover .product-image img {
+        .album-item:hover .album-image img {
             transform: scale(1.05);
         }
         
-        .product-content {
+        .album-content {
             padding: 25px;
             text-align: center;
         }
         
-        .product-name {
+        .album-name {
             font-size: 1.5rem;
             font-weight: 700;
             color: #333;
@@ -301,86 +301,90 @@
             letter-spacing: 1px;
         }
         
-        .product-category {
+        .album-artist {
             font-size: 1rem;
-            color: #8bc34a;
+            color: #8a4f2e;
             margin-bottom: 15px;
             font-weight: 600;
         }
         
-        /* Reviews Section */
-        .reviews {
+        /* Store Hours Section */
+        .store-hours {
             padding: 100px 0;
             background-color: #fff;
         }
         
-        .reviews-content {
+        .hours-content {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
         }
         
-        .review-item {
+        .hours-info {
             flex: 1;
             min-width: 300px;
             padding: 30px;
-            background-color: #f8f9f5;
+            background-color: #f8f7f5;
             border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
         }
         
-        .review-item:hover {
-            transform: translateY(-10px);
-        }
-        
-        .review-text {
-            font-style: italic;
-            color: #666;
+        .hours-info h3 {
+            font-size: 1.8rem;
             margin-bottom: 20px;
-            line-height: 1.6;
+            color: #8a4f2e;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
         }
         
-        .reviewer {
+        .hours-list {
+            list-style: none;
+        }
+        
+        .hours-list li {
             display: flex;
-            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px dashed #ddd;
+            font-size: 1.1rem;
         }
         
-        .reviewer-image {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-right: 15px;
+        .hours-list li:last-child {
+            border-bottom: none;
         }
         
-        .reviewer-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .hours-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
         }
         
-        .reviewer-info h4 {
-            color: #8bc34a;
-            font-weight: 600;
+        .hours-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(138, 79, 46, 0.2);
         }
         
-        .reviewer-info p {
-            color: #999;
-            font-size: 0.9rem;
-        }
-        
-        .fade-down {
+        /* Zoom-in-up animation */
+        .zoom-in-up {
             opacity: 0;
-            transform: translateY(-50px);
+            transform: scale(0.8) translateY(50px);
             transition: all 0.8s ease-out;
+        }
+        
+        .zoom-in-up.active {
+            opacity: 1;
+            transform: scale(1) translateY(0);
         }
         
         /* Contact Form */
         .contact {
             padding: 100px 0;
-            background-color: #f8f9f5;
+            background-color: #f8f7f5;
             position: relative;
         }
         
@@ -399,7 +403,7 @@
         .contact-info h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            color: #8bc34a;
+            color: #8a4f2e;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -447,7 +451,7 @@
         
         .form-group input:focus,
         .form-group textarea:focus {
-            border-color: #8bc34a;
+            border-color: #8a4f2e;
             outline: none;
         }
         
@@ -457,7 +461,7 @@
         }
         
         .submit-btn {
-            background-color: #8bc34a;
+            background-color: #8a4f2e;
             color: #fff;
             border: none;
             padding: 15px 30px;
@@ -473,9 +477,9 @@
         }
         
         .submit-btn:hover {
-            background-color: #689f38;
+            background-color: #6a3d22;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(139, 195, 74, 0.3);
+            box-shadow: 0 10px 20px rgba(138, 79, 46, 0.3);
         }
         
         /* Footer */
@@ -502,7 +506,7 @@
         .footer-column h3 {
             font-size: 1.3rem;
             margin-bottom: 20px;
-            color: #8bc34a;
+            color: #8a4f2e;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -518,7 +522,7 @@
         }
         
         .footer-column a:hover {
-            color: #8bc34a;
+            color: #8a4f2e;
         }
         
         .social-links {
@@ -538,7 +542,7 @@
         }
         
         .social-links a:hover {
-            background-color: #8bc34a;
+            background-color: #8a4f2e;
             color: #fff;
         }
         
@@ -597,7 +601,7 @@
                 flex-direction: column;
             }
             
-            .reviews-content {
+            .hours-content {
                 flex-direction: column;
             }
         }
@@ -608,13 +612,13 @@
     <nav>
         <div class="container nav-container">
             <div class="logo">
-                <a href="/" style="font-size: 32px; text-decoration: none;">🌱</a> Green Thumb Nursery
+                <a href="/" style="font-size: 32px; text-decoration: none;">💿</a> Vintage Record Store
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Plant Categories</a></li>
-                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#albums">Featured Albums</a></li>
+                <li><a href="#store-hours">Store Hours</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="mobile-menu-btn">☰</button>
@@ -624,13 +628,13 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <video class="hero-video" autoplay muted loop>
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-gardener-taking-care-of-potted-plants-39761-large.mp4" type="video/mp4">
+            <source src="https://player.vimeo.com/external/435265937.sd.mp4?s=e2a5f1d78a42b5c66d9a2722ca85948946e3e3ce&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
         </video>
         <div class="overlay"></div>
         <div class="container hero-content">
-            <h1>Bring Nature Home</h1>
-            <p>Discover the perfect plants to transform your space into a lush paradise</p>
-            <button class="cta-button">Explore Our Collection</button>
+            <h1>Vinyl Revival</h1>
+            <p>Discover the rich, warm sound of vintage vinyl records in our carefully curated collection</p>
+            <button class="cta-button">Browse Our Collection</button>
         </div>
     </section>
     
@@ -642,112 +646,91 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Our Green Journey</h3>
-                    <p>Welcome to Green Thumb Nursery, a family-owned plant paradise established in 1998. For over two decades, we've been helping our community create beautiful, sustainable gardens and indoor plant havens.</p>
-                    <p>Our nursery spans over five acres with thousands of plant varieties, from rare exotic specimens to hardy native plants. We pride ourselves on our sustainable growing practices and expert plant knowledge that we love sharing with our customers.</p>
-                    <p>Whether you're an experienced gardener or just beginning your plant journey, our dedicated team is here to help you select the perfect plants and provide the guidance you need to help them thrive.</p>
+                    <h3>Our Vinyl Journey</h3>
+                    <p>Welcome to Vintage Record Store, a haven for music lovers established in 1978. For over four decades, we've been curating an exceptional collection of vinyl records that span across various genres, eras, and cultures.</p>
+                    <p>Our store houses thousands of vinyl records, from rare first pressings to remastered classics. We pride ourselves on our knowledge of music history and our commitment to preserving the authentic analog sound experience that only vinyl can deliver.</p>
+                    <p>Whether you're a seasoned collector or just beginning your vinyl journey, our passionate team is here to guide you through our extensive collection and help you discover the magic of analog sound.</p>
                 </div>
                 <div class="about-image">
-                    <img src="https://picsum.photos/seed/nursery/600/400" alt="Nursery Garden View">
+                    <img src="https://picsum.photos/seed/recordstore/600/400" alt="Record Store Interior">
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Product Categories Section -->
-    <section class="products" id="products">
-        <div class="products-bg"></div>
+    <!-- Featured Albums Section -->
+    <section class="albums" id="albums">
+        <div class="albums-bg"></div>
         <div class="container">
             <div class="section-title">
-                <h2>Plant Categories</h2>
+                <h2>Featured Albums</h2>
             </div>
-            <div class="product-items">
-                <div class="product-item fade-down">
-                    <div class="product-image">
-                        <img src="https://picsum.photos/seed/indoorplant/600/600" alt="Indoor Plants">
+            <div class="album-items">
+                <div class="album-item zoom-in-up">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/album1/600/600" alt="Classic Album">
                     </div>
-                    <div class="product-content">
-                        <h3 class="product-name">Indoor Plants</h3>
-                        <p class="product-category">Air Purifying & Decorative</p>
-                        <button class="cta-button">Explore</button>
-                    </div>
-                </div>
-                <div class="product-item fade-down">
-                    <div class="product-image">
-                        <img src="https://picsum.photos/seed/succulents/600/600" alt="Succulents">
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-name">Succulents</h3>
-                        <p class="product-category">Low Maintenance & Unique</p>
-                        <button class="cta-button">Explore</button>
+                    <div class="album-content">
+                        <h3 class="album-name">Rumors</h3>
+                        <p class="album-artist">Fleetwood Mac</p>
+                        <button class="cta-button">Details</button>
                     </div>
                 </div>
-                <div class="product-item fade-down">
-                    <div class="product-image">
-                        <img src="https://picsum.photos/seed/flowers/600/600" alt="Flowering Plants">
+                <div class="album-item zoom-in-up">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/album2/600/600" alt="Jazz Album">
                     </div>
-                    <div class="product-content">
-                        <h3 class="product-name">Flowering Plants</h3>
-                        <p class="product-category">Colorful & Fragrant</p>
-                        <button class="cta-button">Explore</button>
+                    <div class="album-content">
+                        <h3 class="album-name">Kind of Blue</h3>
+                        <p class="album-artist">Miles Davis</p>
+                        <button class="cta-button">Details</button>
                     </div>
                 </div>
-                <div class="product-item fade-down">
-                    <div class="product-image">
-                        <img src="https://picsum.photos/seed/herbs/600/600" alt="Herb Garden">
+                <div class="album-item zoom-in-up">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/album3/600/600" alt="Rock Album">
                     </div>
-                    <div class="product-content">
-                        <h3 class="product-name">Herb Garden</h3>
-                        <p class="product-category">Culinary & Medicinal</p>
-                        <button class="cta-button">Explore</button>
+                    <div class="album-content">
+                        <h3 class="album-name">Dark Side of the Moon</h3>
+                        <p class="album-artist">Pink Floyd</p>
+                        <button class="cta-button">Details</button>
+                    </div>
+                </div>
+                <div class="album-item zoom-in-up">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/album4/600/600" alt="Soul Album">
+                    </div>
+                    <div class="album-content">
+                        <h3 class="album-name">What's Going On</h3>
+                        <p class="album-artist">Marvin Gaye</p>
+                        <button class="cta-button">Details</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Reviews Section -->
-    <section class="reviews" id="reviews">
+    <!-- Store Hours Section -->
+    <section class="store-hours" id="store-hours">
         <div class="container">
             <div class="section-title">
-                <h2>Customer Reviews</h2>
+                <h2>Store Hours</h2>
             </div>
-            <div class="reviews-content">
-                <div class="review-item">
-                    <p class="review-text">"Green Thumb Nursery has transformed my apartment into a jungle paradise! Their staff provided expert advice on which plants would thrive in my space with limited natural light, and every plant I've purchased is thriving. Couldn't be happier!"</p>
-                    <div class="reviewer">
-                        <div class="reviewer-image">
-                            <img src="https://picsum.photos/seed/person1/200/200" alt="Customer">
-                        </div>
-                        <div class="reviewer-info">
-                            <h4>Sarah Johnson</h4>
-                            <p>Plant Enthusiast</p>
-                        </div>
-                    </div>
+            <div class="hours-content">
+                <div class="hours-info">
+                    <h3>Visit Us</h3>
+                    <ul class="hours-list">
+                        <li><span>Monday</span> <span>10:00 AM - 7:00 PM</span></li>
+                        <li><span>Tuesday</span> <span>10:00 AM - 7:00 PM</span></li>
+                        <li><span>Wednesday</span> <span>10:00 AM - 7:00 PM</span></li>
+                        <li><span>Thursday</span> <span>10:00 AM - 7:00 PM</span></li>
+                        <li><span>Friday</span> <span>10:00 AM - 9:00 PM</span></li>
+                        <li><span>Saturday</span> <span>9:00 AM - 9:00 PM</span></li>
+                        <li><span>Sunday</span> <span>11:00 AM - 6:00 PM</span></li>
+                    </ul>
                 </div>
-                <div class="review-item">
-                    <p class="review-text">"I've been buying plants here for my landscaping business for over five years. The quality is consistently excellent, and their selection of native plants is unmatched. The staff is knowledgeable and always willing to help with special orders."</p>
-                    <div class="reviewer">
-                        <div class="reviewer-image">
-                            <img src="https://picsum.photos/seed/person2/200/200" alt="Customer">
-                        </div>
-                        <div class="reviewer-info">
-                            <h4>Michael Rodriguez</h4>
-                            <p>Landscape Designer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="review-item">
-                    <p class="review-text">"As a first-time plant parent, I was overwhelmed by all the options, but the staff at Green Thumb took the time to educate me on basic plant care and helped me select some hardy varieties to start with. Three months later, they're all still alive and thriving!"</p>
-                    <div class="reviewer">
-                        <div class="reviewer-image">
-                            <img src="https://picsum.photos/seed/person3/200/200" alt="Customer">
-                        </div>
-                        <div class="reviewer-info">
-                            <h4>Emma Wilson</h4>
-                            <p>Beginner Gardener</p>
-                        </div>
-                    </div>
+                <div class="hours-image zoom-in-up">
+                    <img src="https://picsum.photos/seed/recordbrowsing/600/400" alt="Browsing Records">
                 </div>
             </div>
         </div>
@@ -762,15 +745,15 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Contact Information</h3>
-                    <p>Have questions about plant care or availability? Need custom landscaping advice? We're here to help you with all your plant-related queries!</p>
-                    <p><strong>Address:</strong> 456 Garden Way, Greenville, CA</p>
-                    <p><strong>Phone:</strong> (555) 987-6543</p>
-                    <p><strong>Email:</strong> info@greenthumb.com</p>
-                    <p>Follow us on social media for seasonal tips, new arrivals, and plant care guides.</p>
+                    <p>Have questions about a specific record? Looking for a rare pressing? Want to sell your collection? We're here to help with all your vinyl needs!</p>
+                    <p><strong>Address:</strong> 123 Vinyl Avenue, Musictown, CA</p>
+                    <p><strong>Phone:</strong> (555) 123-4567</p>
+                    <p><strong>Email:</strong> info@vintagerecords.com</p>
+                    <p>Follow us on social media for new arrivals, in-store performances, and vinyl care tips.</p>
                     <div class="social-links">
                         <a href="#"><i class="fa fa-facebook"></i></a>
                         <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
                     </div>
                 </div>
                 <div class="contact-form">
@@ -803,28 +786,28 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Green Thumb Nursery</h3>
-                    <p>Helping our community grow beautiful, sustainable gardens since 1998. Our mission is to connect people with nature one plant at a time.</p>
+                    <h3>Vintage Record Store</h3>
+                    <p>Preserving the authentic sound of vinyl since 1978. Our mission is to keep the analog music experience alive for generations to come.</p>
                 </div>
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <a href="#home">Home</a>
                     <a href="#about">About Us</a>
-                    <a href="#products">Plant Categories</a>
-                    <a href="#reviews">Reviews</a>
+                    <a href="#albums">Featured Albums</a>
+                    <a href="#store-hours">Store Hours</a>
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-column">
-                    <h3>Plant Care</h3>
-                    <a href="#">Watering Guides</a>
-                    <a href="#">Light Requirements</a>
-                    <a href="#">Seasonal Tips</a>
-                    <a href="#">Pest Control</a>
-                    <a href="#">Soil & Fertilizer</a>
+                    <h3>Vinyl Care</h3>
+                    <a href="#">Cleaning Tips</a>
+                    <a href="#">Storage Solutions</a>
+                    <a href="#">Turntable Maintenance</a>
+                    <a href="#">Record Grading Guide</a>
+                    <a href="#">Stylus Care</a>
                 </div>
                 <div class="footer-column">
                     <h3>Newsletter</h3>
-                    <p>Subscribe to receive seasonal gardening tips, exclusive offers, and early access to new plant arrivals.</p>
+                    <p>Subscribe to receive updates on new arrivals, upcoming events, and exclusive offers.</p>
                     <form>
                         <div class="form-group">
                             <input type="email" placeholder="Your Email" required>
@@ -834,7 +817,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Green Thumb Nursery. All Rights Reserved.</p>
+                <p>&copy; 2023 Vintage Record Store. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -845,9 +828,9 @@
             document.querySelector('.nav-links').classList.toggle('active');
         });
         
-        // Scroll Animation
+        // Zoom-in-up Animation
         document.addEventListener('DOMContentLoaded', function() {
-            const scrollElements = document.querySelectorAll('.fade-down');
+            const zoomElements = document.querySelectorAll('.zoom-in-up');
             
             const elementInView = (el, dividend = 1) => {
                 const elementTop = el.getBoundingClientRect().top;
@@ -857,28 +840,20 @@
                 );
             };
             
-            const displayScrollElement = (element) => {
-                element.style.opacity = "1";
-                element.style.transform = "translateY(0)";
+            const displayZoomElement = (element) => {
+                element.classList.add('active');
             };
             
-            const hideScrollElement = (element) => {
-                element.style.opacity = "0";
-                element.style.transform = "translateY(-50px)";
-            };
-            
-            const handleScrollAnimation = () => {
-                scrollElements.forEach((el) => {
+            const handleZoomAnimation = () => {
+                zoomElements.forEach((el) => {
                     if (elementInView(el, 1.25)) {
-                        displayScrollElement(el);
-                    } else {
-                        hideScrollElement(el);
+                        displayZoomElement(el);
                     }
                 })
             }
             
-            window.addEventListener('scroll', handleScrollAnimation);
-            handleScrollAnimation();
+            window.addEventListener('scroll', handleZoomAnimation);
+            handleZoomAnimation();
             
             // Contact Form Submission
             document.getElementById('contactForm').addEventListener('submit', function(e) {
