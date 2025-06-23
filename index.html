@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vintage Record Store</title>
+    <title>AppDevCraft</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
         }
         
         body {
-            background-color: #f8f7f5;
+            background-color: #f8f8f8;
             color: #333;
         }
         
@@ -26,7 +26,7 @@
         /* Navigation */
         nav {
             background-color: #fff;
-            box-shadow: 0 2px 10px rgba(138, 79, 46, 0.3);
+            box-shadow: 0 2px 10px rgba(52, 152, 219, 0.2);
             position: fixed;
             width: 100%;
             z-index: 1000;
@@ -42,7 +42,7 @@
         .logo {
             font-size: 24px;
             font-weight: 700;
-            color: #8a4f2e;
+            color: #3498db;
         }
         
         .logo img {
@@ -69,7 +69,7 @@
         }
         
         .nav-links a:hover {
-            color: #8a4f2e;
+            color: #3498db;
         }
         
         .mobile-menu-btn {
@@ -78,7 +78,7 @@
             border: none;
             font-size: 24px;
             cursor: pointer;
-            color: #8a4f2e;
+            color: #3498db;
         }
         
         /* Hero Section */
@@ -105,7 +105,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.7);
             z-index: -1;
         }
         
@@ -126,7 +126,7 @@
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
-            text-shadow: 0 0 15px rgba(138, 79, 46, 0.7);
+            text-shadow: 0 0 15px rgba(52, 152, 219, 0.7);
         }
         
         .hero-content p {
@@ -136,7 +136,7 @@
         }
         
         .cta-button {
-            background-color: #8a4f2e;
+            background-color: #3498db;
             color: #fff;
             border: none;
             padding: 15px 30px;
@@ -150,9 +150,9 @@
         }
         
         .cta-button:hover {
-            background-color: #6a3d22;
+            background-color: #2980b9;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(138, 79, 46, 0.4);
+            box-shadow: 0 10px 20px rgba(52, 152, 219, 0.4);
         }
         
         /* About Section */
@@ -185,7 +185,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background-color: #8a4f2e;
+            background-color: #3498db;
         }
         
         .about-content {
@@ -204,7 +204,7 @@
         .about-text h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            color: #8a4f2e;
+            color: #3498db;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -227,28 +227,28 @@
         .about-image img {
             max-width: 100%;
             border-radius: 10px;
-            box-shadow: 0 15px 30px rgba(138, 79, 46, 0.2);
+            box-shadow: 0 15px 30px rgba(52, 152, 219, 0.2);
         }
         
-        /* Albums Section */
-        .albums {
+        /* Portfolio Section */
+        .portfolio {
             padding: 100px 0;
-            background-color: #f8f7f5;
+            background-color: #f8f8f8;
             position: relative;
         }
         
-        .albums-bg {
+        .portfolio-bg {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             opacity: 0.05;
-            background: url('https://picsum.photos/seed/records/1600/900') center/cover no-repeat;
+            background: url('https://picsum.photos/seed/tech/1600/900') center/cover no-repeat;
             z-index: 0;
         }
         
-        .album-items {
+        .portfolio-items {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -257,43 +257,43 @@
             z-index: 1;
         }
         
-        .album-item {
+        .portfolio-item {
             background-color: #fff;
             overflow: hidden;
-            width: 300px;
+            width: 340px;
             border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
-        .album-item:hover {
+        .portfolio-item:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(138, 79, 46, 0.3);
+            box-shadow: 0 15px 30px rgba(52, 152, 219, 0.3);
         }
         
-        .album-image {
+        .portfolio-image {
             position: relative;
             overflow: hidden;
-            height: 300px;
+            height: 220px;
         }
         
-        .album-image img {
+        .portfolio-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
         
-        .album-item:hover .album-image img {
+        .portfolio-item:hover .portfolio-image img {
             transform: scale(1.05);
         }
         
-        .album-content {
+        .portfolio-content {
             padding: 25px;
             text-align: center;
         }
         
-        .album-name {
+        .portfolio-name {
             font-size: 1.5rem;
             font-weight: 700;
             color: #333;
@@ -301,90 +301,100 @@
             letter-spacing: 1px;
         }
         
-        .album-artist {
+        .portfolio-category {
             font-size: 1rem;
-            color: #8a4f2e;
+            color: #3498db;
             margin-bottom: 15px;
             font-weight: 600;
         }
         
-        /* Store Hours Section */
-        .store-hours {
+        /* Testimonials Section */
+        .testimonials {
             padding: 100px 0;
             background-color: #fff;
         }
         
-        .hours-content {
+        .testimonials-content {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
-            gap: 50px;
+            gap: 30px;
         }
         
-        .hours-info {
+        .testimonial-item {
             flex: 1;
             min-width: 300px;
-            padding: 30px;
-            background-color: #f8f7f5;
+            max-width: 380px;
+            background-color: #f8f8f8;
             border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            position: relative;
         }
         
-        .hours-info h3 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            color: #8a4f2e;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-align: center;
-        }
-        
-        .hours-list {
-            list-style: none;
-        }
-        
-        .hours-list li {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px dashed #ddd;
+        .testimonial-text {
             font-size: 1.1rem;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-style: italic;
         }
         
-        .hours-list li:last-child {
-            border-bottom: none;
+        .testimonial-author {
+            display: flex;
+            align-items: center;
         }
         
-        .hours-image {
-            flex: 1;
-            min-width: 300px;
-            text-align: center;
+        .author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
         }
         
-        .hours-image img {
-            max-width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 15px 30px rgba(138, 79, 46, 0.2);
+        .author-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         
-        /* Zoom-in-up animation */
-        .zoom-in-up {
+        .author-info h4 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .author-info p {
+            font-size: 0.9rem;
+            color: #3498db;
+        }
+        
+        .quotation-mark {
+            font-size: 60px;
+            color: rgba(52, 152, 219, 0.1);
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-family: serif;
+        }
+        
+        /* Fade-down animation */
+        .fade-down {
             opacity: 0;
-            transform: scale(0.8) translateY(50px);
+            transform: translateY(-40px);
             transition: all 0.8s ease-out;
         }
         
-        .zoom-in-up.active {
+        .fade-down.active {
             opacity: 1;
-            transform: scale(1) translateY(0);
+            transform: translateY(0);
         }
         
         /* Contact Form */
         .contact {
             padding: 100px 0;
-            background-color: #f8f7f5;
+            background-color: #f8f8f8;
             position: relative;
         }
         
@@ -403,7 +413,7 @@
         .contact-info h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            color: #8a4f2e;
+            color: #3498db;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -451,7 +461,7 @@
         
         .form-group input:focus,
         .form-group textarea:focus {
-            border-color: #8a4f2e;
+            border-color: #3498db;
             outline: none;
         }
         
@@ -461,7 +471,7 @@
         }
         
         .submit-btn {
-            background-color: #8a4f2e;
+            background-color: #3498db;
             color: #fff;
             border: none;
             padding: 15px 30px;
@@ -477,14 +487,14 @@
         }
         
         .submit-btn:hover {
-            background-color: #6a3d22;
+            background-color: #2980b9;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(138, 79, 46, 0.3);
+            box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
         }
         
         /* Footer */
         footer {
-            background-color: #333;
+            background-color: #2c3e50;
             color: #fff;
             padding: 60px 0 30px;
         }
@@ -506,14 +516,14 @@
         .footer-column h3 {
             font-size: 1.3rem;
             margin-bottom: 20px;
-            color: #8a4f2e;
+            color: #3498db;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
         
         .footer-column p, .footer-column a {
-            color: #aaa;
+            color: #bbb;
             margin-bottom: 10px;
             display: block;
             text-decoration: none;
@@ -522,7 +532,7 @@
         }
         
         .footer-column a:hover {
-            color: #8a4f2e;
+            color: #3498db;
         }
         
         .social-links {
@@ -534,7 +544,7 @@
             display: inline-block;
             width: 40px;
             height: 40px;
-            background-color: #444;
+            background-color: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
             text-align: center;
             line-height: 40px;
@@ -542,15 +552,15 @@
         }
         
         .social-links a:hover {
-            background-color: #8a4f2e;
+            background-color: #3498db;
             color: #fff;
         }
         
         .footer-bottom {
             text-align: center;
             padding-top: 30px;
-            border-top: 1px solid #444;
-            color: #777;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #999;
             font-size: 0.9rem;
         }
         
@@ -560,7 +570,7 @@
                 font-size: 2.2rem;
             }
             
-            .about-content {
+            .about-content, .portfolio-content {
                 flex-direction: column;
             }
             
@@ -601,8 +611,9 @@
                 flex-direction: column;
             }
             
-            .hours-content {
+            .testimonials-content {
                 flex-direction: column;
+                align-items: center;
             }
         }
     </style>
@@ -612,13 +623,13 @@
     <nav>
         <div class="container nav-container">
             <div class="logo">
-                <a href="/" style="font-size: 32px; text-decoration: none;">💿</a> Vintage Record Store
+                <a href="/" style="font-size: 32px; text-decoration: none;">📱</a> AppDevCraft
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#albums">Featured Albums</a></li>
-                <li><a href="#store-hours">Store Hours</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="mobile-menu-btn">☰</button>
@@ -628,13 +639,13 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <video class="hero-video" autoplay muted loop>
-            <source src="https://player.vimeo.com/external/435265937.sd.mp4?s=e2a5f1d78a42b5c66d9a2722ca85948946e3e3ce&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-typing-on-smartphone-in-the-dark-3174-large.mp4" type="video/mp4">
         </video>
         <div class="overlay"></div>
         <div class="container hero-content">
-            <h1>Vinyl Revival</h1>
-            <p>Discover the rich, warm sound of vintage vinyl records in our carefully curated collection</p>
-            <button class="cta-button">Browse Our Collection</button>
+            <h1>Mobile Innovation</h1>
+            <p>We transform your ideas into powerful, user-friendly mobile applications that drive engagement and business growth</p>
+            <button class="cta-button">Get Started</button>
         </div>
     </section>
     
@@ -646,91 +657,135 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Our Vinyl Journey</h3>
-                    <p>Welcome to Vintage Record Store, a haven for music lovers established in 1978. For over four decades, we've been curating an exceptional collection of vinyl records that span across various genres, eras, and cultures.</p>
-                    <p>Our store houses thousands of vinyl records, from rare first pressings to remastered classics. We pride ourselves on our knowledge of music history and our commitment to preserving the authentic analog sound experience that only vinyl can deliver.</p>
-                    <p>Whether you're a seasoned collector or just beginning your vinyl journey, our passionate team is here to guide you through our extensive collection and help you discover the magic of analog sound.</p>
+                    <h3>Who We Are</h3>
+                    <p>AppDevCraft is a premier mobile application development company with a passion for creating innovative, user-centric solutions that help businesses thrive in the digital landscape.</p>
+                    <p>With over a decade of experience, our team of skilled developers, designers, and strategists work collaboratively to deliver cutting-edge mobile applications for iOS and Android platforms that drive user engagement and business growth.</p>
+                    <p>We believe in the power of technology to transform businesses and enhance user experiences. Our approach combines technical expertise with creative problem-solving to develop applications that not only meet but exceed our clients' expectations.</p>
                 </div>
                 <div class="about-image">
-                    <img src="https://picsum.photos/seed/recordstore/600/400" alt="Record Store Interior">
+                    <img src="https://picsum.photos/seed/appteam/600/400" alt="Our Team">
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Featured Albums Section -->
-    <section class="albums" id="albums">
-        <div class="albums-bg"></div>
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-bg"></div>
         <div class="container">
             <div class="section-title">
-                <h2>Featured Albums</h2>
+                <h2>Our Portfolio</h2>
             </div>
-            <div class="album-items">
-                <div class="album-item zoom-in-up">
-                    <div class="album-image">
-                        <img src="https://picsum.photos/seed/album1/600/600" alt="Classic Album">
+            <div class="portfolio-items">
+                <div class="portfolio-item fade-down">
+                    <div class="portfolio-image">
+                        <img src="https://picsum.photos/seed/app1/600/400" alt="Fitness App">
                     </div>
-                    <div class="album-content">
-                        <h3 class="album-name">Rumors</h3>
-                        <p class="album-artist">Fleetwood Mac</p>
-                        <button class="cta-button">Details</button>
-                    </div>
-                </div>
-                <div class="album-item zoom-in-up">
-                    <div class="album-image">
-                        <img src="https://picsum.photos/seed/album2/600/600" alt="Jazz Album">
-                    </div>
-                    <div class="album-content">
-                        <h3 class="album-name">Kind of Blue</h3>
-                        <p class="album-artist">Miles Davis</p>
-                        <button class="cta-button">Details</button>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-name">FitTrack Pro</h3>
+                        <p class="portfolio-category">Fitness & Health</p>
+                        <button class="cta-button">View Case Study</button>
                     </div>
                 </div>
-                <div class="album-item zoom-in-up">
-                    <div class="album-image">
-                        <img src="https://picsum.photos/seed/album3/600/600" alt="Rock Album">
+                <div class="portfolio-item fade-down">
+                    <div class="portfolio-image">
+                        <img src="https://picsum.photos/seed/app2/600/400" alt="E-commerce App">
                     </div>
-                    <div class="album-content">
-                        <h3 class="album-name">Dark Side of the Moon</h3>
-                        <p class="album-artist">Pink Floyd</p>
-                        <button class="cta-button">Details</button>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-name">ShopSmart</h3>
+                        <p class="portfolio-category">E-commerce</p>
+                        <button class="cta-button">View Case Study</button>
                     </div>
                 </div>
-                <div class="album-item zoom-in-up">
-                    <div class="album-image">
-                        <img src="https://picsum.photos/seed/album4/600/600" alt="Soul Album">
+                <div class="portfolio-item fade-down">
+                    <div class="portfolio-image">
+                        <img src="https://picsum.photos/seed/app3/600/400" alt="Finance App">
                     </div>
-                    <div class="album-content">
-                        <h3 class="album-name">What's Going On</h3>
-                        <p class="album-artist">Marvin Gaye</p>
-                        <button class="cta-button">Details</button>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-name">WealthWise</h3>
+                        <p class="portfolio-category">Finance & Banking</p>
+                        <button class="cta-button">View Case Study</button>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-down">
+                    <div class="portfolio-image">
+                        <img src="https://picsum.photos/seed/app4/600/400" alt="Food Delivery App">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-name">QuickBite</h3>
+                        <p class="portfolio-category">Food Delivery</p>
+                        <button class="cta-button">View Case Study</button>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-down">
+                    <div class="portfolio-image">
+                        <img src="https://picsum.photos/seed/app5/600/400" alt="Travel App">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-name">TravelBuddy</h3>
+                        <p class="portfolio-category">Travel & Tourism</p>
+                        <button class="cta-button">View Case Study</button>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-down">
+                    <div class="portfolio-image">
+                        <img src="https://picsum.photos/seed/app6/600/400" alt="Education App">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-name">LearnPro</h3>
+                        <p class="portfolio-category">Education & Learning</p>
+                        <button class="cta-button">View Case Study</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Store Hours Section -->
-    <section class="store-hours" id="store-hours">
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="section-title">
-                <h2>Store Hours</h2>
+                <h2>Client Testimonials</h2>
             </div>
-            <div class="hours-content">
-                <div class="hours-info">
-                    <h3>Visit Us</h3>
-                    <ul class="hours-list">
-                        <li><span>Monday</span> <span>10:00 AM - 7:00 PM</span></li>
-                        <li><span>Tuesday</span> <span>10:00 AM - 7:00 PM</span></li>
-                        <li><span>Wednesday</span> <span>10:00 AM - 7:00 PM</span></li>
-                        <li><span>Thursday</span> <span>10:00 AM - 7:00 PM</span></li>
-                        <li><span>Friday</span> <span>10:00 AM - 9:00 PM</span></li>
-                        <li><span>Saturday</span> <span>9:00 AM - 9:00 PM</span></li>
-                        <li><span>Sunday</span> <span>11:00 AM - 6:00 PM</span></li>
-                    </ul>
+            <div class="testimonials-content">
+                <div class="testimonial-item">
+                    <div class="quotation-mark">"</div>
+                    <p class="testimonial-text">AppDevCraft transformed our business idea into a stunning mobile app with excellent user experience. Their team was professional, responsive, and delivered the project ahead of schedule.</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://picsum.photos/seed/client1/200/200" alt="Client">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>CEO, FitTrack</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="hours-image zoom-in-up">
-                    <img src="https://picsum.photos/seed/recordbrowsing/600/400" alt="Browsing Records">
+                <div class="testimonial-item">
+                    <div class="quotation-mark">"</div>
+                    <p class="testimonial-text">Working with AppDevCraft was an exceptional experience. They understood our requirements perfectly and delivered a high-performance e-commerce app that has significantly increased our sales.</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://picsum.photos/seed/client2/200/200" alt="Client">
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Reynolds</h4>
+                            <p>Founder, ShopSmart</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="quotation-mark">"</div>
+                    <p class="testimonial-text">The team at AppDevCraft is incredibly talented. They built our financial app with top-notch security features and an intuitive interface. Our customers love it, and we couldn't be happier with the results.</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://picsum.photos/seed/client3/200/200" alt="Client">
+                        </div>
+                        <div class="author-info">
+                            <h4>Jessica Williams</h4>
+                            <p>CTO, WealthWise</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -745,15 +800,16 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Contact Information</h3>
-                    <p>Have questions about a specific record? Looking for a rare pressing? Want to sell your collection? We're here to help with all your vinyl needs!</p>
-                    <p><strong>Address:</strong> 123 Vinyl Avenue, Musictown, CA</p>
-                    <p><strong>Phone:</strong> (555) 123-4567</p>
-                    <p><strong>Email:</strong> info@vintagerecords.com</p>
-                    <p>Follow us on social media for new arrivals, in-store performances, and vinyl care tips.</p>
+                    <p>Ready to transform your business with a powerful mobile application? Contact us today to discuss your project requirements and how we can help bring your vision to life.</p>
+                    <p><strong>Address:</strong> 123 Tech Park Avenue, Silicon Valley, CA</p>
+                    <p><strong>Phone:</strong> (555) 987-6543</p>
+                    <p><strong>Email:</strong> info@appdevcraft.com</p>
+                    <p>Follow us on social media for the latest updates, tech insights, and app development trends.</p>
                     <div class="social-links">
                         <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
                         <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="contact-form">
@@ -767,11 +823,21 @@
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
                         </div>
                         <div class="form-group">
-                            <label for="message">Your Message</label>
+                            <label for="project">Project Type</label>
+                            <select id="project" name="project">
+                                <option value="">Select Project Type</option>
+                                <option value="ios">iOS App Development</option>
+                                <option value="android">Android App Development</option>
+                                <option value="cross">Cross-Platform App</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
                             <textarea id="message" name="message" required></textarea>
                         </div>
                         <button type="submit" class="submit-btn">Send Message</button>
@@ -786,28 +852,28 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Vintage Record Store</h3>
-                    <p>Preserving the authentic sound of vinyl since 1978. Our mission is to keep the analog music experience alive for generations to come.</p>
+                    <h3>AppDevCraft</h3>
+                    <p>We specialize in creating innovative, user-friendly mobile applications that drive engagement and help businesses thrive in the digital world.</p>
                 </div>
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <a href="#home">Home</a>
                     <a href="#about">About Us</a>
-                    <a href="#albums">Featured Albums</a>
-                    <a href="#store-hours">Store Hours</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#testimonials">Testimonials</a>
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-column">
-                    <h3>Vinyl Care</h3>
-                    <a href="#">Cleaning Tips</a>
-                    <a href="#">Storage Solutions</a>
-                    <a href="#">Turntable Maintenance</a>
-                    <a href="#">Record Grading Guide</a>
-                    <a href="#">Stylus Care</a>
+                    <h3>Our Services</h3>
+                    <a href="#">iOS App Development</a>
+                    <a href="#">Android App Development</a>
+                    <a href="#">Cross-Platform Apps</a>
+                    <a href="#">UI/UX Design</a>
+                    <a href="#">App Maintenance</a>
                 </div>
                 <div class="footer-column">
                     <h3>Newsletter</h3>
-                    <p>Subscribe to receive updates on new arrivals, upcoming events, and exclusive offers.</p>
+                    <p>Subscribe to receive updates on mobile app trends, new technologies, and exclusive insights.</p>
                     <form>
                         <div class="form-group">
                             <input type="email" placeholder="Your Email" required>
@@ -817,7 +883,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Vintage Record Store. All Rights Reserved.</p>
+                <p>&copy; 2023 AppDevCraft. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -828,40 +894,4 @@
             document.querySelector('.nav-links').classList.toggle('active');
         });
         
-        // Zoom-in-up Animation
-        document.addEventListener('DOMContentLoaded', function() {
-            const zoomElements = document.querySelectorAll('.zoom-in-up');
-            
-            const elementInView = (el, dividend = 1) => {
-                const elementTop = el.getBoundingClientRect().top;
-                return (
-                    elementTop <= 
-                    (window.innerHeight || document.documentElement.clientHeight) / dividend
-                );
-            };
-            
-            const displayZoomElement = (element) => {
-                element.classList.add('active');
-            };
-            
-            const handleZoomAnimation = () => {
-                zoomElements.forEach((el) => {
-                    if (elementInView(el, 1.25)) {
-                        displayZoomElement(el);
-                    }
-                })
-            }
-            
-            window.addEventListener('scroll', handleZoomAnimation);
-            handleZoomAnimation();
-            
-            // Contact Form Submission
-            document.getElementById('contactForm').addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Thank you for your message! We will get back to you soon.');
-                this.reset();
-            });
-        });
-    </script>
-</body>
-</html>
+        // Fade-down Animation
