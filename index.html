@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vintage Vinyl Records</title>
+    <title>Green Gardens Nursery</title>
     <style>
         * {
             margin: 0;
@@ -26,7 +26,7 @@
         /* Navigation */
         nav {
             background-color: #fff;
-            box-shadow: 0 2px 10px rgba(138, 63, 45, 0.2);
+            box-shadow: 0 2px 10px rgba(139, 195, 74, 0.2);
             position: fixed;
             width: 100%;
             z-index: 1000;
@@ -42,7 +42,7 @@
         .logo {
             font-size: 24px;
             font-weight: 700;
-            color: #8a3f2d;
+            color: #8bc34a;
         }
         
         .logo img {
@@ -69,7 +69,7 @@
         }
         
         .nav-links a:hover {
-            color: #8a3f2d;
+            color: #8bc34a;
         }
         
         .mobile-menu-btn {
@@ -78,7 +78,7 @@
             border: none;
             font-size: 24px;
             cursor: pointer;
-            color: #8a3f2d;
+            color: #8bc34a;
         }
         
         /* Hero Section */
@@ -105,7 +105,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.5);
             z-index: -1;
         }
         
@@ -126,7 +126,7 @@
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
-            text-shadow: 0 0 15px rgba(138, 63, 45, 0.7);
+            text-shadow: 0 0 15px rgba(139, 195, 74, 0.7);
         }
         
         .hero-content p {
@@ -136,7 +136,7 @@
         }
         
         .cta-button {
-            background-color: #8a3f2d;
+            background-color: #8bc34a;
             color: #fff;
             border: none;
             padding: 15px 30px;
@@ -150,9 +150,9 @@
         }
         
         .cta-button:hover {
-            background-color: #6a2f1d;
+            background-color: #7cb342;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(138, 63, 45, 0.4);
+            box-shadow: 0 10px 20px rgba(139, 195, 74, 0.4);
         }
         
         /* About Section */
@@ -185,7 +185,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background-color: #8a3f2d;
+            background-color: #8bc34a;
         }
         
         .about-content {
@@ -204,7 +204,7 @@
         .about-text h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            color: #8a3f2d;
+            color: #8bc34a;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -227,28 +227,28 @@
         .about-image img {
             max-width: 100%;
             border-radius: 10px;
-            box-shadow: 0 15px 30px rgba(138, 63, 45, 0.2);
+            box-shadow: 0 15px 30px rgba(139, 195, 74, 0.2);
         }
         
-        /* Albums Section */
-        .albums {
+        /* Products Section */
+        .products {
             padding: 100px 0;
             background-color: #f8f8f8;
             position: relative;
         }
         
-        .albums-bg {
+        .products-bg {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             opacity: 0.05;
-            background: url('https://picsum.photos/seed/vinyl/1600/900') center/cover no-repeat;
+            background: url('https://picsum.photos/seed/plants/1600/900') center/cover no-repeat;
             z-index: 0;
         }
         
-        .albums-items {
+        .product-items {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -257,7 +257,7 @@
             z-index: 1;
         }
         
-        .album-item {
+        .product-item {
             background-color: #fff;
             overflow: hidden;
             width: 280px;
@@ -266,34 +266,34 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
-        .album-item:hover {
+        .product-item:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(138, 63, 45, 0.3);
+            box-shadow: 0 15px 30px rgba(139, 195, 74, 0.3);
         }
         
-        .album-image {
+        .product-image {
             position: relative;
             overflow: hidden;
             height: 280px;
         }
         
-        .album-image img {
+        .product-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
         
-        .album-item:hover .album-image img {
+        .product-item:hover .product-image img {
             transform: scale(1.05);
         }
         
-        .album-content {
+        .product-content {
             padding: 25px;
             text-align: center;
         }
         
-        .album-name {
+        .product-name {
             font-size: 1.5rem;
             font-weight: 700;
             color: #333;
@@ -301,105 +301,193 @@
             letter-spacing: 1px;
         }
         
-        .album-artist {
+        .product-category {
             font-size: 1rem;
-            color: #8a3f2d;
+            color: #8bc34a;
             margin-bottom: 15px;
             font-weight: 600;
         }
         
-        .album-price {
+        .product-price {
             font-size: 1.2rem;
             font-weight: 700;
             color: #333;
             margin-bottom: 15px;
         }
         
-        /* Newsletter Section */
-        .newsletter {
+        /* Reviews Section */
+        .reviews {
             padding: 100px 0;
-            background-color: #333;
+            background-color: #fff;
+        }
+        
+        .reviews-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .review-card {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            max-width: 350px;
             position: relative;
-            overflow: hidden;
+            transition: transform 0.3s ease;
         }
         
-        .newsletter-overlay {
+        .review-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .review-card:before {
+            content: """;
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(138, 63, 45, 0.2);
-            z-index: 0;
+            top: 20px;
+            left: 20px;
+            font-size: 60px;
+            color: rgba(139, 195, 74, 0.2);
+            font-family: serif;
         }
         
-        .newsletter-content {
+        .review-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #555;
+            line-height: 1.6;
             position: relative;
             z-index: 1;
-            text-align: center;
-            color: #fff;
         }
         
-        .newsletter-content h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: #fff;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-        }
-        
-        .newsletter-content p {
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .newsletter-form {
+        .reviewer {
             display: flex;
-            max-width: 600px;
-            margin: 0 auto;
+            align-items: center;
+        }
+        
+        .reviewer-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+        }
+        
+        .reviewer-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .reviewer-info h4 {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .reviewer-info p {
+            font-size: 0.9rem;
+            color: #8bc34a;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background-color: #f8f8f8;
+            position: relative;
+        }
+        
+        .contact-wrapper {
+            display: flex;
             flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
         }
         
-        .newsletter-form input {
+        .contact-info {
             flex: 1;
-            min-width: 250px;
-            padding: 15px 20px;
-            border: none;
-            border-radius: 30px 0 0 30px;
-            font-size: 1rem;
+            min-width: 300px;
         }
         
-        .newsletter-form button {
-            background-color: #8a3f2d;
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #8bc34a;
+        }
+        
+        .contact-detail {
+            display: flex;
+            margin-bottom: 25px;
+            align-items: flex-start;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #8bc34a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
             color: #fff;
-            border: none;
-            padding: 15px 30px;
-            border-radius: 0 30px 30px 0;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            font-size: 20px;
         }
         
-        .newsletter-form button:hover {
-            background-color: #6a2f1d;
+        .contact-text h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: #333;
         }
         
-        /* Fade-down animation */
-        .fade-down {
+        .contact-text p {
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: #8bc34a;
+        }
+        
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        /* Zoom-in-up animation */
+        .zoom-in-up {
             opacity: 0;
-            transform: translateY(-40px);
+            transform: scale(0.8) translateY(50px);
             transition: all 0.8s ease-out;
         }
         
-        .fade-down.active {
+        .zoom-in-up.active {
             opacity: 1;
-            transform: translateY(0);
+            transform: scale(1) translateY(0);
         }
         
         /* Footer */
@@ -426,7 +514,7 @@
         .footer-column h3 {
             font-size: 1.3rem;
             margin-bottom: 20px;
-            color: #8a3f2d;
+            color: #8bc34a;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -442,7 +530,7 @@
         }
         
         .footer-column a:hover {
-            color: #8a3f2d;
+            color: #8bc34a;
         }
         
         .social-links {
@@ -462,7 +550,7 @@
         }
         
         .social-links a:hover {
-            background-color: #8a3f2d;
+            background-color: #8bc34a;
             color: #fff;
         }
         
@@ -517,21 +605,8 @@
                 display: block;
             }
             
-            .newsletter-form {
+            .contact-wrapper {
                 flex-direction: column;
-                width: 80%;
-            }
-            
-            .newsletter-form input {
-                border-radius: 30px;
-                margin-bottom: 15px;
-                width: 100%;
-                min-width: 100%;
-            }
-            
-            .newsletter-form button {
-                border-radius: 30px;
-                width: 100%;
             }
         }
     </style>
@@ -541,13 +616,14 @@
     <nav>
         <div class="container nav-container">
             <div class="logo">
-                <a href="/" style="font-size: 32px; text-decoration: none;">💿</a> Vintage Vinyl
+                <a href="/" style="font-size: 32px; text-decoration: none;">🌱</a> Green Gardens
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#albums">Featured Albums</a></li>
-                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="mobile-menu-btn">☰</button>
         </div>
@@ -556,12 +632,13 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <video class="hero-video" autoplay muted loop>
-            <source src="https://storage.googleapis.com/coverr-main/mp4/Record_Player.mp4" type="video/mp4">
+            <source src="https://storage.googleapis.com/coverr-main/mp4/Plant_Life.mp4" type="video/mp4">
         </video>
         <div class="overlay"></div>
         <div class="container hero-content">
-            <h1>Timeless Vinyl</h1>
-            <button class="cta-button">Discover Our Collection</button>
+            <h1>Grow Your Green World</h1>
+            <p>Discover the perfect plants for your home and garden at Green Gardens Nursery</p>
+            <button class="cta-button">Explore Our Collection</button>
         </div>
     </section>
     
@@ -573,67 +650,67 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Our Vinyl Journey</h3>
-                    <p>Welcome to Vintage Vinyl, where music history comes alive. Since 1975, we've been curating the finest collection of vinyl records from every era and genre.</p>
-                    <p>Our passion for authentic sound and musical heritage drives us to search the world for rare pressings, limited editions, and classic albums that deserve to be experienced on vinyl.</p>
-                    <p>We believe that music isn't just something you listen to—it's something you experience. The warm crackle of vinyl, the artwork you can hold in your hands, and the ritual of dropping the needle creates a connection to music that digital formats simply can't replicate.</p>
+                    <h3>Our Green Journey</h3>
+                    <p>Welcome to Green Gardens Nursery, where passion for plants has been our foundation since 2005. We're dedicated to providing the highest quality plants, trees, and gardening supplies to help your green spaces thrive.</p>
+                    <p>Our team of horticulture experts carefully selects and nurtures each plant in our collection, ensuring they're healthy and ready to flourish in your home or garden.</p>
+                    <p>At Green Gardens, we believe that connecting with nature improves our wellbeing and helps create sustainable environments. We're committed to eco-friendly practices and offering organic options for all your gardening needs.</p>
                 </div>
                 <div class="about-image">
-                    <img src="https://picsum.photos/seed/vinylstore/600/400" alt="Our Store">
+                    <img src="https://picsum.photos/seed/nurserygarden/600/400" alt="Our Nursery">
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Featured Albums Section -->
-    <section class="albums" id="albums">
-        <div class="albums-bg"></div>
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="products-bg"></div>
         <div class="container">
-            <div class="section-title fade-down">
-                <h2>Featured Albums</h2>
+            <div class="section-title zoom-in-up">
+                <h2>Our Products</h2>
             </div>
-            <div class="albums-items">
-                <div class="album-item">
-                    <div class="album-image">
-                        <img src="https://picsum.photos/seed/vinyl1/400/400" alt="Album Cover">
+            <div class="product-items">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="https://picsum.photos/seed/plant1/400/400" alt="Indoor Plant">
                     </div>
-                    <div class="album-content">
-                        <h3 class="album-name">Kind of Blue</h3>
-                        <p class="album-artist">Miles Davis</p>
-                        <p class="album-price">$45.99</p>
+                    <div class="product-content">
+                        <h3 class="product-name">Peace Lily</h3>
+                        <p class="product-category">Indoor Plants</p>
+                        <p class="product-price">$24.99</p>
                         <button class="cta-button">Add to Cart</button>
                     </div>
                 </div>
-                <div class="album-item">
-                    <div class="album-image">
-                        <img src="https://picsum.photos/seed/vinyl2/400/400" alt="Album Cover">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="https://picsum.photos/seed/plant2/400/400" alt="Outdoor Plant">
                     </div>
-                    <div class="album-content">
-                        <h3 class="album-name">Abbey Road</h3>
-                        <p class="album-artist">The Beatles</p>
-                        <p class="album-price">$38.99</p>
+                    <div class="product-content">
+                        <h3 class="product-name">Japanese Maple</h3>
+                        <p class="product-category">Trees & Shrubs</p>
+                        <p class="product-price">$89.99</p>
                         <button class="cta-button">Add to Cart</button>
                     </div>
                 </div>
-                <div class="album-item">
-                    <div class="album-image">
-                        <img src="https://picsum.photos/seed/vinyl3/400/400" alt="Album Cover">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="https://picsum.photos/seed/plant3/400/400" alt="Succulent">
                     </div>
-                    <div class="album-content">
-                        <h3 class="album-name">Thriller</h3>
-                        <p class="album-artist">Michael Jackson</p>
-                        <p class="album-price">$42.99</p>
+                    <div class="product-content">
+                        <h3 class="product-name">Echeveria Collection</h3>
+                        <p class="product-category">Succulents</p>
+                        <p class="product-price">$18.99</p>
                         <button class="cta-button">Add to Cart</button>
                     </div>
                 </div>
-                <div class="album-item">
-                    <div class="album-image">
-                        <img src="https://picsum.photos/seed/vinyl4/400/400" alt="Album Cover">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="https://picsum.photos/seed/plant4/400/400" alt="Herb">
                     </div>
-                    <div class="album-content">
-                        <h3 class="album-name">Dark Side of the Moon</h3>
-                        <p class="album-artist">Pink Floyd</p>
-                        <p class="album-price">$49.99</p>
+                    <div class="product-content">
+                        <h3 class="product-name">Herb Garden Kit</h3>
+                        <p class="product-category">Herbs & Vegetables</p>
+                        <p class="product-price">$34.99</p>
                         <button class="cta-button">Add to Cart</button>
                     </div>
                 </div>
@@ -641,16 +718,111 @@
         </div>
     </section>
     
-    <!-- Newsletter Section -->
-    <section class="newsletter" id="newsletter">
-        <div class="newsletter-overlay"></div>
-        <div class="container newsletter-content">
-            <h2>Join Our Vinyl Club</h2>
-            <p>Subscribe to our newsletter and be the first to know about new arrivals, exclusive releases, and upcoming events. Plus, get 10% off your first order!</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Your email address" required>
-                <button type="submit">Subscribe</button>
-            </form>
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-title">
+                <h2>Customer Reviews</h2>
+            </div>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <p class="review-text">The quality of plants from Green Gardens is exceptional. My indoor jungle is thriving thanks to their expert advice and premium selection.</p>
+                    <div class="reviewer">
+                        <div class="reviewer-image">
+                            <img src="https://picsum.photos/seed/person1/100/100" alt="Reviewer">
+                        </div>
+                        <div class="reviewer-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Plant Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">I've transformed my backyard with trees and shrubs from Green Gardens. Their team was incredibly helpful in selecting the right plants for my space.</p>
+                    <div class="reviewer">
+                        <div class="reviewer-image">
+                            <img src="https://picsum.photos/seed/person2/100/100" alt="Reviewer">
+                        </div>
+                        <div class="reviewer-info">
+                            <h4>Michael Roberts</h4>
+                            <p>Home Gardener</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">As a professional landscaper, I rely on Green Gardens for healthy, well-grown plants. Their inventory is diverse and always in perfect condition.</p>
+                    <div class="reviewer">
+                        <div class="reviewer-image">
+                            <img src="https://picsum.photos/seed/person3/100/100" alt="Reviewer">
+                        </div>
+                        <div class="reviewer-info">
+                            <h4>Lisa Fernandez</h4>
+                            <p>Landscape Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-detail">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-text">
+                            <h4>Address</h4>
+                            <p>123 Greenway Avenue, Botanica, GA 30000</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>(555) 987-6543</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>hello@greengardens.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">🕒</div>
+                        <div class="contact-text">
+                            <h4>Hours</h4>
+                            <p>Monday - Friday: 8am - 6pm<br>
+                            Saturday: 9am - 5pm<br>
+                            Sunday: 10am - 4pm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -659,38 +831,38 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Vintage Vinyl</h3>
-                    <p>Where music enthusiasts discover rare and classic vinyl records. Our carefully curated collection spans decades of musical history.</p>
+                    <h3>Green Gardens</h3>
+                    <p>Your one-stop destination for premium plants, gardening supplies, and expert advice to create thriving green spaces.</p>
                 </div>
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <a href="#home">Home</a>
                     <a href="#about">About Us</a>
-                    <a href="#albums">Featured Albums</a>
-                    <a href="#newsletter">Newsletter</a>
+                    <a href="#products">Products</a>
+                    <a href="#reviews">Reviews</a>
+                    <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-column">
                     <h3>Our Collections</h3>
-                    <a href="#">Jazz & Blues</a>
-                    <a href="#">Classic Rock</a>
-                    <a href="#">Soul & Funk</a>
-                    <a href="#">Hip Hop</a>
-                    <a href="#">Electronic</a>
+                    <a href="#">Indoor Plants</a>
+                    <a href="#">Outdoor Plants</a>
+                    <a href="#">Succulents</a>
+                    <a href="#">Trees & Shrubs</a>
+                    <a href="#">Gardening Tools</a>
                 </div>
                 <div class="footer-column">
-                    <h3>Contact Us</h3>
-                    <p>123 Groove Street, Musicville</p>
-                    <p>Phone: (555) 123-4567</p>
-                    <p>Email: info@vintagevinyl.com</p>
+                    <h3>Connect With Us</h3>
+                    <p>Subscribe to our newsletter for gardening tips and special offers.</p>
                     <div class="social-links">
                         <a href="#"><i class="fa fa-facebook"></i></a>
                         <a href="#"><i class="fa fa-twitter"></i></a>
                         <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Vintage Vinyl. All Rights Reserved.</p>
+                <p>&copy; 2023 Green Gardens Nursery. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -701,11 +873,11 @@
             document.querySelector('.nav-links').classList.toggle('active');
         });
         
-        // Fade-down Animation
-        function checkFade() {
-            const fadeElements = document.querySelectorAll('.fade-down');
+        // Zoom-in-up Animation
+        function checkAnimations() {
+            const elements = document.querySelectorAll('.zoom-in-up');
             
-            fadeElements.forEach(element => {
+            elements.forEach(element => {
                 const elementTop = element.getBoundingClientRect().top;
                 const windowHeight = window.innerHeight;
                 
@@ -715,9 +887,35 @@
             });
         }
         
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (document.querySelector('.nav-links').classList.contains('active')) {
+                    document.querySelector('.nav-links').classList.remove('active');
+                }
+            });
+        });
+        
         // Run on scroll and on page load
-        window.addEventListener('scroll', checkFade);
-        window.addEventListener('load', checkFade);
+        window.addEventListener('scroll', checkAnimations);
+        window.addEventListener('load', checkAnimations);
+        
+        // Form submission
+        const contactForm = document.querySelector('.contact-form form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! We will get back to you soon.');
+                this.reset();
+            });
+        }
     </script>
 </body>
 </html>
