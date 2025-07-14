@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Gardens Nursery</title>
+    <title>Plant-Based Paradise - Vegan Recipes</title>
     <style>
         * {
             margin: 0;
@@ -230,25 +230,25 @@
             box-shadow: 0 15px 30px rgba(139, 195, 74, 0.2);
         }
         
-        /* Products Section */
-        .products {
+        /* Recipe Categories Section */
+        .categories {
             padding: 100px 0;
             background-color: #f8f8f8;
             position: relative;
         }
         
-        .products-bg {
+        .categories-bg {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             opacity: 0.05;
-            background: url('https://picsum.photos/seed/plants/1600/900') center/cover no-repeat;
+            background: url('https://picsum.photos/seed/veggies/1600/900') center/cover no-repeat;
             z-index: 0;
         }
         
-        .product-items {
+        .category-items {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -257,7 +257,7 @@
             z-index: 1;
         }
         
-        .product-item {
+        .category-item {
             background-color: #fff;
             overflow: hidden;
             width: 280px;
@@ -266,193 +266,74 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
-        .product-item:hover {
+        .category-item:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(139, 195, 74, 0.3);
         }
         
-        .product-image {
+        .category-image {
             position: relative;
             overflow: hidden;
             height: 280px;
         }
         
-        .product-image img {
+        .category-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
         
-        .product-item:hover .product-image img {
+        .category-item:hover .category-image img {
             transform: scale(1.05);
         }
         
-        .product-content {
+        .category-content {
             padding: 25px;
             text-align: center;
         }
         
-        .product-name {
+        .category-name {
             font-size: 1.5rem;
             font-weight: 700;
             color: #333;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             letter-spacing: 1px;
         }
         
-        .product-category {
+        .category-description {
             font-size: 1rem;
-            color: #8bc34a;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-        
-        .product-price {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: #333;
-            margin-bottom: 15px;
-        }
-        
-        /* Reviews Section */
-        .reviews {
-            padding: 100px 0;
-            background-color: #fff;
-        }
-        
-        .reviews-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-        }
-        
-        .review-card {
-            background-color: #f9f9f9;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            max-width: 350px;
-            position: relative;
-            transition: transform 0.3s ease;
-        }
-        
-        .review-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .review-card:before {
-            content: """;
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            font-size: 60px;
-            color: rgba(139, 195, 74, 0.2);
-            font-family: serif;
-        }
-        
-        .review-text {
-            font-style: italic;
-            margin-bottom: 20px;
-            color: #555;
-            line-height: 1.6;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .reviewer {
-            display: flex;
-            align-items: center;
-        }
-        
-        .reviewer-image {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-right: 15px;
-        }
-        
-        .reviewer-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .reviewer-info h4 {
-            font-size: 1.1rem;
-            color: #333;
-            margin-bottom: 5px;
-        }
-        
-        .reviewer-info p {
-            font-size: 0.9rem;
-            color: #8bc34a;
-        }
-        
-        /* Contact Section */
-        .contact {
-            padding: 100px 0;
-            background-color: #f8f8f8;
-            position: relative;
-        }
-        
-        .contact-wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            justify-content: center;
-        }
-        
-        .contact-info {
-            flex: 1;
-            min-width: 300px;
-        }
-        
-        .contact-info h3 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            color: #8bc34a;
-        }
-        
-        .contact-detail {
-            display: flex;
-            margin-bottom: 25px;
-            align-items: flex-start;
-        }
-        
-        .contact-icon {
-            width: 50px;
-            height: 50px;
-            background-color: #8bc34a;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 15px;
-            color: #fff;
-            font-size: 20px;
-        }
-        
-        .contact-text h4 {
-            font-size: 1.1rem;
-            margin-bottom: 5px;
-            color: #333;
-        }
-        
-        .contact-text p {
             color: #666;
+            margin-bottom: 20px;
             line-height: 1.5;
         }
         
-        .contact-form {
-            flex: 1;
-            min-width: 300px;
+        /* Subscribe Section */
+        .subscribe {
+            padding: 100px 0;
             background-color: #fff;
+            text-align: center;
+        }
+        
+        .subscribe-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
             padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(139, 195, 74, 0.15);
+        }
+        
+        .subscribe-form h3 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .subscribe-form p {
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
         }
         
         .form-group {
@@ -471,11 +352,6 @@
         .form-control:focus {
             outline: none;
             border-color: #8bc34a;
-        }
-        
-        textarea.form-control {
-            resize: vertical;
-            min-height: 120px;
         }
         
         /* Zoom-in-up animation */
@@ -605,8 +481,8 @@
                 display: block;
             }
             
-            .contact-wrapper {
-                flex-direction: column;
+            .subscribe-form {
+                padding: 30px 20px;
             }
         }
     </style>
@@ -616,14 +492,13 @@
     <nav>
         <div class="container nav-container">
             <div class="logo">
-                <a href="/" style="font-size: 32px; text-decoration: none;">🌱</a> Green Gardens
+                <a href="/" style="font-size: 32px; text-decoration: none;">🥗</a> Plant-Based Paradise
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#categories">Recipe Categories</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
             </ul>
             <button class="mobile-menu-btn">☰</button>
         </div>
@@ -632,13 +507,13 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <video class="hero-video" autoplay muted loop>
-            <source src="https://storage.googleapis.com/coverr-main/mp4/Plant_Life.mp4" type="video/mp4">
+            <source src="https://player.vimeo.com/external/366834164.hd.mp4?s=0e0e07b67a9ef6d654a6bdf0aca125ac9e306e41&profile_id=175&oauth2_token_id=57447761" type="video/mp4">
         </video>
         <div class="overlay"></div>
         <div class="container hero-content">
-            <h1>Grow Your Green World</h1>
-            <p>Discover the perfect plants for your home and garden at Green Gardens Nursery</p>
-            <button class="cta-button">Explore Our Collection</button>
+            <h1>Delicious Plant Power</h1>
+            <p>Discover amazing vegan recipes that will transform your kitchen and delight your taste buds</p>
+            <button class="cta-button">Browse Recipes</button>
         </div>
     </section>
     
@@ -650,178 +525,97 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Our Green Journey</h3>
-                    <p>Welcome to Green Gardens Nursery, where passion for plants has been our foundation since 2005. We're dedicated to providing the highest quality plants, trees, and gardening supplies to help your green spaces thrive.</p>
-                    <p>Our team of horticulture experts carefully selects and nurtures each plant in our collection, ensuring they're healthy and ready to flourish in your home or garden.</p>
-                    <p>At Green Gardens, we believe that connecting with nature improves our wellbeing and helps create sustainable environments. We're committed to eco-friendly practices and offering organic options for all your gardening needs.</p>
+                    <h3>Our Plant-Based Journey</h3>
+                    <p>Welcome to Plant-Based Paradise, your ultimate destination for delicious, nutritious, and easy-to-make vegan recipes. We're passionate about showing the world just how amazing plant-based cooking can be!</p>
+                    <p>Our team of experienced vegan chefs and food enthusiasts are dedicated to creating recipes that are not only kind to animals and the planet but also incredibly satisfying and full of flavor.</p>
+                    <p>Whether you're a committed vegan, vegetarian, or simply looking to incorporate more plant-based meals into your diet, we're here to inspire and guide you through your culinary adventures.</p>
                 </div>
                 <div class="about-image">
-                    <img src="https://picsum.photos/seed/nurserygarden/600/400" alt="Our Nursery">
+                    <img src="https://picsum.photos/seed/veganteam/600/400" alt="Our Team">
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Products Section -->
-    <section class="products" id="products">
-        <div class="products-bg"></div>
+    <!-- Recipe Categories Section -->
+    <section class="categories" id="categories">
+        <div class="categories-bg"></div>
         <div class="container">
             <div class="section-title zoom-in-up">
-                <h2>Our Products</h2>
+                <h2>Recipe Categories</h2>
             </div>
-            <div class="product-items">
-                <div class="product-item">
-                    <div class="product-image">
-                        <img src="https://picsum.photos/seed/plant1/400/400" alt="Indoor Plant">
+            <div class="category-items">
+                <div class="category-item">
+                    <div class="category-image">
+                        <img src="https://picsum.photos/seed/breakfast/400/400" alt="Breakfast">
                     </div>
-                    <div class="product-content">
-                        <h3 class="product-name">Peace Lily</h3>
-                        <p class="product-category">Indoor Plants</p>
-                        <p class="product-price">$24.99</p>
-                        <button class="cta-button">Add to Cart</button>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <div class="product-image">
-                        <img src="https://picsum.photos/seed/plant2/400/400" alt="Outdoor Plant">
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-name">Japanese Maple</h3>
-                        <p class="product-category">Trees & Shrubs</p>
-                        <p class="product-price">$89.99</p>
-                        <button class="cta-button">Add to Cart</button>
+                    <div class="category-content">
+                        <h3 class="category-name">Breakfast</h3>
+                        <p class="category-description">Start your day right with our nutritious and delicious plant-based breakfast recipes.</p>
+                        <button class="cta-button">View Recipes</button>
                     </div>
                 </div>
-                <div class="product-item">
-                    <div class="product-image">
-                        <img src="https://picsum.photos/seed/plant3/400/400" alt="Succulent">
+                <div class="category-item">
+                    <div class="category-image">
+                        <img src="https://picsum.photos/seed/maincourse/400/400" alt="Main Courses">
                     </div>
-                    <div class="product-content">
-                        <h3 class="product-name">Echeveria Collection</h3>
-                        <p class="product-category">Succulents</p>
-                        <p class="product-price">$18.99</p>
-                        <button class="cta-button">Add to Cart</button>
+                    <div class="category-content">
+                        <h3 class="category-name">Main Courses</h3>
+                        <p class="category-description">Hearty, satisfying plant-based meals that will please the whole family.</p>
+                        <button class="cta-button">View Recipes</button>
                     </div>
                 </div>
-                <div class="product-item">
-                    <div class="product-image">
-                        <img src="https://picsum.photos/seed/plant4/400/400" alt="Herb">
+                <div class="category-item">
+                    <div class="category-image">
+                        <img src="https://picsum.photos/seed/desserts/400/400" alt="Desserts">
                     </div>
-                    <div class="product-content">
-                        <h3 class="product-name">Herb Garden Kit</h3>
-                        <p class="product-category">Herbs & Vegetables</p>
-                        <p class="product-price">$34.99</p>
-                        <button class="cta-button">Add to Cart</button>
+                    <div class="category-content">
+                        <h3 class="category-name">Desserts</h3>
+                        <p class="category-description">Indulge your sweet tooth with our decadent vegan treats and desserts.</p>
+                        <button class="cta-button">View Recipes</button>
+                    </div>
+                </div>
+                <div class="category-item">
+                    <div class="category-image">
+                        <img src="https://picsum.photos/seed/quickmeals/400/400" alt="Quick Meals">
+                    </div>
+                    <div class="category-content">
+                        <h3 class="category-name">Quick & Easy</h3>
+                        <p class="category-description">Delicious vegan recipes ready in 30 minutes or less for busy weeknights.</p>
+                        <button class="cta-button">View Recipes</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Reviews Section -->
-    <section class="reviews" id="reviews">
+    <!-- Subscribe Section -->
+    <section class="subscribe" id="subscribe">
         <div class="container">
             <div class="section-title">
-                <h2>Customer Reviews</h2>
+                <h2>Stay Updated</h2>
             </div>
-            <div class="reviews-container">
-                <div class="review-card">
-                    <p class="review-text">The quality of plants from Green Gardens is exceptional. My indoor jungle is thriving thanks to their expert advice and premium selection.</p>
-                    <div class="reviewer">
-                        <div class="reviewer-image">
-                            <img src="https://picsum.photos/seed/person1/100/100" alt="Reviewer">
-                        </div>
-                        <div class="reviewer-info">
-                            <h4>Sarah Johnson</h4>
-                            <p>Plant Enthusiast</p>
-                        </div>
+            <div class="subscribe-form">
+                <h3>Join Our Plant-Based Community</h3>
+                <p>Subscribe to our newsletter and receive weekly recipe inspiration, cooking tips, and exclusive content directly to your inbox.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
                     </div>
-                </div>
-                <div class="review-card">
-                    <p class="review-text">I've transformed my backyard with trees and shrubs from Green Gardens. Their team was incredibly helpful in selecting the right plants for my space.</p>
-                    <div class="reviewer">
-                        <div class="reviewer-image">
-                            <img src="https://picsum.photos/seed/person2/100/100" alt="Reviewer">
-                        </div>
-                        <div class="reviewer-info">
-                            <h4>Michael Roberts</h4>
-                            <p>Home Gardener</p>
-                        </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
                     </div>
-                </div>
-                <div class="review-card">
-                    <p class="review-text">As a professional landscaper, I rely on Green Gardens for healthy, well-grown plants. Their inventory is diverse and always in perfect condition.</p>
-                    <div class="reviewer">
-                        <div class="reviewer-image">
-                            <img src="https://picsum.photos/seed/person3/100/100" alt="Reviewer">
-                        </div>
-                        <div class="reviewer-info">
-                            <h4>Lisa Fernandez</h4>
-                            <p>Landscape Designer</p>
-                        </div>
+                    <div class="form-group">
+                        <select class="form-control" required>
+                            <option value="" disabled selected>Dietary Preferences</option>
+                            <option value="vegan">Strictly Vegan</option>
+                            <option value="vegetarian">Vegetarian</option>
+                            <option value="flexitarian">Flexitarian</option>
+                            <option value="curious">Plant-Curious</option>
+                        </select>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Contact Us</h2>
-            </div>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h3>Get In Touch</h3>
-                    <div class="contact-detail">
-                        <div class="contact-icon">📍</div>
-                        <div class="contact-text">
-                            <h4>Address</h4>
-                            <p>123 Greenway Avenue, Botanica, GA 30000</p>
-                        </div>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="contact-icon">📞</div>
-                        <div class="contact-text">
-                            <h4>Phone</h4>
-                            <p>(555) 987-6543</p>
-                        </div>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="contact-icon">✉️</div>
-                        <div class="contact-text">
-                            <h4>Email</h4>
-                            <p>hello@greengardens.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="contact-icon">🕒</div>
-                        <div class="contact-text">
-                            <h4>Hours</h4>
-                            <p>Monday - Friday: 8am - 6pm<br>
-                            Saturday: 9am - 5pm<br>
-                            Sunday: 10am - 4pm</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="cta-button">Send Message</button>
-                    </form>
-                </div>
+                    <button type="submit" class="cta-button">Subscribe Now</button>
+                </form>
             </div>
         </div>
     </section>
@@ -831,38 +625,37 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Green Gardens</h3>
-                    <p>Your one-stop destination for premium plants, gardening supplies, and expert advice to create thriving green spaces.</p>
+                    <h3>Plant-Based Paradise</h3>
+                    <p>Your go-to resource for delicious, easy, and nutritious vegan recipes to transform your cooking and lifestyle.</p>
                 </div>
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <a href="#home">Home</a>
                     <a href="#about">About Us</a>
-                    <a href="#products">Products</a>
-                    <a href="#reviews">Reviews</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#categories">Recipe Categories</a>
+                    <a href="#subscribe">Subscribe</a>
                 </div>
                 <div class="footer-column">
-                    <h3>Our Collections</h3>
-                    <a href="#">Indoor Plants</a>
-                    <a href="#">Outdoor Plants</a>
-                    <a href="#">Succulents</a>
-                    <a href="#">Trees & Shrubs</a>
-                    <a href="#">Gardening Tools</a>
+                    <h3>Popular Categories</h3>
+                    <a href="#">Breakfast</a>
+                    <a href="#">Main Courses</a>
+                    <a href="#">Desserts</a>
+                    <a href="#">Quick & Easy</a>
+                    <a href="#">Gluten-Free</a>
                 </div>
                 <div class="footer-column">
                     <h3>Connect With Us</h3>
-                    <p>Subscribe to our newsletter for gardening tips and special offers.</p>
+                    <p>Follow us on social media for daily recipe inspiration!</p>
                     <div class="social-links">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-facebook">fb</i></a>
+                        <a href="#"><i class="fa fa-instagram">ig</i></a>
+                        <a href="#"><i class="fa fa-pinterest">pi</i></a>
+                        <a href="#"><i class="fa fa-youtube">yt</i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Green Gardens Nursery. All Rights Reserved.</p>
+                <p>&copy; 2023 Plant-Based Paradise. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -907,12 +700,12 @@
         window.addEventListener('scroll', checkAnimations);
         window.addEventListener('load', checkAnimations);
         
-        // Form submission
-        const contactForm = document.querySelector('.contact-form form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
+        // Form submission for newsletter
+        const subscribeForm = document.querySelector('.subscribe-form form');
+        if (subscribeForm) {
+            subscribeForm.addEventListener('submit', function(e) {
                 e.preventDefault();
-                alert('Thank you for your message! We will get back to you soon.');
+                alert('Thank you for subscribing to our newsletter! You will start receiving weekly recipe inspiration soon.');
                 this.reset();
             });
         }
