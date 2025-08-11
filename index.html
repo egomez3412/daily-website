@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heartfelt Treasures - Personalized Gift Shop</title>
+    <title>Vinyl Vault - Vintage Record Store</title>
     <style>
         * {
             margin: 0;
@@ -26,7 +26,7 @@
         /* Navigation */
         nav {
             background-color: #fff;
-            box-shadow: 0 2px 10px rgba(255, 140, 0, 0.2);
+            box-shadow: 0 2px 10px rgba(138, 79, 44, 0.2);
             position: fixed;
             width: 100%;
             z-index: 1000;
@@ -42,7 +42,7 @@
         .logo {
             font-size: 24px;
             font-weight: 700;
-            color: #ff8c00;
+            color: #8a4f2c;
         }
         
         .logo img {
@@ -69,7 +69,7 @@
         }
         
         .nav-links a:hover {
-            color: #ff8c00;
+            color: #8a4f2c;
         }
         
         .mobile-menu-btn {
@@ -78,7 +78,7 @@
             border: none;
             font-size: 24px;
             cursor: pointer;
-            color: #ff8c00;
+            color: #8a4f2c;
         }
         
         /* Hero Section */
@@ -105,7 +105,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.7);
             z-index: -1;
         }
         
@@ -126,7 +126,7 @@
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
-            text-shadow: 0 0 15px rgba(255, 140, 0, 0.7);
+            text-shadow: 0 0 15px rgba(138, 79, 44, 0.7);
         }
         
         .hero-content p {
@@ -136,7 +136,7 @@
         }
         
         .cta-button {
-            background-color: #ff8c00;
+            background-color: #8a4f2c;
             color: #fff;
             border: none;
             padding: 15px 30px;
@@ -150,9 +150,9 @@
         }
         
         .cta-button:hover {
-            background-color: #e67e00;
+            background-color: #6a3d22;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(255, 140, 0, 0.4);
+            box-shadow: 0 10px 20px rgba(138, 79, 44, 0.4);
         }
         
         /* About Section */
@@ -185,7 +185,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background-color: #ff8c00;
+            background-color: #8a4f2c;
         }
         
         .about-content {
@@ -204,7 +204,7 @@
         .about-text h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            color: #ff8c00;
+            color: #8a4f2c;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -227,28 +227,28 @@
         .about-image img {
             max-width: 100%;
             border-radius: 10px;
-            box-shadow: 0 15px 30px rgba(255, 140, 0, 0.2);
+            box-shadow: 0 15px 30px rgba(138, 79, 44, 0.2);
         }
         
-        /* Product Categories Section */
-        .categories {
+        /* Featured Albums Section */
+        .albums {
             padding: 100px 0;
             background-color: #f8f8f8;
             position: relative;
         }
         
-        .categories-bg {
+        .albums-bg {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             opacity: 0.05;
-            background: url('https://picsum.photos/seed/gifts/1600/900') center/cover no-repeat;
+            background: url('https://picsum.photos/seed/vinyl/1600/900') center/cover no-repeat;
             z-index: 0;
         }
         
-        .category-items {
+        .album-items {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -257,7 +257,7 @@
             z-index: 1;
         }
         
-        .category-item {
+        .album-item {
             background-color: #fff;
             overflow: hidden;
             width: 280px;
@@ -266,105 +266,114 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
-        .category-item:hover {
+        .album-item:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(255, 140, 0, 0.3);
+            box-shadow: 0 15px 30px rgba(138, 79, 44, 0.3);
         }
         
-        .category-image {
+        .album-image {
             position: relative;
             overflow: hidden;
             height: 280px;
         }
         
-        .category-image img {
+        .album-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
         
-        .category-item:hover .category-image img {
+        .album-item:hover .album-image img {
             transform: scale(1.05);
         }
         
-        .category-content {
+        .album-content {
             padding: 25px;
             text-align: center;
         }
         
-        .category-name {
+        .album-name {
             font-size: 1.5rem;
             font-weight: 700;
             color: #333;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             letter-spacing: 1px;
         }
         
-        .category-description {
-            font-size: 1rem;
-            color: #666;
-            margin-bottom: 20px;
-            line-height: 1.5;
+        .album-artist {
+            font-size: 1.1rem;
+            color: #8a4f2c;
+            margin-bottom: 15px;
+            font-weight: 600;
         }
         
-        /* Testimonials Section */
-        .testimonials {
+        .album-price {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        /* Store Locator Section */
+        .store-locator {
             padding: 100px 0;
             background-color: #fff;
         }
         
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-        
-        .testimonial-card {
-            background-color: #f8f8f8;
+        .map-container {
+            width: 100%;
+            height: 400px;
+            margin-top: 30px;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(255, 140, 0, 0.1);
-            transition: transform 0.3s ease;
-            padding: 30px;
-            text-align: center;
+            box-shadow: 0 10px 30px rgba(138, 79, 44, 0.15);
         }
         
-        .testimonial-card:hover {
-            transform: translateY(-10px);
+        .store-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 40px;
         }
         
-        .testimonial-avatar {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin: 0 auto 20px;
-            overflow: hidden;
-        }
-        
-        .testimonial-avatar img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .testimonial-content {
+        .store {
+            background-color: #f8f8f8;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(138, 79, 44, 0.1);
             margin-bottom: 20px;
-            font-style: italic;
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+        
+        .store:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(138, 79, 44, 0.2);
+        }
+        
+        .store h3 {
+            color: #8a4f2c;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .store p {
             color: #666;
+            margin-bottom: 10px;
             line-height: 1.6;
         }
         
-        .testimonial-author {
-            font-weight: 700;
-            color: #ff8c00;
+        /* Zoom-in-up animation */
+        .zoom-in-up {
+            opacity: 0;
+            transform: scale(0.8) translateY(50px);
+            transition: all 0.8s ease-out;
         }
         
-        .testimonial-rating {
-            color: #ffc107;
-            font-size: 20px;
-            margin-top: 10px;
+        .zoom-in-up.active {
+            opacity: 1;
+            transform: scale(1) translateY(0);
         }
         
         /* Contact Form */
@@ -380,7 +389,7 @@
             background-color: #fff;
             padding: 40px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(255, 140, 0, 0.15);
+            box-shadow: 0 10px 30px rgba(138, 79, 44, 0.15);
         }
         
         .contact-form h3 {
@@ -410,19 +419,7 @@
         
         .form-control:focus {
             outline: none;
-            border-color: #ff8c00;
-        }
-        
-        /* Zoom-in-up animation */
-        .zoom-in-up {
-            opacity: 0;
-            transform: scale(0.8) translateY(50px);
-            transition: all 0.8s ease-out;
-        }
-        
-        .zoom-in-up.active {
-            opacity: 1;
-            transform: scale(1) translateY(0);
+            border-color: #8a4f2c;
         }
         
         /* Footer */
@@ -449,7 +446,7 @@
         .footer-column h3 {
             font-size: 1.3rem;
             margin-bottom: 20px;
-            color: #ff8c00;
+            color: #8a4f2c;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -465,7 +462,7 @@
         }
         
         .footer-column a:hover {
-            color: #ff8c00;
+            color: #8a4f2c;
         }
         
         .social-links {
@@ -485,7 +482,7 @@
         }
         
         .social-links a:hover {
-            background-color: #ff8c00;
+            background-color: #8a4f2c;
             color: #fff;
         }
         
@@ -551,13 +548,13 @@
     <nav>
         <div class="container nav-container">
             <div class="logo">
-                <a href="/" style="font-size: 32px; text-decoration: none;">🎁</a> Heartfelt Treasures
+                <a href="/" style="font-size: 32px; text-decoration: none;">🎵</a> Vinyl Vault
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#categories">Featured Products</a></li>
-                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#albums">Featured Albums</a></li>
+                <li><a href="#store-locator">Store Locator</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="mobile-menu-btn">☰</button>
@@ -567,12 +564,12 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <video class="hero-video" autoplay muted loop>
-            <source src="https://player.vimeo.com/external/414788378.hd.mp4?s=3ab77447c64ade3d2b246fb0c3b25accf2eddf55&profile_id=174&oauth2_token_id=57447761" type="video/mp4">
+            <source src="https://player.vimeo.com/external/371853677.hd.mp4?s=efd41e4e4e6c74aeb02b8d0c97918b66b944f6aa&profile_id=174&oauth2_token_id=57447761" type="video/mp4">
         </video>
         <div class="overlay"></div>
         <div class="container hero-content">
-            <h1>Gifts As Unique As Your Love</h1>
-            <button class="cta-button">Shop Now</button>
+            <h1>Timeless Sounds Rediscovered</h1>
+            <button class="cta-button">Browse Collection</button>
         </div>
     </section>
     
@@ -584,108 +581,101 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Our Story</h3>
-                    <p>Welcome to Heartfelt Treasures, where every gift tells a story. We specialize in creating personalized keepsakes that capture special moments, relationships, and milestones in your life.</p>
-                    <p>What began as a small custom gift studio has grown into a beloved destination for those seeking meaningful presents that go beyond the ordinary. Our team of skilled artisans and designers pour their hearts into creating customized treasures that will be cherished for years to come.</p>
-                    <p>We believe that the best gifts aren't just items—they're experiences, memories, and tokens of love. Whether you're celebrating a wedding, welcoming a new baby, honoring a graduation, or simply showing someone you care, we're here to help you create the perfect personalized gift.</p>
+                    <h3>Our Passion</h3>
+                    <p>Welcome to Vinyl Vault, where the warm, authentic sound of vinyl records lives on. Since 1978, we've been a sanctuary for music lovers seeking the rich, unmatched quality that only vinyl can deliver.</p>
+                    <p>Our carefully curated collection spans decades of musical genius - from rare first pressings to essential classics and emerging artists embracing the vinyl revival. Each record in our store has been personally selected for its sonic quality and cultural significance.</p>
+                    <p>Beyond just selling records, we're a community hub for music enthusiasts. Our knowledgeable staff (who are passionate collectors themselves) are always ready to help you discover your next favorite album or find that elusive record you've been hunting for years.</p>
                 </div>
-                <div class="about-image">
-                    <img src="https://picsum.photos/seed/giftshop/600/400" alt="Our Gift Shop">
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Product Categories Section -->
-    <section class="categories" id="categories">
-        <div class="categories-bg"></div>
-        <div class="container">
-            <div class="section-title zoom-in-up">
-                <h2>Featured Products</h2>
-            </div>
-            <div class="category-items">
-                <div class="category-item">
-                    <div class="category-image">
-                        <img src="https://picsum.photos/seed/custom1/400/400" alt="Custom Photo Frames">
-                    </div>
-                    <div class="category-content">
-                        <h3 class="category-name">Custom Photo Frames</h3>
-                        <p class="category-description">Beautifully crafted frames with personalized engravings to showcase your precious memories.</p>
-                        <button class="cta-button">Shop Now</button>
-                    </div>
-                </div>
-                <div class="category-item">
-                    <div class="category-image">
-                        <img src="https://picsum.photos/seed/custom2/400/400" alt="Personalized Jewelry">
-                    </div>
-                    <div class="category-content">
-                        <h3 class="category-name">Personalized Jewelry</h3>
-                        <p class="category-description">Elegant pieces customized with names, dates, or special messages to be treasured forever.</p>
-                        <button class="cta-button">Shop Now</button>
-                    </div>
-                </div>
-                <div class="category-item">
-                    <div class="category-image">
-                        <img src="https://picsum.photos/seed/custom3/400/400" alt="Custom Home Décor">
-                    </div>
-                    <div class="category-content">
-                        <h3 class="category-name">Custom Home Décor</h3>
-                        <p class="category-description">Unique home accents personalized to reflect your style, family, and cherished memories.</p>
-                        <button class="cta-button">Shop Now</button>
-                    </div>
-                </div>
-                <div class="category-item">
-                    <div class="category-image">
-                        <img src="https://picsum.photos/seed/custom4/400/400" alt="Customized Gift Baskets">
-                    </div>
-                    <div class="category-content">
-                        <h3 class="category-name">Customized Gift Baskets</h3>
-                        <p class="category-description">Thoughtfully curated gift collections tailored to celebrate any occasion perfectly.</p>
-                        <button class="cta-button">Shop Now</button>
-                    </div>
+                <div class="about-image zoom-in-up">
+                    <img src="https://picsum.photos/seed/recordstore/600/400" alt="Inside our Record Store">
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
+    <!-- Featured Albums Section -->
+    <section class="albums" id="albums">
+        <div class="albums-bg"></div>
         <div class="container">
             <div class="section-title">
-                <h2>Customer Reviews</h2>
+                <h2>Featured Albums</h2>
             </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-avatar">
-                        <img src="https://picsum.photos/seed/person1/200/200" alt="Customer Photo">
+            <div class="album-items">
+                <div class="album-item">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/album1/400/400" alt="Classic Rock Album">
                     </div>
-                    <div class="testimonial-content">
-                        "The personalized anniversary gift I ordered exceeded all my expectations. My husband was moved to tears when he saw our wedding vows beautifully engraved on the wooden plaque. The craftsmanship is exceptional!"
+                    <div class="album-content">
+                        <h3 class="album-name">Dark Side of the Moon</h3>
+                        <p class="album-artist">Pink Floyd</p>
+                        <p class="album-price">$29.99</p>
+                        <button class="cta-button">Add to Cart</button>
                     </div>
-                    <div class="testimonial-author">Jennifer Adams</div>
-                    <div class="testimonial-rating">★★★★★</div>
                 </div>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-avatar">
-                        <img src="https://picsum.photos/seed/person2/200/200" alt="Customer Photo">
+                <div class="album-item">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/album2/400/400" alt="Jazz Album">
                     </div>
-                    <div class="testimonial-content">
-                        "I needed a special gift for my sister's baby shower and found the perfect custom name blanket at Heartfelt Treasures. The quality is amazing, and their customer service was outstanding when I needed a last-minute change."
+                    <div class="album-content">
+                        <h3 class="album-name">Kind of Blue</h3>
+                        <p class="album-artist">Miles Davis</p>
+                        <p class="album-price">$24.99</p>
+                        <button class="cta-button">Add to Cart</button>
                     </div>
-                    <div class="testimonial-author">Marcus Wilson</div>
-                    <div class="testimonial-rating">★★★★★</div>
                 </div>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-avatar">
-                        <img src="https://picsum.photos/seed/person3/200/200" alt="Customer Photo">
+                <div class="album-item">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/album3/400/400" alt="Soul Album">
                     </div>
-                    <div class="testimonial-content">
-                        "I've ordered multiple personalized gifts from Heartfelt Treasures over the years, and they never disappoint. The family recipe cutting board I had made for my mom's birthday became an instant family heirloom. Thank you!"
+                    <div class="album-content">
+                        <h3 class="album-name">What's Going On</h3>
+                        <p class="album-artist">Marvin Gaye</p>
+                        <p class="album-price">$27.99</p>
+                        <button class="cta-button">Add to Cart</button>
                     </div>
-                    <div class="testimonial-author">Sophia Chen</div>
-                    <div class="testimonial-rating">★★★★★</div>
+                </div>
+                <div class="album-item">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/album4/400/400" alt="Alternative Album">
+                    </div>
+                    <div class="album-content">
+                        <h3 class="album-name">OK Computer</h3>
+                        <p class="album-artist">Radiohead</p>
+                        <p class="album-price">$32.99</p>
+                        <button class="cta-button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Store Locator Section -->
+    <section class="store-locator" id="store-locator">
+        <div class="container">
+            <div class="section-title">
+                <h2>Find Our Stores</h2>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-73.9876!3d40.7654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ1JzU1LjQiTiA3M8KwNTknMTUuNCJX!5e0!3m2!1sen!2sus!4v1629135731415!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="store-info">
+                <div class="store">
+                    <h3>Downtown Location</h3>
+                    <p><strong>Address:</strong> 123 Vinyl Street, Downtown</p>
+                    <p><strong>Hours:</strong> Mon-Sat 10am-8pm, Sun 12pm-6pm</p>
+                    <p><strong>Phone:</strong> (555) 123-4567</p>
+                </div>
+                <div class="store">
+                    <h3>Eastside Location</h3>
+                    <p><strong>Address:</strong> 456 Record Avenue, Eastside</p>
+                    <p><strong>Hours:</strong> Mon-Sat 11am-7pm, Sun 12pm-5pm</p>
+                    <p><strong>Phone:</strong> (555) 987-6543</p>
+                </div>
+                <div class="store">
+                    <h3>Westside Location</h3>
+                    <p><strong>Address:</strong> 789 Groove Boulevard, Westside</p>
+                    <p><strong>Hours:</strong> Mon-Sat 10am-9pm, Sun 11am-7pm</p>
+                    <p><strong>Phone:</strong> (555) 456-7890</p>
                 </div>
             </div>
         </div>
@@ -699,7 +689,7 @@
             </div>
             <div class="contact-form">
                 <h3>Contact Us</h3>
-                <p>Have questions about our personalized gifts or need help creating something special? Send us a message and our team will be happy to assist you.</p>
+                <p>Have questions about our collection or looking for a specific record? Send us a message and our vinyl experts will be happy to help you.</p>
                 <form>
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Your Name" required>
@@ -710,9 +700,9 @@
                     <div class="form-group">
                         <select class="form-control" required>
                             <option value="" disabled selected>Subject</option>
-                            <option value="product-inquiry">Product Inquiry</option>
-                            <option value="custom-order">Custom Order</option>
-                            <option value="order-status">Order Status</option>
+                            <option value="record-inquiry">Record Inquiry</option>
+                            <option value="special-order">Special Order</option>
+                            <option value="event-information">Event Information</option>
                             <option value="other">Other</option>
                         </select>
                     </div>
@@ -730,38 +720,38 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Heartfelt Treasures</h3>
-                    <p>Creating personalized gifts that celebrate life's special moments and the relationships that matter most.</p>
+                    <h3>Vinyl Vault</h3>
+                    <p>Preserving the authentic sound of vinyl records since 1978. Your destination for rare finds and timeless classics.</p>
                 </div>
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <a href="#home">Home</a>
                     <a href="#about">About Us</a>
-                    <a href="#categories">Featured Products</a>
-                    <a href="#testimonials">Reviews</a>
+                    <a href="#albums">Featured Albums</a>
+                    <a href="#store-locator">Store Locator</a>
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-column">
-                    <h3>Gift Categories</h3>
-                    <a href="#">Wedding Gifts</a>
-                    <a href="#">Baby & Kids</a>
-                    <a href="#">Anniversary</a>
-                    <a href="#">Home Décor</a>
-                    <a href="#">Corporate Gifts</a>
+                    <h3>Music Categories</h3>
+                    <a href="#">Classic Rock</a>
+                    <a href="#">Jazz & Blues</a>
+                    <a href="#">Soul & Funk</a>
+                    <a href="#">Alternative & Indie</a>
+                    <a href="#">New Releases</a>
                 </div>
                 <div class="footer-column">
                     <h3>Connect With Us</h3>
-                    <p>Follow us for gift inspiration, new products, and special offers!</p>
+                    <p>Follow us for new arrivals, in-store events, and vinyl care tips!</p>
                     <div class="social-links">
                         <a href="#"><i class="fa fa-facebook">fb</i></a>
                         <a href="#"><i class="fa fa-instagram">ig</i></a>
                         <a href="#"><i class="fa fa-twitter">tw</i></a>
-                        <a href="#"><i class="fa fa-pinterest">pin</i></a>
+                        <a href="#"><i class="fa fa-spotify">sp</i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Heartfelt Treasures. All Rights Reserved.</p>
+                <p>&copy; 2023 Vinyl Vault. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
