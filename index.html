@@ -26,7 +26,7 @@
         /* Navigation */
         nav {
             background-color: #fff;
-            box-shadow: 0 2px 10px rgba(138, 79, 44, 0.2);
+            box-shadow: 0 2px 10px rgba(138, 79, 43, 0.2);
             position: fixed;
             width: 100%;
             z-index: 1000;
@@ -126,7 +126,7 @@
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
-            text-shadow: 0 0 15px rgba(138, 79, 44, 0.7);
+            text-shadow: 0 0 15px rgba(138, 79, 43, 0.7);
         }
         
         .hero-content p {
@@ -152,7 +152,7 @@
         .cta-button:hover {
             background-color: #6a3d22;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(138, 79, 44, 0.4);
+            box-shadow: 0 10px 20px rgba(138, 79, 43, 0.4);
         }
         
         /* About Section */
@@ -227,7 +227,7 @@
         .about-image img {
             max-width: 100%;
             border-radius: 10px;
-            box-shadow: 0 15px 30px rgba(138, 79, 44, 0.2);
+            box-shadow: 0 15px 30px rgba(138, 79, 43, 0.2);
         }
         
         /* Featured Albums Section */
@@ -268,7 +268,7 @@
         
         .album-item:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(138, 79, 44, 0.3);
+            box-shadow: 0 15px 30px rgba(138, 79, 43, 0.3);
         }
         
         .album-image {
@@ -315,72 +315,77 @@
             margin-bottom: 15px;
         }
         
-        /* Events Section */
-        .events {
+        /* Store Locator Section */
+        .store-locator {
             padding: 100px 0;
             background-color: #fff;
         }
         
-        .event-list {
+        .map-container {
+            height: 450px;
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(138, 79, 43, 0.15);
+            margin-top: 40px;
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .stores-info {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 40px;
             gap: 30px;
         }
         
-        .event-item {
-            display: flex;
-            flex-wrap: wrap;
-            background-color: #f8f8f8;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 20px rgba(138, 79, 44, 0.1);
-            transition: transform 0.3s ease;
-        }
-        
-        .event-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(138, 79, 44, 0.2);
-        }
-        
-        .event-image {
+        .store-card {
             flex: 1;
-            min-width: 300px;
-            height: 250px;
+            min-width: 260px;
+            background-color: #f8f8f8;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(138, 79, 43, 0.1);
+            transition: all 0.3s ease;
         }
         
-        .event-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .store-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(138, 79, 43, 0.2);
         }
         
-        .event-content {
-            flex: 2;
-            padding: 30px;
-            min-width: 300px;
-        }
-        
-        .event-date {
-            display: inline-block;
-            background-color: #8a4f2b;
-            color: #fff;
-            padding: 8px 15px;
-            border-radius: 30px;
-            font-size: 0.9rem;
-            font-weight: 600;
+        .store-card h3 {
+            color: #8a4f2b;
             margin-bottom: 15px;
+            font-size: 1.4rem;
         }
         
-        .event-title {
-            font-size: 1.8rem;
-            color: #333;
-            margin-bottom: 15px;
-        }
-        
-        .event-description {
+        .store-card p {
+            margin-bottom: 10px;
             color: #666;
-            margin-bottom: 20px;
-            line-height: 1.6;
+        }
+        
+        .store-card .hours {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+        }
+        
+        /* Slide Left Animation */
+        .slide-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .slide-left.active {
+            opacity: 1;
+            transform: translateX(0);
         }
         
         /* Zoom-in-up animation */
@@ -408,7 +413,7 @@
             background-color: #fff;
             padding: 40px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(138, 79, 44, 0.15);
+            box-shadow: 0 10px 30px rgba(138, 79, 43, 0.15);
         }
         
         .contact-form h3 {
@@ -560,7 +565,7 @@
                 padding: 30px 20px;
             }
             
-            .event-image, .event-content {
+            .store-card {
                 flex: 100%;
             }
         }
@@ -571,13 +576,13 @@
     <nav>
         <div class="container nav-container">
             <div class="logo">
-                <a href="/" style="font-size: 32px; text-decoration: none;">💿</a> Vinyl Vault
+                <a href="/" style="font-size: 32px; text-decoration: none;">🎵</a> Vinyl Vault
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#albums">Featured Albums</a></li>
-                <li><a href="#events">Upcoming Events</a></li>
+                <li><a href="#store-locator">Store Locator</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="mobile-menu-btn">☰</button>
@@ -591,7 +596,7 @@
         </video>
         <div class="overlay"></div>
         <div class="container hero-content">
-            <h1>Timeless Sounds Rediscovered</h1>
+            <h1>Vinyl Sounds Better</h1>
             <p>Step into a world where music has soul, depth, and character. Explore our curated collection of vinyl treasures.</p>
             <button class="cta-button">Browse Collection</button>
         </div>
@@ -605,12 +610,12 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Our Passion</h3>
+                    <h3>Our Story</h3>
                     <p>Welcome to Vinyl Vault, where the warm, authentic sound of vinyl records lives on. Since 1978, we've been a sanctuary for music lovers seeking the rich, unmatched quality that only vinyl can deliver.</p>
                     <p>Our carefully curated collection spans decades of musical genius - from rare first pressings to essential classics and emerging artists embracing the vinyl revival. Each record in our store has been personally selected for its sonic quality and cultural significance.</p>
                     <p>Beyond just selling records, we're a community hub for music enthusiasts. Our knowledgeable staff (who are passionate collectors themselves) are always ready to help you discover your next favorite album or find that elusive record you've been hunting for years.</p>
                 </div>
-                <div class="about-image zoom-in-up">
+                <div class="about-image slide-left">
                     <img src="https://picsum.photos/seed/recordstore/600/400" alt="Inside our Record Store">
                 </div>
             </div>
@@ -673,44 +678,50 @@
         </div>
     </section>
     
-    <!-- Upcoming Events Section -->
-    <section class="events" id="events">
+    <!-- Store Locator Section -->
+    <section class="store-locator" id="store-locator">
         <div class="container">
             <div class="section-title">
-                <h2>Upcoming Events</h2>
+                <h2>Find Our Stores</h2>
             </div>
-            <div class="event-list">
-                <div class="event-item">
-                    <div class="event-image">
-                        <img src="https://picsum.photos/seed/event1/800/500" alt="Album Signing Event">
-                    </div>
-                    <div class="event-content">
-                        <span class="event-date">June 15, 2023 | 7:00 PM</span>
-                        <h3 class="event-title">Album Signing: Local Indie Band</h3>
-                        <p class="event-description">Join us for an exclusive album signing with the rising indie band "The Vinyl Dreamers". Get your copy signed and enjoy a mini acoustic performance!</p>
-                        <button class="cta-button">RSVP Now</button>
-                    </div>
-                </div>
-                <div class="event-item zoom-in-up">
-                    <div class="event-image">
-                        <img src="https://picsum.photos/seed/event2/800/500" alt="Vinyl Care Workshop">
-                    </div>
-                    <div class="event-content">
-                        <span class="event-date">June 22, 2023 | 6:30 PM</span>
-                        <h3 class="event-title">Vinyl Care Workshop</h3>
-                        <p class="event-description">Learn how to properly clean, store, and maintain your vinyl collection to ensure it sounds great for years to come. Our experts will share tips and demonstrate proper techniques.</p>
-                        <button class="cta-button">Register</button>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-73.9866!3d40.7306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDU0JzI2LjgiTiA3M8KwNDInMjAuMyJX!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="stores-info">
+                <div class="store-card slide-left">
+                    <h3>Downtown Location</h3>
+                    <p><strong>Address:</strong> 123 Vinyl Ave, New York, NY 10001</p>
+                    <p><strong>Phone:</strong> (212) 555-1234</p>
+                    <p><strong>Email:</strong> downtown@vinylvault.com</p>
+                    <div class="hours">
+                        <p><strong>Hours:</strong></p>
+                        <p>Mon-Fri: 10am - 8pm</p>
+                        <p>Sat: 10am - 9pm</p>
+                        <p>Sun: 11am - 6pm</p>
                     </div>
                 </div>
-                <div class="event-item">
-                    <div class="event-image">
-                        <img src="https://picsum.photos/seed/event3/800/500" alt="Record Store Day">
+                <div class="store-card slide-left">
+                    <h3>Brooklyn Store</h3>
+                    <p><strong>Address:</strong> 456 Record Lane, Brooklyn, NY 11201</p>
+                    <p><strong>Phone:</strong> (718) 555-5678</p>
+                    <p><strong>Email:</strong> brooklyn@vinylvault.com</p>
+                    <div class="hours">
+                        <p><strong>Hours:</strong></p>
+                        <p>Mon-Fri: 11am - 8pm</p>
+                        <p>Sat: 10am - 10pm</p>
+                        <p>Sun: 12pm - 7pm</p>
                     </div>
-                    <div class="event-content">
-                        <span class="event-date">July 8, 2023 | 10:00 AM</span>
-                        <h3 class="event-title">Record Store Day Special</h3>
-                        <p class="event-description">Celebrate Record Store Day with us! Exclusive releases, in-store performances, special discounts, and free coffee for early birds. Don't miss our biggest event of the year!</p>
-                        <button class="cta-button">Learn More</button>
+                </div>
+                <div class="store-card slide-left">
+                    <h3>Queens Location</h3>
+                    <p><strong>Address:</strong> 789 Turntable St, Queens, NY 11101</p>
+                    <p><strong>Phone:</strong> (347) 555-9012</p>
+                    <p><strong>Email:</strong> queens@vinylvault.com</p>
+                    <div class="hours">
+                        <p><strong>Hours:</strong></p>
+                        <p>Mon-Fri: 11am - 7pm</p>
+                        <p>Sat: 10am - 8pm</p>
+                        <p>Sun: 12pm - 6pm</p>
                     </div>
                 </div>
             </div>
@@ -738,7 +749,7 @@
                             <option value="" disabled selected>Subject</option>
                             <option value="record-inquiry">Record Inquiry</option>
                             <option value="special-order">Special Order</option>
-                            <option value="event-information">Event Information</option>
+                            <option value="store-question">Store Information</option>
                             <option value="other">Other</option>
                         </select>
                     </div>
@@ -764,7 +775,7 @@
                     <a href="#home">Home</a>
                     <a href="#about">About Us</a>
                     <a href="#albums">Featured Albums</a>
-                    <a href="#events">Upcoming Events</a>
+                    <a href="#store-locator">Store Locator</a>
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-column">
@@ -798,11 +809,21 @@
             document.querySelector('.nav-links').classList.toggle('active');
         });
         
-        // Zoom-in-up Animation
+        // Animation functions
         function checkAnimations() {
-            const elements = document.querySelectorAll('.zoom-in-up');
+            const zoomElements = document.querySelectorAll('.zoom-in-up');
+            const slideElements = document.querySelectorAll('.slide-left');
             
-            elements.forEach(element => {
+            zoomElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if(elementTop < windowHeight - 100) {
+                    element.classList.add('active');
+                }
+            });
+            
+            slideElements.forEach(element => {
                 const elementTop = element.getBoundingClientRect().top;
                 const windowHeight = window.innerHeight;
                 
@@ -843,31 +864,4 @@
         }
         
         // Add animation to CTA buttons
-        document.querySelectorAll('.cta-button').forEach(button => {
-            button.addEventListener('mouseover', function() {
-                this.style.transition = 'all 0.3s ease';
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 10px 20px rgba(138, 79, 44, 0.4)';
-            });
-            
-            button.addEventListener('mouseout', function() {
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-            });
-        });
-        
-        // Featured album hover effect
-        document.querySelectorAll('.album-item').forEach(item => {
-            item.addEventListener('mouseenter', function() {
-                const albumImg = this.querySelector('.album-image img');
-                albumImg.style.transform = 'scale(1.05)';
-            });
-            
-            item.addEventListener('mouseleave', function() {
-                const albumImg = this.querySelector('.album-image img');
-                albumImg.style.transform = 'scale(1)';
-            });
-        });
-    </script>
-</body>
-</html>
+        document.querySelectorAll('.cta-button').forEach
