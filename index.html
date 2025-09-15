@@ -26,7 +26,7 @@
         /* Navigation */
         nav {
             background-color: #fff;
-            box-shadow: 0 2px 10px rgba(143, 75, 46, 0.2);
+            box-shadow: 0 2px 10px rgba(138, 79, 44, 0.2);
             position: fixed;
             width: 100%;
             z-index: 1000;
@@ -42,7 +42,7 @@
         .logo {
             font-size: 24px;
             font-weight: 700;
-            color: #8f4b2e;
+            color: #8a4f2c;
         }
         
         .logo img {
@@ -69,7 +69,7 @@
         }
         
         .nav-links a:hover {
-            color: #8f4b2e;
+            color: #8a4f2c;
         }
         
         .mobile-menu-btn {
@@ -78,7 +78,7 @@
             border: none;
             font-size: 24px;
             cursor: pointer;
-            color: #8f4b2e;
+            color: #8a4f2c;
         }
         
         /* Hero Section */
@@ -126,7 +126,7 @@
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
-            text-shadow: 0 0 15px rgba(143, 75, 46, 0.7);
+            text-shadow: 0 0 15px rgba(138, 79, 44, 0.7);
         }
         
         .hero-content p {
@@ -136,7 +136,7 @@
         }
         
         .cta-button {
-            background-color: #8f4b2e;
+            background-color: #8a4f2c;
             color: #fff;
             border: none;
             padding: 15px 30px;
@@ -152,7 +152,7 @@
         .cta-button:hover {
             background-color: #6d3922;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(143, 75, 46, 0.4);
+            box-shadow: 0 10px 20px rgba(138, 79, 44, 0.4);
         }
         
         /* About Section */
@@ -185,7 +185,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background-color: #8f4b2e;
+            background-color: #8a4f2c;
         }
         
         .about-content {
@@ -204,7 +204,7 @@
         .about-text h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            color: #8f4b2e;
+            color: #8a4f2c;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -227,7 +227,7 @@
         .about-image img {
             max-width: 100%;
             border-radius: 10px;
-            box-shadow: 0 15px 30px rgba(143, 75, 46, 0.2);
+            box-shadow: 0 15px 30px rgba(138, 79, 44, 0.2);
         }
         
         /* Featured Albums Section */
@@ -268,7 +268,7 @@
         
         .album-item:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(143, 75, 46, 0.3);
+            box-shadow: 0 15px 30px rgba(138, 79, 44, 0.3);
         }
         
         .album-image {
@@ -303,7 +303,7 @@
         
         .album-artist {
             font-size: 1.1rem;
-            color: #8f4b2e;
+            color: #8a4f2c;
             margin-bottom: 15px;
             font-weight: 600;
         }
@@ -315,89 +315,73 @@
             margin-bottom: 15px;
         }
         
-        /* Store Locator Section */
-        .store-locator {
+        /* Events Section */
+        .events {
             padding: 100px 0;
             background-color: #fff;
         }
         
-        .map-container {
-            height: 450px;
-            width: 100%;
+        .event-list {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .event-card {
+            background-color: #f8f8f8;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(143, 75, 46, 0.15);
-            margin-top: 40px;
-        }
-        
-        .map-container iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        
-        .stores-info {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            margin-top: 40px;
-            gap: 30px;
+            box-shadow: 0 10px 20px rgba(138, 79, 44, 0.1);
+            transition: transform 0.3s ease;
         }
         
-        .store-card {
-            flex: 1;
-            min-width: 260px;
-            background-color: #f8f8f8;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(143, 75, 46, 0.1);
-            transition: all 0.3s ease;
-        }
-        
-        .store-card:hover {
+        .event-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(143, 75, 46, 0.2);
+            box-shadow: 0 15px 30px rgba(138, 79, 44, 0.2);
         }
         
-        .store-card h3 {
-            color: #8f4b2e;
+        .event-image {
+            flex: 1;
+            min-width: 300px;
+            height: 250px;
+        }
+        
+        .event-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .event-details {
+            flex: 2;
+            padding: 30px;
+            min-width: 300px;
+        }
+        
+        .event-date {
+            display: inline-block;
+            background-color: #8a4f2c;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 5px;
             margin-bottom: 15px;
-            font-size: 1.4rem;
+            font-weight: 600;
         }
         
-        .store-card p {
-            margin-bottom: 10px;
+        .event-title {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .event-description {
             color: #666;
-        }
-        
-        .store-card .hours {
-            margin-top: 15px;
-            padding-top: 15px;
-            border-top: 1px solid #ddd;
-        }
-        
-        /* Slide Left Animation */
-        .slide-left {
-            opacity: 0;
-            transform: translateX(-50px);
-            transition: all 0.8s ease-out;
-        }
-        
-        .slide-left.active {
-            opacity: 1;
-            transform: translateX(0);
-        }
-        
-        /* Zoom-in-up animation */
-        .zoom-in-up {
-            opacity: 0;
-            transform: scale(0.8) translateY(50px);
-            transition: all 0.8s ease-out;
-        }
-        
-        .zoom-in-up.active {
-            opacity: 1;
-            transform: scale(1) translateY(0);
+            margin-bottom: 20px;
+            line-height: 1.6;
         }
         
         /* Contact Form */
@@ -413,7 +397,7 @@
             background-color: #fff;
             padding: 40px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(143, 75, 46, 0.15);
+            box-shadow: 0 10px 30px rgba(138, 79, 44, 0.15);
         }
         
         .contact-form h3 {
@@ -443,7 +427,7 @@
         
         .form-control:focus {
             outline: none;
-            border-color: #8f4b2e;
+            border-color: #8a4f2c;
         }
         
         /* Footer */
@@ -470,7 +454,7 @@
         .footer-column h3 {
             font-size: 1.3rem;
             margin-bottom: 20px;
-            color: #8f4b2e;
+            color: #8a4f2c;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -486,7 +470,7 @@
         }
         
         .footer-column a:hover {
-            color: #8f4b2e;
+            color: #8a4f2c;
         }
         
         .social-links {
@@ -506,7 +490,7 @@
         }
         
         .social-links a:hover {
-            background-color: #8f4b2e;
+            background-color: #8a4f2c;
             color: #fff;
         }
         
@@ -516,6 +500,30 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: #999;
             font-size: 0.9rem;
+        }
+        
+        /* Zoom-in-up animation */
+        .zoom-in-up {
+            opacity: 0;
+            transform: scale(0.8) translateY(50px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .zoom-in-up.active {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+        
+        /* Slide Left Animation */
+        .slide-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .slide-left.active {
+            opacity: 1;
+            transform: translateX(0);
         }
         
         /* Responsive Styles */
@@ -565,8 +573,12 @@
                 padding: 30px 20px;
             }
             
-            .store-card {
-                flex: 100%;
+            .event-card {
+                flex-direction: column;
+            }
+            
+            .event-image {
+                min-width: 100%;
             }
         }
     </style>
@@ -582,7 +594,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#albums">Featured Albums</a></li>
-                <li><a href="#store-hours">Store Locator</a></li>
+                <li><a href="#events">Upcoming Events</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="mobile-menu-btn">☰</button>
@@ -596,9 +608,9 @@
         </video>
         <div class="overlay"></div>
         <div class="container hero-content">
-            <h1>The Vinyl Experience</h1>
-            <p>Experience the warmth and richness of vinyl records in our carefully curated collection.</p>
-            <button class="cta-button">Discover Our Collection</button>
+            <h1>Experience Vinyl Magic</h1>
+            <p>Discover the warmth and richness of vintage vinyl records in our carefully curated collection.</p>
+            <button class="cta-button">Explore Our Collection</button>
         </div>
     </section>
     
@@ -678,50 +690,44 @@
         </div>
     </section>
     
-    <!-- Store Locator Section -->
-    <section class="store-locator" id="store-hours">
+    <!-- Upcoming Events Section -->
+    <section class="events" id="events">
         <div class="container">
             <div class="section-title">
-                <h2>Store Locator</h2>
+                <h2>Upcoming Events</h2>
             </div>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3059445135!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1655936458653!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <div class="stores-info">
-                <div class="store-card slide-left">
-                    <h3>Downtown Location</h3>
-                    <p><strong>Address:</strong> 123 Vinyl Ave, New York, NY 10001</p>
-                    <p><strong>Phone:</strong> (212) 555-1234</p>
-                    <p><strong>Email:</strong> downtown@vinylvault.com</p>
-                    <div class="hours">
-                        <p><strong>Hours:</strong></p>
-                        <p>Mon-Fri: 10am - 8pm</p>
-                        <p>Sat: 10am - 9pm</p>
-                        <p>Sun: 11am - 6pm</p>
+            <div class="event-list">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://picsum.photos/seed/event1/600/400" alt="Record Release Party">
+                    </div>
+                    <div class="event-details">
+                        <span class="event-date">June 15, 2023 • 7:00 PM</span>
+                        <h3 class="event-title">Vinyl Release Party: Local Indie Showcase</h3>
+                        <p class="event-description">Join us for an exclusive listening party celebrating the vinyl release of three local indie bands. Enjoy refreshments, meet the artists, and be among the first to get your hands on these limited-edition pressings.</p>
+                        <button class="cta-button">RSVP Now</button>
                     </div>
                 </div>
-                <div class="store-card slide-left">
-                    <h3>Brooklyn Store</h3>
-                    <p><strong>Address:</strong> 456 Record Lane, Brooklyn, NY 11201</p>
-                    <p><strong>Phone:</strong> (718) 555-5678</p>
-                    <p><strong>Email:</strong> brooklyn@vinylvault.com</p>
-                    <div class="hours">
-                        <p><strong>Hours:</strong></p>
-                        <p>Mon-Fri: 11am - 8pm</p>
-                        <p>Sat: 10am - 10pm</p>
-                        <p>Sun: 12pm - 7pm</p>
+                <div class="event-card zoom-in-up">
+                    <div class="event-image">
+                        <img src="https://picsum.photos/seed/event2/600/400" alt="Record Collecting Workshop">
+                    </div>
+                    <div class="event-details">
+                        <span class="event-date">June 22, 2023 • 6:30 PM</span>
+                        <h3 class="event-title">Vinyl Care & Collecting Workshop</h3>
+                        <p class="event-description">Learn the essentials of vinyl record care, storage, and collecting from our resident experts. This hands-on workshop covers cleaning techniques, proper handling, and tips for starting and maintaining your collection.</p>
+                        <button class="cta-button">Register</button>
                     </div>
                 </div>
-                <div class="store-card slide-left">
-                    <h3>Queens Location</h3>
-                    <p><strong>Address:</strong> 789 Turntable St, Queens, NY 11101</p>
-                    <p><strong>Phone:</strong> (347) 555-9012</p>
-                    <p><strong>Email:</strong> queens@vinylvault.com</p>
-                    <div class="hours">
-                        <p><strong>Hours:</strong></p>
-                        <p>Mon-Fri: 11am - 7pm</p>
-                        <p>Sat: 10am - 8pm</p>
-                        <p>Sun: 12pm - 6pm</p>
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://picsum.photos/seed/event3/600/400" alt="DJ Night">
+                    </div>
+                    <div class="event-details">
+                        <span class="event-date">July 8, 2023 • 8:00 PM</span>
+                        <h3 class="event-title">Vintage Soul & Funk Night</h3>
+                        <p class="event-description">Experience the warm, rich sound of classic soul and funk on vinyl. Our guest DJ will be spinning rare 45s and LPs from the golden age of soul. Come ready to groove to the authentic analog sound!</p>
+                        <button class="cta-button">Get Tickets</button>
                     </div>
                 </div>
             </div>
@@ -749,7 +755,7 @@
                             <option value="" disabled selected>Subject</option>
                             <option value="record-inquiry">Record Inquiry</option>
                             <option value="special-order">Special Order</option>
-                            <option value="store-question">Store Information</option>
+                            <option value="event-question">Event Information</option>
                             <option value="other">Other</option>
                         </select>
                     </div>
@@ -775,7 +781,7 @@
                     <a href="#home">Home</a>
                     <a href="#about">About Us</a>
                     <a href="#albums">Featured Albums</a>
-                    <a href="#store-hours">Store Locator</a>
+                    <a href="#events">Upcoming Events</a>
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-column">
@@ -863,5 +869,20 @@
             });
         }
         
-        // Add album hover effect
-        document.querySelectorAll('.album-
+        // Album item hover effect for featured albums
+        const albumItems = document.querySelectorAll('.album-item');
+        albumItems.forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                this.querySelector('.album-image img').style.transform = 'scale(1.05)';
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                this.querySelector('.album-image img').style.transform = 'scale(1)';
+            });
+        });
+        
+        // Event cards animation on scroll
+        const eventCards = document.querySelectorAll('.event-card');
+        let delay = 0;
+        
+        eventCards.forEach
