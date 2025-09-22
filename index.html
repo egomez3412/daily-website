@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinyl Vault - Vintage Record Store</title>
+    <title>Crafted Luxury - Custom Furniture Design</title>
     <style>
         * {
             margin: 0;
@@ -26,7 +26,7 @@
         /* Navigation */
         nav {
             background-color: #fff;
-            box-shadow: 0 2px 10px rgba(138, 79, 44, 0.2);
+            box-shadow: 0 2px 10px rgba(140, 75, 126, 0.2);
             position: fixed;
             width: 100%;
             z-index: 1000;
@@ -42,7 +42,7 @@
         .logo {
             font-size: 24px;
             font-weight: 700;
-            color: #8a4f2c;
+            color: #8c4b7e;
         }
         
         .logo img {
@@ -69,7 +69,7 @@
         }
         
         .nav-links a:hover {
-            color: #8a4f2c;
+            color: #8c4b7e;
         }
         
         .mobile-menu-btn {
@@ -78,7 +78,7 @@
             border: none;
             font-size: 24px;
             cursor: pointer;
-            color: #8a4f2c;
+            color: #8c4b7e;
         }
         
         /* Hero Section */
@@ -105,7 +105,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.6);
             z-index: -1;
         }
         
@@ -126,7 +126,7 @@
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
-            text-shadow: 0 0 15px rgba(138, 79, 44, 0.7);
+            text-shadow: 0 0 15px rgba(140, 75, 126, 0.7);
         }
         
         .hero-content p {
@@ -136,7 +136,7 @@
         }
         
         .cta-button {
-            background-color: #8a4f2c;
+            background-color: #8c4b7e;
             color: #fff;
             border: none;
             padding: 15px 30px;
@@ -150,9 +150,9 @@
         }
         
         .cta-button:hover {
-            background-color: #6d3922;
+            background-color: #6d3e62;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(138, 79, 44, 0.4);
+            box-shadow: 0 10px 20px rgba(140, 75, 126, 0.4);
         }
         
         /* About Section */
@@ -185,7 +185,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background-color: #8a4f2c;
+            background-color: #8c4b7e;
         }
         
         .about-content {
@@ -204,7 +204,7 @@
         .about-text h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            color: #8a4f2c;
+            color: #8c4b7e;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -227,28 +227,28 @@
         .about-image img {
             max-width: 100%;
             border-radius: 10px;
-            box-shadow: 0 15px 30px rgba(138, 79, 44, 0.2);
+            box-shadow: 0 15px 30px rgba(140, 75, 126, 0.2);
         }
         
-        /* Featured Albums Section */
-        .albums {
+        /* Portfolio Gallery */
+        .portfolio {
             padding: 100px 0;
             background-color: #f8f8f8;
             position: relative;
         }
         
-        .albums-bg {
+        .portfolio-bg {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             opacity: 0.05;
-            background: url('https://picsum.photos/seed/vinyl/1600/900') center/cover no-repeat;
+            background: url('https://picsum.photos/seed/furniture/1600/900') center/cover no-repeat;
             z-index: 0;
         }
         
-        .album-items {
+        .gallery-items {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -257,43 +257,43 @@
             z-index: 1;
         }
         
-        .album-item {
+        .gallery-item {
             background-color: #fff;
             overflow: hidden;
-            width: 280px;
+            width: 360px;
             border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
-        .album-item:hover {
+        .gallery-item:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(138, 79, 44, 0.3);
+            box-shadow: 0 15px 30px rgba(140, 75, 126, 0.3);
         }
         
-        .album-image {
+        .gallery-image {
             position: relative;
             overflow: hidden;
             height: 280px;
         }
         
-        .album-image img {
+        .gallery-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
         
-        .album-item:hover .album-image img {
+        .gallery-item:hover .gallery-image img {
             transform: scale(1.05);
         }
         
-        .album-content {
+        .gallery-content {
             padding: 25px;
             text-align: center;
         }
         
-        .album-name {
+        .gallery-title {
             font-size: 1.5rem;
             font-weight: 700;
             color: #333;
@@ -301,87 +301,94 @@
             letter-spacing: 1px;
         }
         
-        .album-artist {
+        .gallery-category {
             font-size: 1.1rem;
-            color: #8a4f2c;
+            color: #8c4b7e;
             margin-bottom: 15px;
             font-weight: 600;
         }
         
-        .album-price {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: #333;
+        .gallery-description {
+            font-size: 1rem;
+            color: #666;
             margin-bottom: 15px;
+            line-height: 1.6;
         }
         
-        /* Events Section */
-        .events {
+        /* Testimonials Section */
+        .testimonials {
             padding: 100px 0;
             background-color: #fff;
         }
         
-        .event-list {
+        .testimonial-list {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 30px;
             margin-top: 40px;
         }
         
-        .event-card {
+        .testimonial-card {
             background-color: #f8f8f8;
             border-radius: 15px;
             overflow: hidden;
-            display: flex;
-            flex-wrap: wrap;
-            box-shadow: 0 10px 20px rgba(138, 79, 44, 0.1);
+            padding: 30px;
+            box-shadow: 0 10px 20px rgba(140, 75, 126, 0.1);
             transition: transform 0.3s ease;
+            max-width: 360px;
         }
         
-        .event-card:hover {
+        .testimonial-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(138, 79, 44, 0.2);
+            box-shadow: 0 15px 30px rgba(140, 75, 126, 0.2);
         }
         
-        .event-image {
-            flex: 1;
-            min-width: 300px;
-            height: 250px;
+        .testimonial-content {
+            position: relative;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
         }
         
-        .event-image img {
+        .testimonial-content:before {
+            content: '"';
+            font-size: 4rem;
+            color: rgba(140, 75, 126, 0.2);
+            position: absolute;
+            top: -20px;
+            left: -10px;
+        }
+        
+        .testimonial-client {
+            display: flex;
+            align-items: center;
+        }
+        
+        .client-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+        }
+        
+        .client-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
         
-        .event-details {
-            flex: 2;
-            padding: 30px;
-            min-width: 300px;
-        }
-        
-        .event-date {
-            display: inline-block;
-            background-color: #8a4f2c;
-            color: #fff;
-            padding: 8px 15px;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-        
-        .event-title {
-            font-size: 1.8rem;
+        .client-info h4 {
+            font-size: 1.2rem;
             color: #333;
-            margin-bottom: 15px;
-            font-weight: 700;
+            margin-bottom: 5px;
         }
         
-        .event-description {
-            color: #666;
-            margin-bottom: 20px;
-            line-height: 1.6;
+        .client-info p {
+            font-size: 0.9rem;
+            color: #8c4b7e;
         }
         
         /* Contact Form */
@@ -397,7 +404,7 @@
             background-color: #fff;
             padding: 40px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(138, 79, 44, 0.15);
+            box-shadow: 0 10px 30px rgba(140, 75, 126, 0.15);
         }
         
         .contact-form h3 {
@@ -427,7 +434,7 @@
         
         .form-control:focus {
             outline: none;
-            border-color: #8a4f2c;
+            border-color: #8c4b7e;
         }
         
         /* Footer */
@@ -454,7 +461,7 @@
         .footer-column h3 {
             font-size: 1.3rem;
             margin-bottom: 20px;
-            color: #8a4f2c;
+            color: #8c4b7e;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -470,7 +477,7 @@
         }
         
         .footer-column a:hover {
-            color: #8a4f2c;
+            color: #8c4b7e;
         }
         
         .social-links {
@@ -490,7 +497,7 @@
         }
         
         .social-links a:hover {
-            background-color: #8a4f2c;
+            background-color: #8c4b7e;
             color: #fff;
         }
         
@@ -573,12 +580,12 @@
                 padding: 30px 20px;
             }
             
-            .event-card {
-                flex-direction: column;
+            .gallery-item {
+                width: 100%;
             }
             
-            .event-image {
-                min-width: 100%;
+            .testimonial-card {
+                max-width: 100%;
             }
         }
     </style>
@@ -588,13 +595,13 @@
     <nav>
         <div class="container nav-container">
             <div class="logo">
-                <a href="/" style="font-size: 32px; text-decoration: none;">🎵</a> Vinyl Vault
+                <a href="/" style="font-size: 32px; text-decoration: none;">🪑</a> Crafted Luxury
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#albums">Featured Albums</a></li>
-                <li><a href="#events">Upcoming Events</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="mobile-menu-btn">☰</button>
@@ -604,13 +611,13 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <video class="hero-video" autoplay muted loop>
-            <source src="https://player.vimeo.com/external/371853677.hd.mp4?s=efd41e4e4e6c74aeb02b8d0c97918b66b944f6aa&profile_id=174&oauth2_token_id=57447761" type="video/mp4">
+            <source src="https://player.vimeo.com/external/370467553.hd.mp4?s=ce49e5a6a6aee32c81e87c85e2837c16fa39139f&profile_id=174&oauth2_token_id=57447761" type="video/mp4">
         </video>
         <div class="overlay"></div>
         <div class="container hero-content">
-            <h1>Experience Vinyl Magic</h1>
-            <p>Discover the warmth and richness of vintage vinyl records in our carefully curated collection.</p>
-            <button class="cta-button">Explore Our Collection</button>
+            <h1>Handcrafted Furniture</h1>
+            <p>We create bespoke furniture pieces that blend traditional craftsmanship with contemporary design.</p>
+            <button class="cta-button">Request a Consultation</button>
         </div>
     </section>
     
@@ -622,112 +629,143 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Our Passion for Vinyl</h3>
-                    <p>Welcome to Vinyl Vault, where the warm, authentic sound of vinyl records lives on. Since 1978, we've been a sanctuary for music lovers seeking the rich, unmatched quality that only vinyl can deliver.</p>
-                    <p>Our carefully curated collection spans decades of musical genius - from rare first pressings to essential classics and emerging artists embracing the vinyl revival. Each record in our store has been personally selected for its sonic quality and cultural significance.</p>
-                    <p>Beyond just selling records, we're a community hub for music enthusiasts. Our knowledgeable staff (who are passionate collectors themselves) are always ready to help you discover your next favorite album or find that elusive record you've been hunting for years.</p>
+                    <h3>Our Passion for Craftsmanship</h3>
+                    <p>At Crafted Luxury, we believe that furniture should be as unique as the spaces they inhabit. Since 2005, our team of master craftsmen has been creating bespoke furniture pieces that combine timeless techniques with contemporary aesthetics.</p>
+                    <p>Each piece we create tells a story – from the carefully selected sustainable hardwoods to the meticulous joinery and hand-applied finishes. We collaborate closely with our clients to bring their vision to life, ensuring that every piece is not only beautiful but functional and durable.</p>
+                    <p>Whether you're looking for a statement dining table, a custom bedroom set, or unique built-ins for your home or office, our dedicated team will guide you through the entire process – from initial design consultation to final installation.</p>
                 </div>
                 <div class="about-image zoom-in-up">
-                    <img src="https://picsum.photos/seed/recordstore/600/400" alt="Inside our Record Store">
+                    <img src="https://picsum.photos/seed/woodworking/600/400" alt="Craftsman at work">
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Featured Albums Section -->
-    <section class="albums" id="albums">
-        <div class="albums-bg"></div>
+    <!-- Portfolio Gallery Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-bg"></div>
         <div class="container">
             <div class="section-title">
-                <h2>Featured Albums</h2>
+                <h2>Our Portfolio</h2>
             </div>
-            <div class="album-items">
-                <div class="album-item">
-                    <div class="album-image">
-                        <img src="https://picsum.photos/seed/album1/400/400" alt="Classic Rock Album">
+            <div class="gallery-items">
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="https://picsum.photos/seed/furniture1/600/400" alt="Dining Table">
                     </div>
-                    <div class="album-content">
-                        <h3 class="album-name">Dark Side of the Moon</h3>
-                        <p class="album-artist">Pink Floyd</p>
-                        <p class="album-price">$29.99</p>
-                        <button class="cta-button">Add to Cart</button>
-                    </div>
-                </div>
-                <div class="album-item">
-                    <div class="album-image">
-                        <img src="https://picsum.photos/seed/album2/400/400" alt="Jazz Album">
-                    </div>
-                    <div class="album-content">
-                        <h3 class="album-name">Kind of Blue</h3>
-                        <p class="album-artist">Miles Davis</p>
-                        <p class="album-price">$24.99</p>
-                        <button class="cta-button">Add to Cart</button>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Walnut Dining Table</h3>
+                        <p class="gallery-category">Dining Furniture</p>
+                        <p class="gallery-description">Hand-crafted walnut table with book-matched grain pattern and brass inlay details.</p>
+                        <button class="cta-button">View Details</button>
                     </div>
                 </div>
-                <div class="album-item">
-                    <div class="album-image">
-                        <img src="https://picsum.photos/seed/album3/400/400" alt="Soul Album">
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="https://picsum.photos/seed/furniture2/600/400" alt="Lounge Chair">
                     </div>
-                    <div class="album-content">
-                        <h3 class="album-name">What's Going On</h3>
-                        <p class="album-artist">Marvin Gaye</p>
-                        <p class="album-price">$27.99</p>
-                        <button class="cta-button">Add to Cart</button>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Modern Lounge Chair</h3>
+                        <p class="gallery-category">Seating</p>
+                        <p class="gallery-description">Ergonomic lounge chair featuring bent maple and premium leather upholstery.</p>
+                        <button class="cta-button">View Details</button>
                     </div>
                 </div>
-                <div class="album-item">
-                    <div class="album-image">
-                        <img src="https://picsum.photos/seed/album4/400/400" alt="Alternative Album">
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="https://picsum.photos/seed/furniture3/600/400" alt="Bookshelf">
                     </div>
-                    <div class="album-content">
-                        <h3 class="album-name">OK Computer</h3>
-                        <p class="album-artist">Radiohead</p>
-                        <p class="album-price">$32.99</p>
-                        <button class="cta-button">Add to Cart</button>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Floating Bookshelf</h3>
+                        <p class="gallery-category">Storage Solutions</p>
+                        <p class="gallery-description">Custom floating shelving unit with integrated lighting and hidden compartments.</p>
+                        <button class="cta-button">View Details</button>
+                    </div>
+                </div>
+                <div class="gallery-item zoom-in-up">
+                    <div class="gallery-image">
+                        <img src="https://picsum.photos/seed/furniture4/600/400" alt="Coffee Table">
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Live Edge Coffee Table</h3>
+                        <p class="gallery-category">Living Room</p>
+                        <p class="gallery-description">Stunning maple burl coffee table with glass river inlay and custom steel base.</p>
+                        <button class="cta-button">View Details</button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="https://picsum.photos/seed/furniture5/600/400" alt="Bed Frame">
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Platform Bed Frame</h3>
+                        <p class="gallery-category">Bedroom</p>
+                        <p class="gallery-description">Minimalist platform bed with integrated nightstands and hidden storage.</p>
+                        <button class="cta-button">View Details</button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="https://picsum.photos/seed/furniture6/600/400" alt="Desk">
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Executive Desk</h3>
+                        <p class="gallery-category">Office</p>
+                        <p class="gallery-description">Executive desk crafted from African mahogany with leather inlay and custom cable management.</p>
+                        <button class="cta-button">View Details</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Upcoming Events Section -->
-    <section class="events" id="events">
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="section-title">
-                <h2>Upcoming Events</h2>
+                <h2>Client Testimonials</h2>
             </div>
-            <div class="event-list">
-                <div class="event-card">
-                    <div class="event-image">
-                        <img src="https://picsum.photos/seed/event1/600/400" alt="Record Release Party">
+            <div class="testimonial-list">
+                <div class="testimonial-card slide-left">
+                    <div class="testimonial-content">
+                        <p>The dining table Crafted Luxury created for our family is absolutely stunning. The attention to detail is remarkable, and it's clear that every inch was made with care and precision. It will be a centerpiece in our home for generations.</p>
                     </div>
-                    <div class="event-details">
-                        <span class="event-date">June 15, 2023 • 7:00 PM</span>
-                        <h3 class="event-title">Vinyl Release Party: Local Indie Showcase</h3>
-                        <p class="event-description">Join us for an exclusive listening party celebrating the vinyl release of three local indie bands. Enjoy refreshments, meet the artists, and be among the first to get your hands on these limited-edition pressings.</p>
-                        <button class="cta-button">RSVP Now</button>
-                    </div>
-                </div>
-                <div class="event-card zoom-in-up">
-                    <div class="event-image">
-                        <img src="https://picsum.photos/seed/event2/600/400" alt="Record Collecting Workshop">
-                    </div>
-                    <div class="event-details">
-                        <span class="event-date">June 22, 2023 • 6:30 PM</span>
-                        <h3 class="event-title">Vinyl Care & Collecting Workshop</h3>
-                        <p class="event-description">Learn the essentials of vinyl record care, storage, and collecting from our resident experts. This hands-on workshop covers cleaning techniques, proper handling, and tips for starting and maintaining your collection.</p>
-                        <button class="cta-button">Register</button>
+                    <div class="testimonial-client">
+                        <div class="client-image">
+                            <img src="https://picsum.photos/seed/person1/100/100" alt="Sarah Johnson">
+                        </div>
+                        <div class="client-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>New York, NY</p>
+                        </div>
                     </div>
                 </div>
-                <div class="event-card">
-                    <div class="event-image">
-                        <img src="https://picsum.photos/seed/event3/600/400" alt="DJ Night">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>We commissioned a complete set of built-ins for our living room, and the results exceeded all expectations. The team was professional, responsive, and worked with us to incorporate all our specific needs into the design.</p>
                     </div>
-                    <div class="event-details">
-                        <span class="event-date">July 8, 2023 • 8:00 PM</span>
-                        <h3 class="event-title">Vintage Soul & Funk Night</h3>
-                        <p class="event-description">Experience the warm, rich sound of classic soul and funk on vinyl. Our guest DJ will be spinning rare 45s and LPs from the golden age of soul. Come ready to groove to the authentic analog sound!</p>
-                        <button class="cta-button">Get Tickets</button>
+                    <div class="testimonial-client">
+                        <div class="client-image">
+                            <img src="https://picsum.photos/seed/person2/100/100" alt="David Chen">
+                        </div>
+                        <div class="client-info">
+                            <h4>David Chen</h4>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card zoom-in-up">
+                    <div class="testimonial-content">
+                        <p>As an interior designer, I've worked with many furniture makers, and Crafted Luxury stands above the rest. Their ability to translate conceptual designs into functional art pieces is unmatched. My clients are always thrilled with the results.</p>
+                    </div>
+                    <div class="testimonial-client">
+                        <div class="client-image">
+                            <img src="https://picsum.photos/seed/person3/100/100" alt="Michelle Rodriguez">
+                        </div>
+                        <div class="client-info">
+                            <h4>Michelle Rodriguez</h4>
+                            <p>Interior Designer</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -741,8 +779,8 @@
                 <h2>Get In Touch</h2>
             </div>
             <div class="contact-form">
-                <h3>Contact Us</h3>
-                <p>Have questions about our collection or looking for a specific record? Send us a message and our vinyl experts will be happy to help you.</p>
+                <h3>Start Your Custom Project</h3>
+                <p>Ready to create a piece of furniture as unique as you are? Fill out the form below to schedule a consultation with our design team.</p>
                 <form>
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Your Name" required>
@@ -751,18 +789,23 @@
                         <input type="email" class="form-control" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
+                        <input type="tel" class="form-control" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
                         <select class="form-control" required>
-                            <option value="" disabled selected>Subject</option>
-                            <option value="record-inquiry">Record Inquiry</option>
-                            <option value="special-order">Special Order</option>
-                            <option value="event-question">Event Information</option>
+                            <option value="" disabled selected>Project Type</option>
+                            <option value="dining">Dining Furniture</option>
+                            <option value="seating">Seating & Sofas</option>
+                            <option value="bedroom">Bedroom Furniture</option>
+                            <option value="office">Office Furniture</option>
+                            <option value="storage">Storage & Shelving</option>
                             <option value="other">Other</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        <textarea class="form-control" rows="5" placeholder="Tell us about your project..." required></textarea>
                     </div>
-                    <button type="submit" class="cta-button">Send Message</button>
+                    <button type="submit" class="cta-button">Submit Request</button>
                 </form>
             </div>
         </div>
@@ -773,38 +816,38 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Vinyl Vault</h3>
-                    <p>Preserving the authentic sound of vinyl records since 1978. Your destination for rare finds and timeless classics.</p>
+                    <h3>Crafted Luxury</h3>
+                    <p>Creating bespoke furniture that combines artisanal craftsmanship with modern design since 2005.</p>
                 </div>
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <a href="#home">Home</a>
                     <a href="#about">About Us</a>
-                    <a href="#albums">Featured Albums</a>
-                    <a href="#events">Upcoming Events</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#testimonials">Testimonials</a>
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-column">
-                    <h3>Music Categories</h3>
-                    <a href="#">Classic Rock</a>
-                    <a href="#">Jazz & Blues</a>
-                    <a href="#">Soul & Funk</a>
-                    <a href="#">Alternative & Indie</a>
-                    <a href="#">New Releases</a>
+                    <h3>Our Services</h3>
+                    <a href="#">Custom Furniture Design</a>
+                    <a href="#">Bespoke Built-ins</a>
+                    <a href="#">Commercial Projects</a>
+                    <a href="#">Restoration & Repair</a>
+                    <a href="#">Design Consultation</a>
                 </div>
                 <div class="footer-column">
                     <h3>Connect With Us</h3>
-                    <p>Follow us for new arrivals, in-store events, and vinyl care tips!</p>
+                    <p>Follow us for design inspiration, project updates, and craftsmanship insights.</p>
                     <div class="social-links">
                         <a href="#"><i class="fa fa-facebook">fb</i></a>
                         <a href="#"><i class="fa fa-instagram">ig</i></a>
-                        <a href="#"><i class="fa fa-twitter">tw</i></a>
-                        <a href="#"><i class="fa fa-spotify">sp</i></a>
+                        <a href="#"><i class="fa fa-pinterest">pin</i></a>
+                        <a href="#"><i class="fa fa-houzz">hz</i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Vinyl Vault. All Rights Reserved.</p>
+                <p>&copy; 2023 Crafted Luxury Custom Furniture. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -824,65 +867,4 @@
                 const elementTop = element.getBoundingClientRect().top;
                 const windowHeight = window.innerHeight;
                 
-                if(elementTop < windowHeight - 100) {
-                    element.classList.add('active');
-                }
-            });
-            
-            slideElements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-                
-                if(elementTop < windowHeight - 100) {
-                    element.classList.add('active');
-                }
-            });
-        }
-        
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-                
-                // Close mobile menu if open
-                if (document.querySelector('.nav-links').classList.contains('active')) {
-                    document.querySelector('.nav-links').classList.remove('active');
-                }
-            });
-        });
-        
-        // Run on scroll and on page load
-        window.addEventListener('scroll', checkAnimations);
-        window.addEventListener('load', checkAnimations);
-        
-        // Form submission for contact form
-        const contactForm = document.querySelector('.contact-form form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Thank you for your message! Our team will get back to you soon.');
-                this.reset();
-            });
-        }
-        
-        // Album item hover effect for featured albums
-        const albumItems = document.querySelectorAll('.album-item');
-        albumItems.forEach(item => {
-            item.addEventListener('mouseenter', function() {
-                this.querySelector('.album-image img').style.transform = 'scale(1.05)';
-            });
-            
-            item.addEventListener('mouseleave', function() {
-                this.querySelector('.album-image img').style.transform = 'scale(1)';
-            });
-        });
-        
-        // Event cards animation on scroll
-        const eventCards = document.querySelectorAll('.event-card');
-        let delay = 0;
-        
-        eventCards.forEach
+                if(elementTop < windowHeight - 100)
