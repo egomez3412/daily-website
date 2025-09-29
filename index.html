@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crafted Luxury - Custom Furniture Design</title>
+    <title>Vintage Vinyl Records</title>
     <style>
         * {
             margin: 0;
@@ -26,7 +26,7 @@
         /* Navigation */
         nav {
             background-color: #fff;
-            box-shadow: 0 2px 10px rgba(140, 75, 126, 0.2);
+            box-shadow: 0 2px 10px rgba(138, 79, 45, 0.2);
             position: fixed;
             width: 100%;
             z-index: 1000;
@@ -42,7 +42,7 @@
         .logo {
             font-size: 24px;
             font-weight: 700;
-            color: #8c4b7e;
+            color: #8a4f2d;
         }
         
         .logo img {
@@ -69,7 +69,7 @@
         }
         
         .nav-links a:hover {
-            color: #8c4b7e;
+            color: #8a4f2d;
         }
         
         .mobile-menu-btn {
@@ -78,7 +78,7 @@
             border: none;
             font-size: 24px;
             cursor: pointer;
-            color: #8c4b7e;
+            color: #8a4f2d;
         }
         
         /* Hero Section */
@@ -126,7 +126,7 @@
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
-            text-shadow: 0 0 15px rgba(140, 75, 126, 0.7);
+            text-shadow: 0 0 15px rgba(138, 79, 45, 0.7);
         }
         
         .hero-content p {
@@ -136,7 +136,7 @@
         }
         
         .cta-button {
-            background-color: #8c4b7e;
+            background-color: #8a4f2d;
             color: #fff;
             border: none;
             padding: 15px 30px;
@@ -150,9 +150,9 @@
         }
         
         .cta-button:hover {
-            background-color: #6d3e62;
+            background-color: #6a3e23;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(140, 75, 126, 0.4);
+            box-shadow: 0 10px 20px rgba(138, 79, 45, 0.4);
         }
         
         /* About Section */
@@ -185,7 +185,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background-color: #8c4b7e;
+            background-color: #8a4f2d;
         }
         
         .about-content {
@@ -204,7 +204,7 @@
         .about-text h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            color: #8c4b7e;
+            color: #8a4f2d;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -227,28 +227,28 @@
         .about-image img {
             max-width: 100%;
             border-radius: 10px;
-            box-shadow: 0 15px 30px rgba(140, 75, 126, 0.2);
+            box-shadow: 0 15px 30px rgba(138, 79, 45, 0.2);
         }
         
-        /* Portfolio Gallery */
-        .portfolio {
+        /* Featured Albums */
+        .featured-albums {
             padding: 100px 0;
             background-color: #f8f8f8;
             position: relative;
         }
         
-        .portfolio-bg {
+        .featured-bg {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             opacity: 0.05;
-            background: url('https://picsum.photos/seed/furniture/1600/900') center/cover no-repeat;
+            background: url('https://picsum.photos/seed/vinyl/1600/900') center/cover no-repeat;
             z-index: 0;
         }
         
-        .gallery-items {
+        .album-items {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -257,7 +257,7 @@
             z-index: 1;
         }
         
-        .gallery-item {
+        .album-item {
             background-color: #fff;
             overflow: hidden;
             width: 360px;
@@ -266,34 +266,34 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
-        .gallery-item:hover {
+        .album-item:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(140, 75, 126, 0.3);
+            box-shadow: 0 15px 30px rgba(138, 79, 45, 0.3);
         }
         
-        .gallery-image {
+        .album-image {
             position: relative;
             overflow: hidden;
-            height: 280px;
+            height: 360px;
         }
         
-        .gallery-image img {
+        .album-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
         
-        .gallery-item:hover .gallery-image img {
+        .album-item:hover .album-image img {
             transform: scale(1.05);
         }
         
-        .gallery-content {
+        .album-content {
             padding: 25px;
             text-align: center;
         }
         
-        .gallery-title {
+        .album-title {
             font-size: 1.5rem;
             font-weight: 700;
             color: #333;
@@ -301,94 +301,60 @@
             letter-spacing: 1px;
         }
         
-        .gallery-category {
+        .album-artist {
             font-size: 1.1rem;
-            color: #8c4b7e;
+            color: #8a4f2d;
             margin-bottom: 15px;
             font-weight: 600;
         }
         
-        .gallery-description {
-            font-size: 1rem;
-            color: #666;
-            margin-bottom: 15px;
-            line-height: 1.6;
-        }
-        
-        /* Testimonials Section */
-        .testimonials {
-            padding: 100px 0;
-            background-color: #fff;
-        }
-        
-        .testimonial-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 40px;
-        }
-        
-        .testimonial-card {
-            background-color: #f8f8f8;
-            border-radius: 15px;
-            overflow: hidden;
-            padding: 30px;
-            box-shadow: 0 10px 20px rgba(140, 75, 126, 0.1);
-            transition: transform 0.3s ease;
-            max-width: 360px;
-        }
-        
-        .testimonial-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(140, 75, 126, 0.2);
-        }
-        
-        .testimonial-content {
-            position: relative;
-            font-style: italic;
-            color: #666;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-        
-        .testimonial-content:before {
-            content: '"';
-            font-size: 4rem;
-            color: rgba(140, 75, 126, 0.2);
-            position: absolute;
-            top: -20px;
-            left: -10px;
-        }
-        
-        .testimonial-client {
-            display: flex;
-            align-items: center;
-        }
-        
-        .client-image {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-right: 15px;
-        }
-        
-        .client-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .client-info h4 {
+        .album-price {
             font-size: 1.2rem;
             color: #333;
-            margin-bottom: 5px;
+            margin-bottom: 15px;
+            font-weight: 700;
         }
         
-        .client-info p {
-            font-size: 0.9rem;
-            color: #8c4b7e;
+        /* Store Hours */
+        .store-hours {
+            padding: 100px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+        
+        .hours-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #f8f8f8;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(138, 79, 45, 0.15);
+        }
+        
+        .hours-list {
+            margin: 30px 0;
+        }
+        
+        .hours-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px dashed rgba(138, 79, 45, 0.3);
+        }
+        
+        .hours-item:last-child {
+            border-bottom: none;
+        }
+        
+        .day {
+            font-weight: 700;
+            color: #333;
+            font-size: 1.1rem;
+        }
+        
+        .time {
+            color: #8a4f2d;
+            font-size: 1.1rem;
         }
         
         /* Contact Form */
@@ -404,7 +370,7 @@
             background-color: #fff;
             padding: 40px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(140, 75, 126, 0.15);
+            box-shadow: 0 10px 30px rgba(138, 79, 45, 0.15);
         }
         
         .contact-form h3 {
@@ -434,7 +400,7 @@
         
         .form-control:focus {
             outline: none;
-            border-color: #8c4b7e;
+            border-color: #8a4f2d;
         }
         
         /* Footer */
@@ -461,7 +427,7 @@
         .footer-column h3 {
             font-size: 1.3rem;
             margin-bottom: 20px;
-            color: #8c4b7e;
+            color: #8a4f2d;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -477,7 +443,7 @@
         }
         
         .footer-column a:hover {
-            color: #8c4b7e;
+            color: #8a4f2d;
         }
         
         .social-links {
@@ -497,7 +463,7 @@
         }
         
         .social-links a:hover {
-            background-color: #8c4b7e;
+            background-color: #8a4f2d;
             color: #fff;
         }
         
@@ -580,12 +546,14 @@
                 padding: 30px 20px;
             }
             
-            .gallery-item {
+            .album-item {
                 width: 100%;
             }
             
-            .testimonial-card {
-                max-width: 100%;
+            .hours-item {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
             }
         }
     </style>
@@ -595,13 +563,13 @@
     <nav>
         <div class="container nav-container">
             <div class="logo">
-                <a href="/" style="font-size: 32px; text-decoration: none;">🪑</a> Crafted Luxury
+                <a href="/" style="font-size: 32px; text-decoration: none;">🎵</a> Vintage Vinyl
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#featured-albums">Featured Albums</a></li>
+                <li><a href="#store-hours">Store Hours</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="mobile-menu-btn">☰</button>
@@ -611,13 +579,12 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <video class="hero-video" autoplay muted loop>
-            <source src="https://player.vimeo.com/external/370467553.hd.mp4?s=ce49e5a6a6aee32c81e87c85e2837c16fa39139f&profile_id=174&oauth2_token_id=57447761" type="video/mp4">
+            <source src="https://storage.coverr.co/videos/J1IPNIo7o29OQVQXpwBvSAhFTWGtfnxP?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6Ijg3NjdFMzIzRjlGQzEzN0E4QTAyIiwiaWF0IjoxNjE4NDEzMTI5fQ.uH_YR-jG-6QQnfQo5wh4j4r4Fj_9NWGF9wrTnL5KFTM" type="video/mp4">
         </video>
         <div class="overlay"></div>
         <div class="container hero-content">
-            <h1>Handcrafted Furniture</h1>
-            <p>We create bespoke furniture pieces that blend traditional craftsmanship with contemporary design.</p>
-            <button class="cta-button">Request a Consultation</button>
+            <h1>Timeless Sound, Vintage Soul</h1>
+            <button class="cta-button">Browse Our Collection</button>
         </div>
     </section>
     
@@ -629,145 +596,136 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Our Passion for Craftsmanship</h3>
-                    <p>At Crafted Luxury, we believe that furniture should be as unique as the spaces they inhabit. Since 2005, our team of master craftsmen has been creating bespoke furniture pieces that combine timeless techniques with contemporary aesthetics.</p>
-                    <p>Each piece we create tells a story – from the carefully selected sustainable hardwoods to the meticulous joinery and hand-applied finishes. We collaborate closely with our clients to bring their vision to life, ensuring that every piece is not only beautiful but functional and durable.</p>
-                    <p>Whether you're looking for a statement dining table, a custom bedroom set, or unique built-ins for your home or office, our dedicated team will guide you through the entire process – from initial design consultation to final installation.</p>
+                    <h3>Our Passion for Vinyl</h3>
+                    <p>Welcome to Vintage Vinyl, where analog meets artistry. Since 1978, we've been curating one of the most extensive collections of vinyl records in the city. Our passion for authentic sound and musical heritage drives everything we do.</p>
+                    <p>Our store features thousands of carefully selected vinyl records spanning all genres and eras. From rare first pressings to modern reissues, we cater to collectors, enthusiasts, and anyone who appreciates the warm, rich sound that only vinyl can deliver.</p>
+                    <p>Beyond just selling records, we're a community hub for music lovers. Our knowledgeable staff is always ready to help you discover your next favorite album, and our regular listening sessions and local artist showcases create a space where music brings people together.</p>
                 </div>
                 <div class="about-image zoom-in-up">
-                    <img src="https://picsum.photos/seed/woodworking/600/400" alt="Craftsman at work">
+                    <img src="https://picsum.photos/seed/vinylshop/600/400" alt="Record Store Interior">
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Portfolio Gallery Section -->
-    <section class="portfolio" id="portfolio">
-        <div class="portfolio-bg"></div>
+    <!-- Featured Albums Section -->
+    <section class="featured-albums" id="featured-albums">
+        <div class="featured-bg"></div>
         <div class="container">
             <div class="section-title">
-                <h2>Our Portfolio</h2>
+                <h2>Featured Albums</h2>
             </div>
-            <div class="gallery-items">
-                <div class="gallery-item">
-                    <div class="gallery-image">
-                        <img src="https://picsum.photos/seed/furniture1/600/400" alt="Dining Table">
+            <div class="album-items">
+                <div class="album-item">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/vinyl1/600/600" alt="Classic Rock Album">
                     </div>
-                    <div class="gallery-content">
-                        <h3 class="gallery-title">Walnut Dining Table</h3>
-                        <p class="gallery-category">Dining Furniture</p>
-                        <p class="gallery-description">Hand-crafted walnut table with book-matched grain pattern and brass inlay details.</p>
-                        <button class="cta-button">View Details</button>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-image">
-                        <img src="https://picsum.photos/seed/furniture2/600/400" alt="Lounge Chair">
-                    </div>
-                    <div class="gallery-content">
-                        <h3 class="gallery-title">Modern Lounge Chair</h3>
-                        <p class="gallery-category">Seating</p>
-                        <p class="gallery-description">Ergonomic lounge chair featuring bent maple and premium leather upholstery.</p>
-                        <button class="cta-button">View Details</button>
+                    <div class="album-content">
+                        <h3 class="album-title">Dark Side of the Moon</h3>
+                        <p class="album-artist">Pink Floyd</p>
+                        <p class="album-price">$45.99</p>
+                        <button class="cta-button">Add to Cart</button>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <div class="gallery-image">
-                        <img src="https://picsum.photos/seed/furniture3/600/400" alt="Bookshelf">
+                <div class="album-item">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/vinyl2/600/600" alt="Jazz Album">
                     </div>
-                    <div class="gallery-content">
-                        <h3 class="gallery-title">Floating Bookshelf</h3>
-                        <p class="gallery-category">Storage Solutions</p>
-                        <p class="gallery-description">Custom floating shelving unit with integrated lighting and hidden compartments.</p>
-                        <button class="cta-button">View Details</button>
-                    </div>
-                </div>
-                <div class="gallery-item zoom-in-up">
-                    <div class="gallery-image">
-                        <img src="https://picsum.photos/seed/furniture4/600/400" alt="Coffee Table">
-                    </div>
-                    <div class="gallery-content">
-                        <h3 class="gallery-title">Live Edge Coffee Table</h3>
-                        <p class="gallery-category">Living Room</p>
-                        <p class="gallery-description">Stunning maple burl coffee table with glass river inlay and custom steel base.</p>
-                        <button class="cta-button">View Details</button>
+                    <div class="album-content">
+                        <h3 class="album-title">Kind of Blue</h3>
+                        <p class="album-artist">Miles Davis</p>
+                        <p class="album-price">$39.99</p>
+                        <button class="cta-button">Add to Cart</button>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <div class="gallery-image">
-                        <img src="https://picsum.photos/seed/furniture5/600/400" alt="Bed Frame">
+                <div class="album-item">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/vinyl3/600/600" alt="Soul Album">
                     </div>
-                    <div class="gallery-content">
-                        <h3 class="gallery-title">Platform Bed Frame</h3>
-                        <p class="gallery-category">Bedroom</p>
-                        <p class="gallery-description">Minimalist platform bed with integrated nightstands and hidden storage.</p>
-                        <button class="cta-button">View Details</button>
+                    <div class="album-content">
+                        <h3 class="album-title">What's Going On</h3>
+                        <p class="album-artist">Marvin Gaye</p>
+                        <p class="album-price">$42.99</p>
+                        <button class="cta-button">Add to Cart</button>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <div class="gallery-image">
-                        <img src="https://picsum.photos/seed/furniture6/600/400" alt="Desk">
+                <div class="album-item zoom-in-up">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/vinyl4/600/600" alt="Alternative Album">
                     </div>
-                    <div class="gallery-content">
-                        <h3 class="gallery-title">Executive Desk</h3>
-                        <p class="gallery-category">Office</p>
-                        <p class="gallery-description">Executive desk crafted from African mahogany with leather inlay and custom cable management.</p>
-                        <button class="cta-button">View Details</button>
+                    <div class="album-content">
+                        <h3 class="album-title">OK Computer</h3>
+                        <p class="album-artist">Radiohead</p>
+                        <p class="album-price">$38.99</p>
+                        <button class="cta-button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="album-item">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/vinyl5/600/600" alt="Hip Hop Album">
+                    </div>
+                    <div class="album-content">
+                        <h3 class="album-title">To Pimp a Butterfly</h3>
+                        <p class="album-artist">Kendrick Lamar</p>
+                        <p class="album-price">$44.99</p>
+                        <button class="cta-button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="album-item">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/vinyl6/600/600" alt="Classic Album">
+                    </div>
+                    <div class="album-content">
+                        <h3 class="album-title">Rumours</h3>
+                        <p class="album-artist">Fleetwood Mac</p>
+                        <p class="album-price">$41.99</p>
+                        <button class="cta-button">Add to Cart</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
+    <!-- Store Hours Section -->
+    <section class="store-hours" id="store-hours">
         <div class="container">
             <div class="section-title">
-                <h2>Client Testimonials</h2>
+                <h2>Store Hours</h2>
             </div>
-            <div class="testimonial-list">
-                <div class="testimonial-card slide-left">
-                    <div class="testimonial-content">
-                        <p>The dining table Crafted Luxury created for our family is absolutely stunning. The attention to detail is remarkable, and it's clear that every inch was made with care and precision. It will be a centerpiece in our home for generations.</p>
+            <div class="hours-container">
+                <h3>Visit Us In-Store</h3>
+                <p>Drop by our location to browse our full collection, talk music with our knowledgeable staff, and experience the warm sound of vinyl on our listening stations.</p>
+                <div class="hours-list">
+                    <div class="hours-item">
+                        <span class="day">Monday</span>
+                        <span class="time">11:00 AM - 7:00 PM</span>
                     </div>
-                    <div class="testimonial-client">
-                        <div class="client-image">
-                            <img src="https://picsum.photos/seed/person1/100/100" alt="Sarah Johnson">
-                        </div>
-                        <div class="client-info">
-                            <h4>Sarah Johnson</h4>
-                            <p>New York, NY</p>
-                        </div>
+                    <div class="hours-item">
+                        <span class="day">Tuesday</span>
+                        <span class="time">11:00 AM - 7:00 PM</span>
                     </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>We commissioned a complete set of built-ins for our living room, and the results exceeded all expectations. The team was professional, responsive, and worked with us to incorporate all our specific needs into the design.</p>
+                    <div class="hours-item">
+                        <span class="day">Wednesday</span>
+                        <span class="time">11:00 AM - 7:00 PM</span>
                     </div>
-                    <div class="testimonial-client">
-                        <div class="client-image">
-                            <img src="https://picsum.photos/seed/person2/100/100" alt="David Chen">
-                        </div>
-                        <div class="client-info">
-                            <h4>David Chen</h4>
-                            <p>San Francisco, CA</p>
-                        </div>
+                    <div class="hours-item">
+                        <span class="day">Thursday</span>
+                        <span class="time">11:00 AM - 7:00 PM</span>
                     </div>
-                </div>
-                <div class="testimonial-card zoom-in-up">
-                    <div class="testimonial-content">
-                        <p>As an interior designer, I've worked with many furniture makers, and Crafted Luxury stands above the rest. Their ability to translate conceptual designs into functional art pieces is unmatched. My clients are always thrilled with the results.</p>
+                    <div class="hours-item">
+                        <span class="day">Friday</span>
+                        <span class="time">11:00 AM - 9:00 PM</span>
                     </div>
-                    <div class="testimonial-client">
-                        <div class="client-image">
-                            <img src="https://picsum.photos/seed/person3/100/100" alt="Michelle Rodriguez">
-                        </div>
-                        <div class="client-info">
-                            <h4>Michelle Rodriguez</h4>
-                            <p>Interior Designer</p>
-                        </div>
+                    <div class="hours-item">
+                        <span class="day">Saturday</span>
+                        <span class="time">10:00 AM - 9:00 PM</span>
+                    </div>
+                    <div class="hours-item">
+                        <span class="day">Sunday</span>
+                        <span class="time">12:00 PM - 6:00 PM</span>
                     </div>
                 </div>
+                <p>123 Music Avenue, Downtown | Phone: (555) 123-4567</p>
             </div>
         </div>
     </section>
@@ -779,8 +737,8 @@
                 <h2>Get In Touch</h2>
             </div>
             <div class="contact-form">
-                <h3>Start Your Custom Project</h3>
-                <p>Ready to create a piece of furniture as unique as you are? Fill out the form below to schedule a consultation with our design team.</p>
+                <h3>Contact Us</h3>
+                <p>Have questions about specific records or looking for something special? Drop us a line and we'll get back to you as soon as possible.</p>
                 <form>
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Your Name" required>
@@ -793,19 +751,18 @@
                     </div>
                     <div class="form-group">
                         <select class="form-control" required>
-                            <option value="" disabled selected>Project Type</option>
-                            <option value="dining">Dining Furniture</option>
-                            <option value="seating">Seating & Sofas</option>
-                            <option value="bedroom">Bedroom Furniture</option>
-                            <option value="office">Office Furniture</option>
-                            <option value="storage">Storage & Shelving</option>
+                            <option value="" disabled selected>Inquiry Type</option>
+                            <option value="record-search">Record Search</option>
+                            <option value="purchase-inquiry">Purchase Inquiry</option>
+                            <option value="selling-records">Selling Records</option>
+                            <option value="events">Event Information</option>
                             <option value="other">Other</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" rows="5" placeholder="Tell us about your project..." required></textarea>
+                        <textarea class="form-control" rows="5" placeholder="Your message..." required></textarea>
                     </div>
-                    <button type="submit" class="cta-button">Submit Request</button>
+                    <button type="submit" class="cta-button">Send Message</button>
                 </form>
             </div>
         </div>
@@ -816,38 +773,38 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Crafted Luxury</h3>
-                    <p>Creating bespoke furniture that combines artisanal craftsmanship with modern design since 2005.</p>
+                    <h3>Vintage Vinyl</h3>
+                    <p>Curating authentic vinyl experiences since 1978. From rare collectibles to new releases, we're your destination for all things vinyl.</p>
                 </div>
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <a href="#home">Home</a>
                     <a href="#about">About Us</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#testimonials">Testimonials</a>
+                    <a href="#featured-albums">Featured Albums</a>
+                    <a href="#store-hours">Store Hours</a>
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-column">
                     <h3>Our Services</h3>
-                    <a href="#">Custom Furniture Design</a>
-                    <a href="#">Bespoke Built-ins</a>
-                    <a href="#">Commercial Projects</a>
-                    <a href="#">Restoration & Repair</a>
-                    <a href="#">Design Consultation</a>
+                    <a href="#">New Vinyl Records</a>
+                    <a href="#">Used & Vintage Vinyl</a>
+                    <a href="#">Record Cleaning</a>
+                    <a href="#">Special Orders</a>
+                    <a href="#">Buy & Trade</a>
                 </div>
                 <div class="footer-column">
                     <h3>Connect With Us</h3>
-                    <p>Follow us for design inspiration, project updates, and craftsmanship insights.</p>
+                    <p>Follow us for new arrivals, special events, and vinyl culture.</p>
                     <div class="social-links">
                         <a href="#"><i class="fa fa-facebook">fb</i></a>
                         <a href="#"><i class="fa fa-instagram">ig</i></a>
-                        <a href="#"><i class="fa fa-pinterest">pin</i></a>
-                        <a href="#"><i class="fa fa-houzz">hz</i></a>
+                        <a href="#"><i class="fa fa-twitter">tw</i></a>
+                        <a href="#"><i class="fa fa-spotify">sp</i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Crafted Luxury Custom Furniture. All Rights Reserved.</p>
+                <p>&copy; 2023 Vintage Vinyl Records. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -867,4 +824,42 @@
                 const elementTop = element.getBoundingClientRect().top;
                 const windowHeight = window.innerHeight;
                 
-                if(elementTop < windowHeight - 100)
+                if(elementTop < windowHeight - 100) {
+                    element.classList.add('active');
+                }
+            });
+            
+            slideElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if(elementTop < windowHeight - 100) {
+                    element.classList.add('active');
+                }
+            });
+        }
+        
+        // Check animations on scroll
+        window.addEventListener('scroll', checkAnimations);
+        
+        // Check animations on load
+        window.addEventListener('load', checkAnimations);
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if(document.querySelector('.nav-links').classList.contains('active')) {
+                    document.querySelector('.nav-links').classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
