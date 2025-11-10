@@ -26,7 +26,7 @@
         /* Navigation */
         nav {
             background-color: #fff;
-            box-shadow: 0 2px 10px rgba(143, 75, 46, 0.2);
+            box-shadow: 0 2px 10px rgba(138, 79, 43, 0.2);
             position: fixed;
             width: 100%;
             z-index: 1000;
@@ -42,7 +42,7 @@
         .logo {
             font-size: 24px;
             font-weight: 700;
-            color: #8f4b2e;
+            color: #8a4f2b;
         }
         
         .logo img {
@@ -69,7 +69,7 @@
         }
         
         .nav-links a:hover {
-            color: #8f4b2e;
+            color: #8a4f2b;
         }
         
         .mobile-menu-btn {
@@ -78,7 +78,7 @@
             border: none;
             font-size: 24px;
             cursor: pointer;
-            color: #8f4b2e;
+            color: #8a4f2b;
         }
         
         /* Hero Section */
@@ -126,7 +126,7 @@
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
-            text-shadow: 0 0 15px rgba(143, 75, 46, 0.7);
+            text-shadow: 0 0 15px rgba(138, 79, 43, 0.7);
         }
         
         .hero-content p {
@@ -136,7 +136,7 @@
         }
         
         .cta-button {
-            background-color: #8f4b2e;
+            background-color: #8a4f2b;
             color: #fff;
             border: none;
             padding: 15px 30px;
@@ -150,9 +150,9 @@
         }
         
         .cta-button:hover {
-            background-color: #7a3f27;
+            background-color: #734224;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(143, 75, 46, 0.4);
+            box-shadow: 0 10px 20px rgba(138, 79, 43, 0.4);
         }
         
         /* About Section */
@@ -185,7 +185,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background-color: #8f4b2e;
+            background-color: #8a4f2b;
         }
         
         .about-content {
@@ -204,7 +204,7 @@
         .about-text h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            color: #8f4b2e;
+            color: #8a4f2b;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -227,7 +227,7 @@
         .about-image img {
             max-width: 100%;
             border-radius: 10px;
-            box-shadow: 0 15px 30px rgba(143, 75, 46, 0.2);
+            box-shadow: 0 15px 30px rgba(138, 79, 43, 0.2);
         }
         
         /* Featured Albums */
@@ -268,7 +268,7 @@
         
         .album-item:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(143, 75, 46, 0.3);
+            box-shadow: 0 15px 30px rgba(138, 79, 43, 0.3);
         }
         
         .album-image {
@@ -303,7 +303,7 @@
         
         .album-artist {
             font-size: 1.1rem;
-            color: #8f4b2e;
+            color: #8a4f2b;
             margin-bottom: 15px;
             font-weight: 600;
         }
@@ -328,12 +328,12 @@
             background-color: #f8f8f8;
             padding: 40px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(143, 75, 46, 0.15);
+            box-shadow: 0 10px 30px rgba(138, 79, 43, 0.15);
         }
         
         .hours-container h3 {
             font-size: 1.8rem;
-            color: #8f4b2e;
+            color: #8a4f2b;
             margin-bottom: 30px;
             font-weight: 700;
         }
@@ -347,7 +347,7 @@
         
         .hours-list li {
             padding: 15px 0;
-            border-bottom: 1px solid rgba(143, 75, 46, 0.2);
+            border-bottom: 1px solid rgba(138, 79, 43, 0.2);
             font-size: 1.1rem;
             display: flex;
             justify-content: space-between;
@@ -363,7 +363,7 @@
         }
         
         .time {
-            color: #8f4b2e;
+            color: #8a4f2b;
         }
         
         /* Contact Form */
@@ -379,7 +379,7 @@
             background-color: #fff;
             padding: 40px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(143, 75, 46, 0.15);
+            box-shadow: 0 10px 30px rgba(138, 79, 43, 0.15);
         }
         
         .contact-form h3 {
@@ -409,7 +409,7 @@
         
         .form-control:focus {
             outline: none;
-            border-color: #8f4b2e;
+            border-color: #8a4f2b;
         }
         
         /* Footer */
@@ -436,7 +436,7 @@
         .footer-column h3 {
             font-size: 1.3rem;
             margin-bottom: 20px;
-            color: #8f4b2e;
+            color: #8a4f2b;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -452,7 +452,7 @@
         }
         
         .footer-column a:hover {
-            color: #8f4b2e;
+            color: #8a4f2b;
         }
         
         .social-links {
@@ -472,7 +472,7 @@
         }
         
         .social-links a:hover {
-            background-color: #8f4b2e;
+            background-color: #8a4f2b;
             color: #fff;
         }
         
@@ -506,6 +506,18 @@
         .slide-left.active {
             opacity: 1;
             transform: translateX(0);
+        }
+        
+        /* Fade Down Animation */
+        .fade-down {
+            opacity: 0;
+            transform: translateY(-30px);
+            transition: all 0.8s ease;
+        }
+        
+        .fade-down.active {
+            opacity: 1;
+            transform: translateY(0);
         }
         
         /* Responsive Styles */
@@ -566,7 +578,7 @@
     <nav>
         <div class="container nav-container">
             <div class="logo">
-                <a href="/" style="font-size: 32px; text-decoration: none;">💿</a> Vintage Vinyl
+                <a href="/" style="font-size: 32px; text-decoration: none;">🎵</a> Vintage Vinyl
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -582,12 +594,12 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <video class="hero-video" autoplay muted loop>
-            <source src="https://www.youtube.com/embed/fJ9rUzIMcZQ?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&mute=1" type="video/mp4">
+            <source src="https://www.youtube.com/embed/d9NF2edxy-M?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&mute=1" type="video/mp4">
         </video>
         <div class="overlay"></div>
         <div class="container hero-content">
-            <h1>Sound of the Past, Music for Today</h1>
-            <button class="cta-button">Explore Our Collection</button>
+            <h1 class="fade-down">Discover Vinyl Magic</h1>
+            <button class="cta-button fade-down">Explore Our Collection</button>
         </div>
     </section>
     
@@ -619,7 +631,7 @@
                 <h2>Featured Albums</h2>
             </div>
             <div class="album-items">
-                <div class="album-item">
+                <div class="album-item fade-down">
                     <div class="album-image">
                         <img src="https://picsum.photos/seed/album1/600/600" alt="Dark Side of the Moon">
                     </div>
@@ -630,7 +642,7 @@
                         <button class="cta-button">Add to Cart</button>
                     </div>
                 </div>
-                <div class="album-item">
+                <div class="album-item fade-down">
                     <div class="album-image">
                         <img src="https://picsum.photos/seed/album2/600/600" alt="Kind of Blue">
                     </div>
@@ -641,7 +653,7 @@
                         <button class="cta-button">Add to Cart</button>
                     </div>
                 </div>
-                <div class="album-item">
+                <div class="album-item fade-down">
                     <div class="album-image">
                         <img src="https://picsum.photos/seed/album3/600/600" alt="Abbey Road">
                     </div>
@@ -663,7 +675,7 @@
                         <button class="cta-button">Add to Cart</button>
                     </div>
                 </div>
-                <div class="album-item">
+                <div class="album-item zoom-in-up">
                     <div class="album-image">
                         <img src="https://picsum.photos/seed/album5/600/600" alt="Rumours">
                     </div>
@@ -674,7 +686,7 @@
                         <button class="cta-button">Add to Cart</button>
                     </div>
                 </div>
-                <div class="album-item">
+                <div class="album-item zoom-in-up">
                     <div class="album-image">
                         <img src="https://picsum.photos/seed/album6/600/600" alt="Purple Rain">
                     </div>
@@ -695,7 +707,7 @@
             <div class="section-title">
                 <h2>Store Hours</h2>
             </div>
-            <div class="hours-container">
+            <div class="hours-container fade-down">
                 <h3>Visit Us In-Store</h3>
                 <ul class="hours-list">
                     <li><span class="day">Monday</span> <span class="time">Closed</span></li>
@@ -790,7 +802,7 @@
 
         // Animation on Scroll
         function checkVisibility() {
-            const elements = document.querySelectorAll('.zoom-in-up, .slide-left');
+            const elements = document.querySelectorAll('.zoom-in-up, .slide-left, .fade-down');
             
             elements.forEach(element => {
                 const rect = element.getBoundingClientRect();
@@ -803,7 +815,10 @@
         }
 
         // Initial check
-        checkVisibility();
+        window.addEventListener('DOMContentLoaded', () => {
+            // Trigger animations for elements in the viewport on page load
+            setTimeout(checkVisibility, 100);
+        });
 
         // Check on scroll
         window.addEventListener('scroll', checkVisibility);
