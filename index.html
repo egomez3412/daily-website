@@ -603,7 +603,7 @@
     <nav>
         <div class="container nav-container">
             <div class="logo">
-                <a href="/" style="font-size: 32px; text-decoration: none;">🎵</a> Vinyl Revival
+                <a href="/" style="font-size: 32px; text-decoration: none;">💿</a> Vinyl Revival
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -619,11 +619,12 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <video class="hero-video" autoplay muted loop>
-            <source src="https://www.youtube.com/embed/pFZJaPNVNxE?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&mute=1" type="video/mp4">
+            <source src="https://www.youtube.com/embed/v64KOxKVLVg" type="video/mp4">
         </video>
         <div class="overlay"></div>
         <div class="container hero-content">
             <h1 class="fade-down">Analog Sound. Timeless Experience.</h1>
+            <p class="fade-down">Experience the warm, rich sound of vinyl at San Francisco's premier vintage record store</p>
             <button class="cta-button fade-down">Discover Our Collection</button>
         </div>
     </section>
@@ -859,7 +860,11 @@
             
             // Initial check
             handleScroll();
-        });
-    </script>
-</body>
-</html>
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    // Close mobile menu if open
+                    document.querySelector('.
