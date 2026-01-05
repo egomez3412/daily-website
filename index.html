@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoChic - Sustainable Fashion</title>
+    <title>Vintage Vinyl Records</title>
     <style>
         * {
             margin: 0;
@@ -26,7 +26,7 @@
         /* Navigation */
         nav {
             background-color: #fff;
-            box-shadow: 0 2px 10px rgba(139, 195, 74, 0.2);
+            box-shadow: 0 2px 10px rgba(138, 79, 45, 0.2);
             position: fixed;
             width: 100%;
             z-index: 1000;
@@ -42,7 +42,7 @@
         .logo {
             font-size: 24px;
             font-weight: 700;
-            color: #8bc34a;
+            color: #8a4f2d;
         }
         
         .logo img {
@@ -69,7 +69,7 @@
         }
         
         .nav-links a:hover {
-            color: #8bc34a;
+            color: #8a4f2d;
         }
         
         .mobile-menu-btn {
@@ -78,7 +78,7 @@
             border: none;
             font-size: 24px;
             cursor: pointer;
-            color: #8bc34a;
+            color: #8a4f2d;
         }
         
         /* Hero Section */
@@ -105,7 +105,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.6);
             z-index: -1;
         }
         
@@ -126,7 +126,7 @@
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
-            text-shadow: 0 0 15px rgba(139, 195, 74, 0.7);
+            text-shadow: 0 0 15px rgba(138, 79, 45, 0.7);
         }
         
         .hero-content p {
@@ -136,7 +136,7 @@
         }
         
         .cta-button {
-            background-color: #8bc34a;
+            background-color: #8a4f2d;
             color: #fff;
             border: none;
             padding: 15px 30px;
@@ -150,9 +150,9 @@
         }
         
         .cta-button:hover {
-            background-color: #7cb342;
+            background-color: #6d3e23;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(139, 195, 74, 0.4);
+            box-shadow: 0 10px 20px rgba(138, 79, 45, 0.4);
         }
         
         /* About Section */
@@ -185,7 +185,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background-color: #8bc34a;
+            background-color: #8a4f2d;
         }
         
         .about-content {
@@ -204,7 +204,7 @@
         .about-text h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            color: #8bc34a;
+            color: #8a4f2d;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -227,11 +227,11 @@
         .about-image img {
             max-width: 100%;
             border-radius: 10px;
-            box-shadow: 0 15px 30px rgba(139, 195, 74, 0.2);
+            box-shadow: 0 15px 30px rgba(138, 79, 45, 0.2);
         }
         
-        /* Product Catalog */
-        .product-catalog {
+        /* Featured Albums */
+        .featured-albums {
             padding: 100px 0;
             background-color: #f8f8f8;
             position: relative;
@@ -244,11 +244,11 @@
             width: 100%;
             height: 100%;
             opacity: 0.05;
-            background: url('https://picsum.photos/seed/fashion/1600/900') center/cover no-repeat;
+            background: url('https://picsum.photos/seed/vinyl/1600/900') center/cover no-repeat;
             z-index: 0;
         }
         
-        .product-items {
+        .album-items {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -257,7 +257,7 @@
             z-index: 1;
         }
         
-        .product-item {
+        .album-item {
             background-color: #fff;
             overflow: hidden;
             width: 280px;
@@ -266,34 +266,34 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
-        .product-item:hover {
+        .album-item:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(139, 195, 74, 0.3);
+            box-shadow: 0 15px 30px rgba(138, 79, 45, 0.3);
         }
         
-        .product-image {
+        .album-image {
             position: relative;
             overflow: hidden;
             height: 280px;
         }
         
-        .product-image img {
+        .album-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
         
-        .product-item:hover .product-image img {
+        .album-item:hover .album-image img {
             transform: scale(1.05);
         }
         
-        .product-content {
+        .album-content {
             padding: 25px;
             text-align: center;
         }
         
-        .product-title {
+        .album-title {
             font-size: 1.3rem;
             font-weight: 700;
             color: #333;
@@ -301,62 +301,55 @@
             letter-spacing: 1px;
         }
         
-        .product-category {
+        .album-artist {
             font-size: 1rem;
-            color: #8bc34a;
+            color: #8a4f2d;
             margin-bottom: 10px;
         }
         
-        .product-description {
+        .album-description {
             font-size: 0.9rem;
             color: #666;
             margin-bottom: 15px;
             line-height: 1.5;
         }
         
-        /* Size Guide */
-        .size-guide {
+        /* Store Hours */
+        .store-hours {
             padding: 100px 0;
             background-color: #fff;
         }
         
-        .size-guide-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-        }
-        
-        .size-table {
+        .hours-table {
             width: 100%;
             max-width: 800px;
             border-collapse: collapse;
             margin: 0 auto;
-            box-shadow: 0 5px 15px rgba(139, 195, 74, 0.1);
+            box-shadow: 0 5px 15px rgba(138, 79, 45, 0.1);
             border-radius: 10px;
             overflow: hidden;
         }
         
-        .size-table th,
-        .size-table td {
+        .hours-table th,
+        .hours-table td {
             padding: 15px;
             text-align: center;
             border-bottom: 1px solid #eee;
         }
         
-        .size-table th {
-            background-color: #8bc34a;
+        .hours-table th {
+            background-color: #8a4f2d;
             color: white;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
         
-        .size-table tr:nth-child(even) {
+        .hours-table tr:nth-child(even) {
             background-color: #f9f9f9;
         }
         
-        .size-table tr:hover {
+        .hours-table tr:hover {
             background-color: #f0f0f0;
         }
         
@@ -373,7 +366,7 @@
             background-color: #fff;
             padding: 40px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(139, 195, 74, 0.15);
+            box-shadow: 0 10px 30px rgba(138, 79, 45, 0.15);
         }
         
         .contact-form h3 {
@@ -403,7 +396,7 @@
         
         .form-control:focus {
             outline: none;
-            border-color: #8bc34a;
+            border-color: #8a4f2d;
         }
         
         /* Footer */
@@ -430,7 +423,7 @@
         .footer-column h3 {
             font-size: 1.3rem;
             margin-bottom: 20px;
-            color: #8bc34a;
+            color: #8a4f2d;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -446,7 +439,7 @@
         }
         
         .footer-column a:hover {
-            color: #8bc34a;
+            color: #8a4f2d;
         }
         
         .social-links {
@@ -466,7 +459,7 @@
         }
         
         .social-links a:hover {
-            background-color: #8bc34a;
+            background-color: #8a4f2d;
             color: #fff;
         }
         
@@ -561,16 +554,16 @@
                 padding: 30px 20px;
             }
             
-            .product-item {
+            .album-item {
                 width: 100%;
             }
             
-            .size-table {
+            .hours-table {
                 font-size: 0.8rem;
             }
             
-            .size-table th,
-            .size-table td {
+            .hours-table th,
+            .hours-table td {
                 padding: 10px;
             }
         }
@@ -581,13 +574,13 @@
     <nav>
         <div class="container nav-container">
             <div class="logo">
-                <a href="/" style="font-size: 32px; text-decoration: none;">👗</a> EcoChic
+                <a href="/" style="font-size: 32px; text-decoration: none;">💿</a> Vintage Vinyl
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#size-guide">Size Guide</a></li>
+                <li><a href="#albums">Featured Albums</a></li>
+                <li><a href="#store-hours">Store Hours</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="mobile-menu-btn">☰</button>
@@ -597,13 +590,12 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <video class="hero-video" autoplay muted loop>
-            <source src="https://www.youtube.com/embed/NEvX_LsWGJo" type="video/mp4">
+            <source src="https://www.youtube.com/embed/fev8Lr4_4Ow" type="video/mp4">
         </video>
         <div class="overlay"></div>
         <div class="container hero-content">
-            <h1 class="fade-down">Fashion with a Conscience</h1>
-            <p class="fade-down">Sustainable, ethical, and stylish clothing made with environmentally friendly materials and fair labor practices</p>
-            <button class="cta-button fade-down">Shop Collection</button>
+            <h1 class="fade-down">Rediscover Analog Magic</h1>
+            <button class="cta-button fade-down">Browse Collection</button>
         </div>
     </section>
     
@@ -615,167 +607,151 @@
             </div>
             <div class="about-content">
                 <div class="about-text slide-left">
-                    <h3>Our Mission</h3>
-                    <p>EcoChic was founded in 2018 with a simple mission: to create beautiful, timeless clothing without harming the planet or exploiting workers.</p>
-                    <p>We believe fashion can be a force for good. Every piece in our collection is crafted from organic, recycled, or responsibly sourced materials, using eco-friendly dyes and production methods that minimize waste and water usage.</p>
-                    <p>Our commitment to sustainability extends beyond our products. We partner with environmental organizations, offset our carbon footprint, and continuously work to improve our practices and transparency throughout our supply chain.</p>
+                    <h3>Our Story</h3>
+                    <p>Vintage Vinyl was established in 1978 with a simple passion: to preserve and celebrate the timeless art of analog music.</p>
+                    <p>For over four decades, we've been curating an exceptional collection of vinyl records spanning all genres and eras. From rare first pressings to remastered classics, our inventory is a treasure trove for collectors and music enthusiasts alike.</p>
+                    <p>Our knowledgeable staff shares your passion for music and is always ready to help you discover your next favorite album or track down that elusive record you've been searching for. We believe in the warm, authentic sound that only vinyl can deliver.</p>
                 </div>
                 <div class="about-image zoom-in-up">
-                    <img src="https://picsum.photos/seed/sustainablefashion/600/400" alt="Sustainable Fashion Production">
+                    <img src="https://picsum.photos/seed/vinylstore/600/400" alt="Vintage Vinyl Store Interior">
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Product Catalog Section -->
-    <section class="product-catalog" id="products">
+    <!-- Featured Albums Section -->
+    <section class="featured-albums" id="albums">
         <div class="catalog-bg"></div>
         <div class="container">
             <div class="section-title">
-                <h2>Our Collection</h2>
+                <h2>Featured Albums</h2>
             </div>
-            <div class="product-items">
-                <div class="product-item fade-down">
-                    <div class="product-image">
-                        <img src="https://picsum.photos/seed/fashion1/400/400" alt="Organic Cotton Dress">
+            <div class="album-items">
+                <div class="album-item fade-down">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/vinyl1/400/400" alt="Classic Rock Vinyl">
                     </div>
-                    <div class="product-content">
-                        <h3 class="product-title">Organic Maxi Dress</h3>
-                        <p class="product-category">Women's Collection</p>
-                        <p class="product-description">Made from 100% GOTS-certified organic cotton, dyed with natural indigo.</p>
+                    <div class="album-content">
+                        <h3 class="album-title">Dark Side of the Moon</h3>
+                        <p class="album-artist">Pink Floyd</p>
+                        <p class="album-description">1973 pressing in near mint condition. Complete with all original inserts.</p>
+                        <button class="cta-button">$129.99</button>
+                    </div>
+                </div>
+                <div class="album-item fade-down">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/vinyl2/400/400" alt="Jazz Vinyl">
+                    </div>
+                    <div class="album-content">
+                        <h3 class="album-title">Kind of Blue</h3>
+                        <p class="album-artist">Miles Davis</p>
+                        <p class="album-description">Original 1959 Columbia Records pressing. Audiophile quality.</p>
+                        <button class="cta-button">$179.50</button>
+                    </div>
+                </div>
+                <div class="album-item fade-down">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/vinyl3/400/400" alt="Soul Vinyl">
+                    </div>
+                    <div class="album-content">
+                        <h3 class="album-title">What's Going On</h3>
+                        <p class="album-artist">Marvin Gaye</p>
+                        <p class="album-description">1971 Tamla Records. Beautifully preserved sleeve and vinyl.</p>
                         <button class="cta-button">$89.99</button>
                     </div>
                 </div>
-                <div class="product-item fade-down">
-                    <div class="product-image">
-                        <img src="https://picsum.photos/seed/fashion2/400/400" alt="Hemp Blend Shirt">
+                <div class="album-item zoom-in-up">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/vinyl4/400/400" alt="Alternative Vinyl">
                     </div>
-                    <div class="product-content">
-                        <h3 class="product-title">Hemp Blend Shirt</h3>
-                        <p class="product-category">Men's Collection</p>
-                        <p class="product-description">Breathable and durable hemp-cotton blend. Perfect for all seasons.</p>
-                        <button class="cta-button">$65.00</button>
-                    </div>
-                </div>
-                <div class="product-item fade-down">
-                    <div class="product-image">
-                        <img src="https://picsum.photos/seed/fashion3/400/400" alt="Recycled Denim Jeans">
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title">Recycled Denim Jeans</h3>
-                        <p class="product-category">Unisex Collection</p>
-                        <p class="product-description">Made from 80% recycled denim and 20% organic cotton. Water-saving production.</p>
-                        <button class="cta-button">$79.50</button>
+                    <div class="album-content">
+                        <h3 class="album-title">Nevermind</h3>
+                        <p class="album-artist">Nirvana</p>
+                        <p class="album-description">First pressing from 1991 on DGC Records. Collector's item.</p>
+                        <button class="cta-button">$149.00</button>
                     </div>
                 </div>
-                <div class="product-item zoom-in-up">
-                    <div class="product-image">
-                        <img src="https://picsum.photos/seed/fashion4/400/400" alt="Tencel Jumpsuit">
+                <div class="album-item slide-left">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/vinyl5/400/400" alt="Hip Hop Vinyl">
                     </div>
-                    <div class="product-content">
-                        <h3 class="product-title">Tencel Jumpsuit</h3>
-                        <p class="product-category">Women's Collection</p>
-                        <p class="product-description">Luxuriously soft and fluid Tencel™ lyocell from responsibly harvested wood.</p>
+                    <div class="album-content">
+                        <h3 class="album-title">The Low End Theory</h3>
+                        <p class="album-artist">A Tribe Called Quest</p>
+                        <p class="album-description">1991 Jive Records. Essential hip-hop masterpiece.</p>
                         <button class="cta-button">$110.00</button>
                     </div>
                 </div>
-                <div class="product-item slide-left">
-                    <div class="product-image">
-                        <img src="https://picsum.photos/seed/fashion5/400/400" alt="Cork Accessories">
+                <div class="album-item slide-left">
+                    <div class="album-image">
+                        <img src="https://picsum.photos/seed/vinyl6/400/400" alt="Electronic Vinyl">
                     </div>
-                    <div class="product-content">
-                        <h3 class="product-title">Cork Belt</h3>
-                        <p class="product-category">Accessories</p>
-                        <p class="product-description">Sustainable cork material harvested without harming the trees.</p>
-                        <button class="cta-button">$45.00</button>
-                    </div>
-                </div>
-                <div class="product-item slide-left">
-                    <div class="product-image">
-                        <img src="https://picsum.photos/seed/fashion6/400/400" alt="Bamboo Loungewear">
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title">Bamboo Lounge Set</h3>
-                        <p class="product-category">Loungewear</p>
-                        <p class="product-description">Ultra-soft bamboo viscose that's gentle on skin and the environment.</p>
-                        <button class="cta-button">$95.00</button>
+                    <div class="album-content">
+                        <h3 class="album-title">Computer World</h3>
+                        <p class="album-artist">Kraftwerk</p>
+                        <p class="album-description">1981 German pressing. Electronic music cornerstone.</p>
+                        <button class="cta-button">$135.00</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Size Guide Section -->
-    <section class="size-guide" id="size-guide">
+    <!-- Store Hours Section -->
+    <section class="store-hours" id="store-hours">
         <div class="container">
             <div class="section-title">
-                <h2>Size Guide</h2>
+                <h2>Store Hours</h2>
             </div>
             <div class="size-guide-content">
-                <table class="size-table">
+                <table class="hours-table">
                     <thead>
                         <tr>
-                            <th>Size</th>
-                            <th>Chest (inches)</th>
-                            <th>Waist (inches)</th>
-                            <th>Hips (inches)</th>
-                            <th>EU Size</th>
-                            <th>US Size</th>
+                            <th>Day</th>
+                            <th>Opening Hours</th>
+                            <th>Notes</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>XS</td>
-                            <td>31-33</td>
-                            <td>24-26</td>
-                            <td>34-36</td>
-                            <td>34-36</td>
-                            <td>0-2</td>
+                            <td>Monday</td>
+                            <td>11:00 AM - 7:00 PM</td>
+                            <td>New arrivals day</td>
                         </tr>
                         <tr>
-                            <td>S</td>
-                            <td>33-35</td>
-                            <td>26-28</td>
-                            <td>36-38</td>
-                            <td>36-38</td>
-                            <td>4-6</td>
+                            <td>Tuesday</td>
+                            <td>11:00 AM - 7:00 PM</td>
+                            <td>Regular hours</td>
                         </tr>
                         <tr>
-                            <td>M</td>
-                            <td>35-37</td>
-                            <td>28-30</td>
-                            <td>38-40</td>
-                            <td>38-40</td>
-                            <td>8-10</td>
+                            <td>Wednesday</td>
+                            <td>11:00 AM - 7:00 PM</td>
+                            <td>Regular hours</td>
                         </tr>
                         <tr>
-                            <td>L</td>
-                            <td>37-39</td>
-                            <td>30-32</td>
-                            <td>40-42</td>
-                            <td>42-44</td>
-                            <td>12-14</td>
+                            <td>Thursday</td>
+                            <td>11:00 AM - 8:00 PM</td>
+                            <td>Late night browsing</td>
                         </tr>
                         <tr>
-                            <td>XL</td>
-                            <td>39-41</td>
-                            <td>32-34</td>
-                            <td>42-44</td>
-                            <td>46-48</td>
-                            <td>16-18</td>
+                            <td>Friday</td>
+                            <td>10:00 AM - 9:00 PM</td>
+                            <td>Vinyl Happy Hour 4-6PM</td>
                         </tr>
                         <tr>
-                            <td>XXL</td>
-                            <td>41-43</td>
-                            <td>34-36</td>
-                            <td>44-46</td>
-                            <td>50-52</td>
-                            <td>20-22</td>
+                            <td>Saturday</td>
+                            <td>10:00 AM - 9:00 PM</td>
+                            <td>Live DJ sessions 2-5PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>12:00 PM - 6:00 PM</td>
+                            <td>Relaxed browsing</td>
                         </tr>
                     </tbody>
                 </table>
                 <p class="zoom-in-up" style="margin-top: 30px; text-align: center; max-width: 600px; margin-left: auto; margin-right: auto;">
-                    Our garments are designed with a relaxed, comfortable fit. If you're between sizes, we recommend sizing down for a more fitted look or sizing up for a more relaxed silhouette. Don't hesitate to contact us if you need help choosing the right size.
+                    We occasionally host special events and listening parties after regular hours. Sign up for our newsletter to stay updated on upcoming events and new arrivals.
                 </p>
             </div>
         </div>
@@ -789,7 +765,7 @@
             </div>
             <div class="contact-form">
                 <h3>Contact Us</h3>
-                <p>Have questions about our sustainable practices, products, or want to collaborate? We'd love to hear from you!</p>
+                <p>Have questions about our inventory, looking for a specific record, or want to sell your collection? Drop us a line!</p>
                 <form>
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Your Name" required>
@@ -814,37 +790,37 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>EcoChic</h3>
-                    <p>Sustainable fashion shouldn't compromise on style or ethics. We're committed to creating beautiful clothing that respects people and planet.</p>
+                    <h3>Vintage Vinyl</h3>
+                    <p>Preserving the art of analog music since 1978. Our passion is bringing the authentic vinyl experience to both collectors and new enthusiasts.</p>
                 </div>
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <a href="#home">Home</a>
                     <a href="#about">About Us</a>
-                    <a href="#products">Products</a>
-                    <a href="#size-guide">Size Guide</a>
+                    <a href="#albums">Featured Albums</a>
+                    <a href="#store-hours">Store Hours</a>
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-column">
                     <h3>Contact Info</h3>
-                    <p>123 Green Street, Eco District</p>
+                    <p>123 Music Avenue, Downtown</p>
                     <p>Portland, OR 97201</p>
-                    <p>Phone: (503) 555-0123</p>
-                    <p>Email: hello@ecochic.com</p>
+                    <p>Phone: (503) 555-7890</p>
+                    <p>Email: info@vintagevinyl.com</p>
                 </div>
                 <div class="footer-column">
                     <h3>Follow Us</h3>
-                    <p>Join our sustainable fashion community for tips, updates and exclusive offers!</p>
+                    <p>Join our community of vinyl enthusiasts for new arrivals, rare finds, and in-store events!</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f">f</i></a>
                         <a href="#"><i class="fab fa-instagram">i</i></a>
                         <a href="#"><i class="fab fa-twitter">t</i></a>
-                        <a href="#"><i class="fab fa-pinterest">p</i></a>
+                        <a href="#"><i class="fab fa-spotify">s</i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 EcoChic Sustainable Fashion. All Rights Reserved.</p>
+                <p>&copy; 2023 Vintage Vinyl Records. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -886,4 +862,20 @@
             // Initial check
             handleScroll();
             
-            // Smooth scrolling for
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    document.querySelector('.nav-links').classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
